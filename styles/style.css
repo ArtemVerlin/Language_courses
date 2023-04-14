@@ -46,9 +46,6 @@ p{
 	display: flex;
 }
 
-.header__logo {
-	padding-left: 100px;
-}
 .header__logo-img {
 	max-width: 73px;
 	max-height: 70px;
@@ -86,7 +83,7 @@ letter-spacing: -0.02em;
 
 .first_section {
 	padding: 1px 0;
-	min-height: 700px;
+	min-height: 900px;
 	max-height: 900px;
 	height: 100%;
 	width: 100%;
@@ -95,9 +92,13 @@ letter-spacing: -0.02em;
 		115deg,
 		rgba(26, 26, 26, 0.7),
 		rgba(217, 217, 217, 0.2)
-	), url("/Language_courses/img/first_section\ background.jpg");
+	), url("/Language_courses/img/background-first-section.svg");
 	background-size: cover;
 	background-position:bottom;
+}
+
+.first_section__container{
+	
 }
 
 .title {
