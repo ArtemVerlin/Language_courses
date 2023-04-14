@@ -25,14 +25,20 @@
 
 				<nav class="header__nav">
 					<ul class="menu__list">
-						<li><a class="menu__link" href="#">Home</a></li>
-						<li><a class="menu__link" href="#">Courses</a></li>
-						<li><a class="menu__link" href="#">Exams</a></li>
-						<li><a class="menu__link" href="#">About us</a></li>
-						<li><a class="menu__link" href="#">Contact us</a></li>
+						<li><a class="menu__link"  href="#">Home</a></li>
+						<li><a class="menu__link" href="#">What we offer</a></li>
+						<li><a class="menu__link" href="#">Cases</a></li>
+						<li><a class="menu__link" href="#">Get in Touch</a></li>
+						
 					</ul>
 				</nav>
 
+				<div class="callback">
+						<a href="#popup" class="callback__button popup-link">
+						<img class="callback-icon" src="/Language_courses/img/callback-icon.svg" alt="">
+						Book a call
+						</a>
+				</div>
 			</div>
 		</header>
 
@@ -41,14 +47,16 @@
 			<section class="first_section">
 				<div class="container">
 					<div class="first_section__container">
-						<h1 class="title">Discover the world through language</h1>
-						<div class="first_section__links">
-								<a href="#" class="first_section__link-1">
-									<p>Our Courses</p>
+							<div class="first_section__content">
+								<h1 class="title">Discover the world through language</h1>
+								<div class="first_section__links">
+								<a href="#" data-goto=".third_section" class="first_section__link-1 first_section__link">
+									Our Courses
 								</a>
-								<a href="#" class="first_section__link-2">
-								<p>Book a meeting</p>
+								<a href="#" data-goto=".fourth_section" class="first_section__link-2 first_section__link">
+								Book a meeting
 							</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -357,6 +365,37 @@
 			</div>             
 		</footer>
 
+		<div id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="close-popup popup__close">X</a>
+					<div class="popup__tiitle">Hello let me tell you a little about myself</div>
+					<div class="popup__text">
+						<a href="#popup_2" class="popup-link">Lorem</a>
+						ipsum dolor sit amet consectetur, adipisicing elit.
+						Libero magnam expedita exercitationem ad repellat vel laborum quaerat suscipit autem,
+						labore qui quo nisi accusamus, repellendus itaque voluptatem? Aperiam, rem sed.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup_2" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="close-popup popup__close">X</a>
+					<div class="popup__tiitle">Hello let me tell you a little about myself</div>
+					<div class="popup__text">
+						<a href="#popup_2" class="popup-link">Lorem</a> ipsum dolor sit amet consectetur, adipisicing elit.
+						Libero magnam expedita exercitationem ad repellat vel laborum quaerat suscipit autem,
+						labore qui quo nisi accusamus, repellendus itaque voluptatem? Aperiam, rem sed.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./Js/smooft_scroll.js"></script>
+		<script src="./Js/popup.js"></script>
 		<script src="./Js/Swiper/swiper-bundle.min.js"></script>
 		<script src="./Js/main.js"></script>
 	</div>
