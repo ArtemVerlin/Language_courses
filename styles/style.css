@@ -479,6 +479,10 @@ color: #F2F2F2;
 	
 }
 
+.modal.open .modal-content{
+	
+}
+
 .modal-content {
 	background-color: var(--main-white);
 	margin: auto;

@@ -1,3 +1,5 @@
+const popup = document.querySelector('.popup');
+
 function validation(form) {
 
 	let result = true;
@@ -64,7 +66,14 @@ document.getElementById('form').addEventListener('submit', function(event) {
 	event.preventDefault()
 	
 	if (validation(this) === true) {
-		//ТУТ ДОЛЖЕН ОТКРЫТЬСЯ ПОПАП
+		// Добавляем класс 'open' для открытия popup-окна
+		popup.classList.add('open');
+
+		// Добавляем обработчик события на кнопку закрытия popup-окна
+		const closeBtn = popup.querySelector('.close-btn');
+		closeBtn.addEventListener('click', function() {
+  		popup.classList.remove('open');
+		});
 	}
 
 });
