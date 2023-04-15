@@ -22,6 +22,7 @@ body._lock{
   	--main-pink: #f497da;
   	--main-gray: #333333;
 	--main-white: #FFFFFF;
+	--main-hover-button: #00cc96;
 }
 
 
@@ -123,7 +124,7 @@ transition: all 0.3s;
 	visibility: hidden;
 	overflow-y: auto;
 	overflow-x: hidden;
-
+	z-index: 5;
 	background-color: rgba(0, 0, 0, 0.8);
 
 	transition: all 0.5s ease 0s;
@@ -200,7 +201,7 @@ transition: all 0.3s;
 		115deg,
 		rgba(26, 26, 26, 0.7),
 		rgba(217, 217, 217, 0.2)
-	), url("/Language_courses/img/background-first-section.svg");
+	), url("/img/background-first-section.svg");
 	background-size: cover;
 	background-position:bottom;
 }
@@ -240,9 +241,15 @@ color: var(--main-white);
 	border-radius: 60px;
 	padding: 12px 24px 12px 24px;
 	min-width: 180px;
+	transition: all 0.2s;
 }
 
-.first_section__link-1:hover{}
+.first_section__link-1:hover{
+	color: #000;
+	min-width: 140px;
+	background-color: #00cc96;
+	border: 2px solid var(--main-hover-button);
+}
 
 .first_section__link-2 {
 	border: 2px solid var(--main-aqua);
@@ -250,6 +257,14 @@ color: var(--main-white);
 	background: var(--main-aqua);
 	padding: 12px 24px 12px 24px;
 	min-width: 180px;
+	transition: all 0.2s;
+}
+
+.first_section__link-2:hover{
+	color: #000;
+	min-width: 140px;
+	background-color: #00cc96;
+	border: 2px solid var(--main-hover-button);
 }
 
 /*********************************first_section**********************************/
@@ -308,12 +323,24 @@ margin-bottom: 36px;
 
 .form-control {
 	display: block;
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 	padding: 13px 0 16px 13px;
 	color: #A3A3A4;
 	background-color: #F2F2F2;
 	border: 1px solid #F2F2F2;
 	width: 400px;
+}
+
+.error .form-control{
+	border-color: red;
+	margin-bottom: 0px;
+}
+
+
+.error-label{
+	font-size: 15px;
+	color: red;
+	line-height: 10px;
 }
 
 .submit-button {
@@ -324,7 +351,7 @@ margin-bottom: 36px;
 	height: 52px;
 	background: var(--main-pink);
 	border-radius: 60px;
-	margin: 0 auto 0
+	margin: 36px auto 0
 }
 
 .submit-button__text{
@@ -487,6 +514,7 @@ color: #F2F2F2;
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
+	transition: all 0.5s;
 }
 
 body.modal-open {
@@ -550,7 +578,7 @@ body.modal-open {
 }
 
 .swiper {
-	width: 480px;
+	width: 520px;
   height: 350px;
 }
 
@@ -583,25 +611,29 @@ body.modal-open {
 	font-size: 16px;
 	line-height: 30px;
 	color: var(--main-gray);
-	padding: 0px 48px 48px 48px;
+	padding: 0px 48px 48px 54px;
 }
 
 /* .swiper-pagination {
 	
-}
-.swiper-button-prev {
-
-}
-.swiper-button-next {
-
 } */
+
 
 .swiper-button-next::after,
 .swiper-button-prev::after{
 	color: var(--main-pink);
-	font-size: 25px;
+	font-size: 22px;
+	transition: all 0.2s;
 }
 
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover::after{
+	font-size: 38px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--main-pink);
+}
 /*********************************fifth section**********************************/
 
 .five_section__container {

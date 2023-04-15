@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./Swiper/package/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./styles/style.css"/>
 	<link rel="stylesheet" href="./styles/reset.css"/>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -37,8 +37,8 @@
 				</nav>
 
 				<div class="callback">
-						<a href="#popup" class="callback__button popup-link">
-						<img class="callback-icon" src="/Language_courses/img/callback-icon.svg" alt="">
+						<a href="#popup-book-a-call" class="callback__button popup-link">
+						<img class="callback-icon" src="/img/callback-icon.svg" alt="">
 						Book a call
 						</a>
 				</div>
@@ -74,49 +74,71 @@
 						<p class="two_section__text">
 							Our language school offers a dynamic and immersive learning experience designed
 							to help you achieve fluency in your target language </p>
-							<form class="survey-form">
+							<form action="#" id="form" class="survey-form">
 								<p class="survey-form__title">Enroll for a course now</p>
-								<label id="name-label" for="name"></label>
-								<input
+								<div class="input_box">
+									<input
+										type="text"
+										name="name"
+										id="name"
+										class="form-control"
+										placeholder="Full name"
+									/>
+								</div>
+								<div class="input_box">
+									<input
 									type="text"
 									name="name"
 									id="name"
-									class="form-control"
-									placeholder="Full name"
-									required 
-								/>
-								<label id="name-label" for="name"></label>
-								<input
-									type="text"
-									name="name"
-									id="name"
-									class="form-control"
+									class="form-control _email"
 									placeholder="Email"
-									required 
-								/>
-								<label id="name-label" for="name"></label>
-								<input
-									type="text"
-									name="name"
-									id="name"
+									/>
+								</div>
+								<div class="input-box">
+									<input
+									type="tel"
+									name="phone"
+									id="phone"
 									class="form-control"
-									placeholder="Phone number"
-									required 
-								/>
-								<select id="dropdown" name="role" class="form-control" required>
+									placeholder="+7(000)000-00-00"
+									maxlength="16"
+									/>
+								</div>
+								<div class="input-box">
+									<select id="dropdown" name="role" class="form-control">
 									<option disabled selected value>Select a course</option>
-									<option value="Student">#</option>
-									<option value="Full Time Job">#</option>
-									<option value="Full Time Learner">#</option>
-									<option value="Prefer not to say">#</option>
-									<option value="Other">#</option>
-								</select>
-							<button type="submit" id="submit" class="submit-button">
-								<span class="submit-button__text">Apply Now</span>
-							</button>
-						</form>
+									<option value="For beginners">For beginners</option>
+									<option value="For Pre-intermediate">For Pre-intermediate</option>
+									<option value="For intermediate">For intermediate</option>
+									<option value="Preparation for Exam">Preparation for Exam</option>
+									<option value="Consultation">Consultation</option>
+									</select>
+								</div>
+								<button id="popup__apply-now" type="submit" class="submit-button">
+									<span class="submit-button__text">Apply Now</span>
+									<!-- <span class="submit-button__text">
+										<a href="#popup" >Apply Now</a>
+									</span> -->
+								</button>
+							</form>
 					</div>
 				</div>
+
+				<div id="popup__apply-now" class="popup-form">
+					<div class="popup__body">
+						<div class="popup__content">
+							<a href="#header" class="close-popup popup__close"><span class="close">&times;</span></a>
+							<div class="popup__tiitle">Hello let me tell you a little about myself</div>
+							<div class="popup__text">
+								<a href="#popup_2" class="popup-link">Lorem</a>
+								ipsum dolor sit amet consectetur, adipisicing elit.
+								Libero magnam expedita exercitationem ad repellat vel laborum quaerat suscipit autem,
+								labore qui quo nisi accusamus, repellendus itaque voluptatem? Aperiam, rem sed.
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</section>
 
 			<section class="third_section">
@@ -389,10 +411,10 @@
 			</div>             
 		</footer>
 
-		<div id="popup" class="popup">
+		<div id="popup-book-a-call" class="popup">
 			<div class="popup__body">
 				<div class="popup__content">
-					<a href="#header" class="close-popup popup__close">X</a>
+					<a href="#header" class="close-popup popup__close"><span class="close">&times;</span></a>
 					<div class="popup__tiitle">Hello let me tell you a little about myself</div>
 					<div class="popup__text">
 						<a href="#popup_2" class="popup-link">Lorem</a>
@@ -419,10 +441,11 @@
 		</div>
 
 		<script src="./Js/smooft_scroll.js"></script>
-		<script src="./Js/popup.js"></script>
-		<script src="./Js/Swiper/swiper-bundle.min.js"></script>
+		<script src="./Js/popup-book-a-call.js"></script>
+		<script src="./Swiper/package/swiper-bundle.min.js"></script>
 		<script src="./Js/main.js"></script>
 		<script src="./Js/calendar.js"></script>
+		<script src="./Js/form-validate-succsess.js"></script>
 	</div>
 </body>
 </html>
