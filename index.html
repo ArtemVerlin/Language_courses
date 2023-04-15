@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="./styles/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./styles/style.css"/>
 	<link rel="stylesheet" href="./styles/reset.css"/>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<title>Language School</title>
 </head>
 <body>
@@ -75,30 +78,30 @@
 								<p class="survey-form__title">Enroll for a course now</p>
 								<label id="name-label" for="name"></label>
 								<input
-								type="text"
-								name="name"
-								id="name"
-								class="form-control"
-								placeholder="Full name"
-								required 
+									type="text"
+									name="name"
+									id="name"
+									class="form-control"
+									placeholder="Full name"
+									required 
 								/>
 								<label id="name-label" for="name"></label>
 								<input
-								type="text"
-								name="name"
-								id="name"
-								class="form-control"
-								placeholder="Email"
-								required 
+									type="text"
+									name="name"
+									id="name"
+									class="form-control"
+									placeholder="Email"
+									required 
 								/>
 								<label id="name-label" for="name"></label>
 								<input
-								type="text"
-								name="name"
-								id="name"
-								class="form-control"
-								placeholder="Phone number"
-								required 
+									type="text"
+									name="name"
+									id="name"
+									class="form-control"
+									placeholder="Phone number"
+									required 
 								/>
 								<select id="dropdown" name="role" class="form-control" required>
 									<option disabled selected value>Select a course</option>
@@ -107,7 +110,7 @@
 									<option value="Full Time Learner">#</option>
 									<option value="Prefer not to say">#</option>
 									<option value="Other">#</option>
-							</select>
+								</select>
 							<button type="submit" id="submit" class="submit-button">
 								<span class="submit-button__text">Apply Now</span>
 							</button>
@@ -161,10 +164,31 @@
 								<h3 class="grid-1-title">University consultation </h3>
 								<h4 class="grid-2-title">Lets choose the best university for you!</h4>
 								<p class=" project-text">Our experienced consultants work with you to understand your academic goals, preferences, and requirements, and then provide you with personalized recommendations on universities.</p>
-									<a href="#" class="grid_button">Explore our courses</a>
+								
+
+
+
+
+								<button id="open-modal" class="grid_button">Book a meeting</button>
+								<div id="modal" class="modal">
+									<div class="modal-content">
+									  <span class="close">&times;</span>
+										<div class="modal-center">
+											<h2 class="calendar_text">Select date and time</h2>
+											<div id="calendar"></div>
+										</div>	
+									</div>
+								  </div>
+							  
+								  
 							</div>
 						</div>
-								
+						
+						
+
+
+
+
 					</div>
 				</div>
 			</section>
@@ -398,6 +422,7 @@
 		<script src="./Js/popup.js"></script>
 		<script src="./Js/Swiper/swiper-bundle.min.js"></script>
 		<script src="./Js/main.js"></script>
+		<script src="./Js/calendar.js"></script>
 	</div>
 </body>
 </html>
