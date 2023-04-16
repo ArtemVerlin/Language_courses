@@ -68,7 +68,6 @@ document.getElementById('form').addEventListener('submit', function(event) {
         const modal = document.getElementById('modal_sectionOne');
         const openModalButton = document.getElementById('open_modal_sectionOne');
         const closeButton = document.querySelector('.close_sectionOne');
-		openModalButton.addEventListener('click', function() {
             modal.style.display = "block";
             document.body.classList.add("modal-open");
             setTimeout(() => {
@@ -76,7 +75,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
             }, 10);
             window.addEventListener("click", closeOutsideModal);
             document.addEventListener("keydown", closeOnEsc);
-          });
+          
           
           closeButton.addEventListener('click', function() {
             closeModal();
