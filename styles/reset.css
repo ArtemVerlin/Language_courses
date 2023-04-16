@@ -40,7 +40,7 @@ img, svg, video {
 /* Form */
 input, textarea, button, select {
   font-family: inherit;
-  font-size: inherit;
+  /* font-size: inherit; */
 }
 
 input::-ms-clear {
