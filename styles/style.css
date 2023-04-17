@@ -157,7 +157,7 @@ transition: all 0.3s;
 	background-color: yellow;
 	padding: 0px 20px 0px;
 }
-/*************************************POPUP**************************************************/
+/*************************************popup-book-a-call**************************************************/
 .popup {
 	position: fixed;
 	top: 0;
@@ -170,7 +170,6 @@ transition: all 0.3s;
 	overflow-x: hidden;
 	z-index: 5;
 	background-color: rgba(0, 0, 0, 0.8);
-
 	transition: all 0.5s ease 0s;
 }
 
@@ -195,7 +194,6 @@ transition: all 0.3s;
 	position: relative;
 	background-color:white;
 	color: #000;
-	max-width: 800px;
 	padding: 30px;
 	border-radius: 10px;
 	margin-top: 80px;
@@ -216,15 +214,15 @@ transition: all 0.3s;
 	justify-content: center;
 	text-align: center;
 	color: #000;
-	font-size: 30px; 
+	font-size: 3rem; 
 	margin: 0px 0px 1em 0px;
 }
 .popup__text {
 	color: #000;
-	font-size: 20px;
+	font-size: 2rem;
 }
 
-/*************************************POPUP**************************************************/
+/*************************************popup-book-a-call**************************************************/
 
 /*********************************Header**********************************/
 
