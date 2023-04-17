@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="./styles/adaptation.css">
 	<link rel="stylesheet" href="./styles/reset.css"/>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="icon" href="data:;base64,=">
 	<title>Language School</title>
 </head>
@@ -49,19 +49,56 @@
 					<div class="popup__body">
 						<div class="container">
 							<div class="popup__content">
-								<a href="#header" class="close-popup popup__close"><span class="close">&times;</span></a>
-								<div class="popup__tiitle">Hello let me tell you a little about myself</div>
-								<div class="popup__text">
-									<a href="#popup_2" class="popup-link">Lorem</a>
-									ipsum dolor sit amet consectetur, adipisicing elit.
-									Libero magnam expedita exercitationem ad repellat vel laborum quaerat suscipit autem,
-									labore qui quo nisi accusamus, repellendus itaque voluptatem? Aperiam, rem sed.
+								<a href="#header" class="close-popup popup__close">
+									<span class="popup__close">&times;</span>
+								</a>
+								<div class="popup-book-a-call__text-container">
+									<div class="popup__tiitle">Direct Call</div>
+									<div class="popup__text">
+										<p>
+											Fill out the form  and one of our language experts will be in touch with you shortly to discuss
+											how we can help you achieve your language goals.
+										</p>
+									</div>
 								</div>
+								<form action="#" id="form__call-a-back" class="survey-form__book-a-call">
+									<div class="input_box">
+										<input
+											type="text"
+											name="name"
+											id="name"
+											class="form-control"
+											placeholder="Full name"
+										/>
+									</div>
+									<div class="input-box">
+										<input
+										type="tel"
+										name="phone"
+										id="phone"
+										class="form-control"
+										placeholder="+7(000)000-00-00"
+										maxlength="16"
+										/>
+									</div>
+									<button id="open_modal_call-a-back" type="submit" class="submit-button submit-button__text">Apply Now</button>
+										<div id="modal_call-a-back" class="modal_sectionOne">
+											<div class="modal-content_sectionOne">
+												<span class="close_sectionOne">&times;</span>
+												<div class="modal-center_sectionOne">
+													<div class="modal-center_sectionOne">
+														<h3 class="modal_header">Thank you!</h3>
+														<p class="text_modal_section_one">We will contact you shortly</p>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</button>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 		</header>
 
 		<main class="main">
@@ -465,6 +502,7 @@
 		<script src="./Swiper/package/swiper-bundle.min.js"></script>
 		<script src="./Js/main.js"></script>
 		<script src="./Js/calendar.js"></script>
+		<script src="./Js/form-validate-book-a-call.js"></script>
 		<!--<script src="./Js/form-validate-succsess.js"></script>-->
 		<script src="./Js/form-validate-sectionOne.js"></script>
 		<script src="./Js/form-section-five.js"></script>
