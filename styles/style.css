@@ -808,26 +808,29 @@ body.modal-open {
 	flex-direction: row;
 	background-color: var(--main-white);
 	border-radius: 60px;
-	width: 100%;
-	height: 450px;
-	min-height:612px;
+	width: 33,3em;
+	height: 500px;
 }
 
+.survey_section_five{
+	margin: 50px 40px 50px 40px;
+	width: 100%;
+}
 
 .send_buttom {
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	width: 240px;
+	width: 10em;
 	height: 45px;
-  padding: 0 20px;
+  	padding: 0 20px;
 	border: none;
-  border-radius: 60px;
-  background-color: var(--main-aqua);
-  color: #474350;
-  font-size: 18px;
+  	border-radius: 60px;
+  	background-color: var(--main-aqua);
+ 	color: #474350;
+ 	font-size: 18px;
 	font-weight: 600;
-  cursor: pointer;
+  	cursor: pointer;
 	z-index: 3;
 	margin: 36px auto 0;
 }
@@ -836,24 +839,25 @@ textarea {
 	resize: none; 
 	overflow: auto;
 	line-height: 1.2rem;
-	height: 120px;
+	height: 8rem;
   }
 
-.fifth_img{
-	margin: 40px 0px 100px 60px;
+  .fifth_img {
+	margin: 40px 0px 80px 40px;
 	border-radius: 60px;
 	border: none;
 	width: 100%;
-	max-width: 400px;
-	height: 100%;
-	max-height: 350px;
+	height: auto;
+	max-width: 100%;
+	max-height: 500px;
 }
+
 /*********************************fifth section**********************************/
 
 /*********************************footer**********************************/
 .footer{
-  background-color: #474350;
-  margin: 200px 0px 0px;
+  	background-color: #474350;
+  	margin: 200px 0px 0px;
 	padding: 50px 0px 100px;
 }
 
