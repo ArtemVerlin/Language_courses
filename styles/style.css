@@ -30,6 +30,7 @@ body._lock{
 	max-width:1420px;
 	padding: 0 100px 0;
 	margin: 0 auto 0;
+	height: 100%;
 }
 
 p{
@@ -193,9 +194,7 @@ transition: all 0.3s;
 
 .first_section {
 	padding: 1px 0;
-	min-height: 32vh;
-	max-height: 32vh;
-	height: 100%;
+	height: 32vh;
 	width: 100%;
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
 	background-image:linear-gradient(
@@ -204,22 +203,22 @@ transition: all 0.3s;
 		rgba(217, 217, 217, 0.2)
 	), url("/img/background-first-section.svg");
 	background-size: cover;
-	background-position:bottom;
 }
 
-.first_section__container{
-	height: 32vh;
+.first_section__content{
+	height: 100%;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: center;
 }
 
 .title {
 display: inline-block;
-max-width: 325px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 33px;
+font-size: 1.5em;
 line-height: 38px;
 color: var(--main-white);
 }
@@ -299,7 +298,7 @@ color: var(--main-white);
 	max-width: 800px;
 	width: 50%;
 	max-height: 200px;
-	height: 250px;
+	height: 250px;;
 	position: fixed;
 	top: 40%;
 	left: 0;
@@ -380,11 +379,11 @@ color: var(--main-white);
 }
 
 .section__title {
-margin: 173px auto 70px;
+margin: 100px auto 70px;
 font-family: 'Roboto', sans-serif;
 color: var(--main-gray);
 font-weight: 700;
-font-size: 40px;
+font-size: 35px;
 line-height: 20px;
 letter-spacing: -0.02em;
 }
@@ -436,7 +435,7 @@ select{
 	color: #000;
 	background-color: #F2F2F2;
 	border: 2px solid #F2F2F2;
-	width: 300px;
+	width: 380px;
 }
 
 .error .form-control{
@@ -505,12 +504,12 @@ color: #F2F2F2;
 	grid-template-columns: 1fr 1fr;
 }
 .project-grid__tile-img{
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: 100%;
 }
 .project-grid__tile-img-reverse{
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: 100%;
 	grid-column-start: 2;
 	grid-column-end: -1;
 }
@@ -786,8 +785,10 @@ textarea {
 	margin: 40px 0px 100px 60px;
 	border-radius: 60px;
 	border: none;
-	width: 400px;
-	height: 350px;
+	width: 100%;
+	max-width: 400px;
+	height: 100%;
+	max-height: 350px;
 }
 /*********************************fifth section**********************************/
 
