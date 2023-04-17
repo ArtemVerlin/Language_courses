@@ -67,10 +67,14 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
         const modal = document.getElementById('modal_sectionOne');
         const openModalButton = document.getElementById('open_modal_sectionOne');
         const closeButton = document.querySelector('.close_sectionOne');
+				const popupActive = document.querySelector('.popup.open');
             modal.style.display = "block";
             document.body.classList.add("modal-open");
             setTimeout(() => {
               modal.classList.add("open");
+							if (popupActive) {
+								popupClose(popupActive, false);
+							}
             }, 10);
             window.addEventListener("click", closeOutsideModal);
             document.addEventListener("keydown", closeOnEsc);
@@ -78,10 +82,12 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
           
           closeButton.addEventListener('click', function() {
             closeModal();
+						
           });
           
           function closeModal() {
             modal.classList.remove("open");
+						body.classList.remove('_lock');
             setTimeout(() => {
               modal.style.display = "none";
               document.body.classList.remove("modal-open");

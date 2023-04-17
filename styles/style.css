@@ -195,8 +195,7 @@ transition: all 0.3s;
 	position: relative;
 	background-color:white;
 	color: #000;
-	padding: 30px;
-	border-radius: 10px;
+	border-radius: 60px;
 	margin-top: 80px;
 	transition: all 0.5s ease 0s;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
@@ -211,7 +210,7 @@ transition: all 0.3s;
 
 .popup-book-a-call__text-container{
 	width: 40%;
-	margin: 0px 0px 0px 0px;
+	margin: 70px 20px 80px 70px;
 }
 
 .popup__tiitle {
@@ -222,6 +221,11 @@ transition: all 0.3s;
 .popup__text {
 	color: #000;
 	font-size: 2rem;
+}
+
+.survey-form__book-a-call{
+	width: 60%;
+	margin: 120px 60px 80px 0px;
 }
 
 /*************************************popup-book-a-call**************************************************/
