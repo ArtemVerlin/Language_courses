@@ -34,7 +34,7 @@ function validation(form) {
 		const parent = input.parentNode;
 
 		if (parent.classList.contains('error')) {
-			parent.querySelector('.error-label').remove()
+			parent.querySelector('.error-text').remove()
 			parent.classList.remove('error')
 		}
 	}
@@ -42,14 +42,14 @@ function validation(form) {
 	//createErrors--------------------------------
 	function createError(input, text) {
 		const parent = input.parentNode;
-		const errorLabel = document.createElement('label')
+		const errorText = document.createElement('p')
+		// const title = document.querySelector('.survey-form__title')
 
-		errorLabel.classList.add('error-label')
-		errorLabel.textContent = text
-
+		errorText.classList.add('error-text')
+		errorText.textContent = text
 		parent.classList.add('error');
 
-		parent.prepend(errorLabel)
+		parent.append(errorText)
 	}
 	
 

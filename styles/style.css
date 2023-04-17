@@ -73,7 +73,7 @@ p{
 
 .menu__link {
 font-weight: 600;
-font-size: 16px;
+font-size: 14px;
 line-height: 15px;
 display: flex;
 align-items: center;
@@ -209,7 +209,6 @@ transition: all 0.3s;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 	justify-content: center;
 }
 
@@ -393,9 +392,9 @@ letter-spacing: -0.02em;
 	flex-direction: row;
 	background-color: var(--main-white);
 	border-radius:  60px;
-	width: 100%;
 	height: 450px;
 	min-height:612px;
+	width: 100%;
 }
 
 .two_section__text {
@@ -404,6 +403,7 @@ font-size: 25px;
 line-height: 35px;
 color: #333333;
 padding: 90px 0px 0px 62px;
+width: 50%;
 }
 
 .survey-form__title{
@@ -416,7 +416,9 @@ margin-bottom: 36px;
 
 .survey-form {
 	margin: 53px 40px 0px 40px;
+	width: 50%;
 }
+
 
 input::placeholder{
 	font-size: 20px;
@@ -430,12 +432,12 @@ select{
 .form-control {
 	display: block;
 	margin-bottom: 20px;
-	font-size: 25px;
+	font-size: 20px;
 	padding: 10px 0 14px 10px;
 	color: #000;
 	background-color: #F2F2F2;
 	border: 2px solid #F2F2F2;
-	width: 380px;
+	width: 100%;
 }
 
 .error .form-control{
@@ -444,10 +446,12 @@ select{
 }
 
 
-.error-label{
+.error-text{
 	font-size: 15px;
 	color: red;
-	line-height: 10px;
+	line-height: 15px;
+	padding: 5px 0px 10px 0px;
+
 }
 
 .submit-button {
