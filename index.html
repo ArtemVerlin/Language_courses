@@ -4,19 +4,22 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS-->
 	<link rel="stylesheet" href="./Swiper/package/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./styles/style.css"/>
 	<link rel="stylesheet" href="./styles/adaptation.css">
 	<link rel="stylesheet" href="./styles/reset.css"/>
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="./styles/calendar.css">
+	<link rel="stylesheet" href="./styles/modal_third_section.css">
+	<link rel="stylesheet" href="./styles/modal_thank_you.css">
+	<link rel="stylesheet" href="./styles/modal_book_a-call.css">
+	<!--CSS END-->
 	<link rel="icon" href="data:;base64,=">
 	<title>Language School</title>
 </head>
 <body>
 	<div class="wrapper">
-
+		<!--Header-->
 		<header id="header test" class="header lock-padding">
 			<div class="container header__container">
 
@@ -81,6 +84,7 @@
 										maxlength="16"
 										/>
 									</div>
+									<!--Modal "Callback" + modal "thank you"-->
 									<button id="open_modal_call-a-back" type="submit" class="submit-button submit-button__text">Apply Now</button>
 										<div id="modal_call-a-back" class="modal_sectionOne">
 											<div class="modal-content_sectionOne">
@@ -94,15 +98,18 @@
 											</div>
 										</div>
 									</button>
+									<!--Modal "Callback" + modal "thank you" END-->
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 		</header>
+		<!--Header END-->
+
 
 		<main class="main">
-
+			<!--Section 1-->
 			<section class="first_section">
 				<div class="container">
 							<div class="first_section__content">
@@ -118,7 +125,9 @@
 						</div>
 				</div>
 			</section>
+			<!--Section 1 END--> 
 
+			<!--Section 2--> 
 			<section class="two_section">
 				<div class="container">
 					<div class="section__title-container">
@@ -168,13 +177,7 @@
 									<option value="Consultation">Consultation</option>
 									</select>
 								</div>
-
-
-
-
-
-
-
+								<!--Modal "thank you + Apply button"-->
 								<button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
 								<div id="modal_sectionOne" class="modal_sectionOne">
 									<div class="modal-content_sectionOne">
@@ -187,33 +190,15 @@
 										</div>	
 									</div>
 								</div>
-
-								
-
-
-
 								</button>
+								<!--Modal "thank you + Apply button" END-->
 							</form>
 					</div>
 				</div>
-
-				<!--<div id="popup__apply-now" class="popup-form">
-					<div class="popup__body">
-						<div class="popup__content">
-							<a href="#header" class="close-popup popup__close"><span class="close">&times;</span></a>
-							<div class="popup__tiitle">Hello let me tell you a little about myself</div>
-							<div class="popup__text">
-								<a href="#popup_2" class="popup-link">Lorem</a>
-								ipsum dolor sit amet consectetur, adipisicing elit.
-								Libero magnam expedita exercitationem ad repellat vel laborum quaerat suscipit autem,
-								labore qui quo nisi accusamus, repellendus itaque voluptatem? Aperiam, rem sed.
-							</div>
-						</div>
-					</div>
-				</div>-->
-
 			</section>
-
+			<!--Section 2 END--> 
+			
+			<!--Section 3--> 
 			<section class="third_section">
 				<div class="container">
 
@@ -260,96 +245,102 @@
 								<h4 class="grid-2-title">Lets choose the best university for you!</h4>
 								<p class=" project-text">Our experienced consultants work with you to understand your academic goals, preferences, and requirements, and then provide you with personalized recommendations on universities.</p>
 								
-
-
-
+								
+								<!--Modal + calendar-->
 
 								<a onclick="return false;" href="#" id="open-modal" class="grid_button">Book a meeting</a>
 								<div id="modal" class="modal">
 									<div class="modal-content">
-									  <span class="close">&times;</span>
-										<div class="modal-center">
-											<h2 class="calendar_text">Select date and time</h2>
-											<div id="calendar"></div>
+									  	<span class="close">&times;</span>
+										<!--Calendar-->
+									  	<div class="date-picker">
+											<div class="selected-date"></div>
+											<div class="dates active">
+												<div class="month">
+													<div class="arrows prev-mth">&lt;</div>
+													<div class="mth"></div>
+													<div class="arrows next-mth">&gt;</div>
+												</div>
+												<div class="days"></div>
+											</div>
 										</div>	
+										<!--Calendar END-->  
 									</div>
-								  </div>
-							  
-								  
+								</div>
+
+								<!--Modal + calendar END--> 
 							</div>
 						</div>
-						
-						
-
-
-
-
 					</div>
 				</div>
 			</section>
+			<!--Section 3 END--> 
 
+			<!--Section 4--> 
 			<section class="fourth_section">
 				<div class="container">
 					<div class="fourth_section__grid-templaetes">
-					<div class="fourth-section__title-container">
-						<h2 class="fourth-section__title">What our <span class="pink">Students</span> say about us</h2>
-					</div>
-
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="slider__foto-name">
-									<img src="./img/students-photo slider-1.jpg" alt="students-photo" class="slider__img">
-									<h5 class="slider__name">Name Surname</h5>
-								</div>
-								<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-																				Consectetur ac blandit nam massa massa elementum mollis lectus. 
-																				Sit ultricies nisl amet non, quis enim velit tempus. 
-																				Interdum duis imperdiet venenatis</p>
-							</div>
-
-							<div class="swiper-slide">
-								<div class="slider__foto-name">
-									<img src="./img/students-photo slider-2.jpg" alt="students-photo" class="slider__img">
-									<h5 class="slider__name">Name Surname</h5>
-								</div>
-								<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Consectetur ac blandit nam massa massa elementum mollis lectus. 
-									Sit ultricies nisl amet non, quis enim velit tempus. 
-									Interdum duis imperdiet venenatis</p>
-							</div>
-
-							<div class="swiper-slide">
-								<div class="slider__foto-name">
-									<img src="./img/students-photo slider-1.jpg" alt="students-photo" class="slider__img">
-									<h5 class="slider__name">Name Surname</h5>
-								</div>
-								<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Consectetur ac blandit nam massa massa elementum mollis lectus. 
-									Sit ultricies nisl amet non, quis enim velit tempus. 
-									Interdum duis imperdiet venenatis</p>
-							</div>
-
-							<div class="swiper-slide">
-								<div class="slider__foto-name">
-									<img src="./img/students-photo slider-2.jpg" alt="students-photo" class="slider__img">
-									<h5 class="slider__name">Name Surname</h5>
-								</div>
-								<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Consectetur ac blandit nam massa massa elementum mollis lectus. 
-									Sit ultricies nisl amet non, quis enim velit tempus. 
-									Interdum duis imperdiet venenatis</p>
-							</div>
-
+						<div class="fourth-section__title-container">
+							<h2 class="fourth-section__title">What our <span class="pink">Students</span> say about us</h2>
 						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
+						<!--Swiper--> 
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slider__foto-name">
+										<img src="./img/students-photo slider-1.jpg" alt="students-photo" class="slider__img">
+										<h5 class="slider__name">Name Surname</h5>
+									</div>
+									<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+																					Consectetur ac blandit nam massa massa elementum mollis lectus. 
+																					Sit ultricies nisl amet non, quis enim velit tempus. 
+																					Interdum duis imperdiet venenatis</p>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__foto-name">
+										<img src="./img/students-photo slider-2.jpg" alt="students-photo" class="slider__img">
+										<h5 class="slider__name">Name Surname</h5>
+									</div>
+									<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+										Consectetur ac blandit nam massa massa elementum mollis lectus. 
+										Sit ultricies nisl amet non, quis enim velit tempus. 
+										Interdum duis imperdiet venenatis</p>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__foto-name">
+										<img src="./img/students-photo slider-1.jpg" alt="students-photo" class="slider__img">
+										<h5 class="slider__name">Name Surname</h5>
+									</div>
+									<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+										Consectetur ac blandit nam massa massa elementum mollis lectus. 
+										Sit ultricies nisl amet non, quis enim velit tempus. 
+										Interdum duis imperdiet venenatis</p>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__foto-name">
+										<img src="./img/students-photo slider-2.jpg" alt="students-photo" class="slider__img">
+										<h5 class="slider__name">Name Surname</h5>
+									</div>
+									<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+										Consectetur ac blandit nam massa massa elementum mollis lectus. 
+										Sit ultricies nisl amet non, quis enim velit tempus. 
+										Interdum duis imperdiet venenatis</p>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<!--Swiper END--> 
 					</div>
 				</div>
 			</section>
+			<!--Section 4 END--> 
 
+			<!--Section 5-->
 			<section class="five_section">
 				<div class="container">
 					<div class="section__title-container">
@@ -404,9 +395,9 @@
 					</div>
 				</div>
 			</section>
-
+			<!--Section 5 END-->
 		</main>
-
+		<!--Footer-->
 		<footer class="footer">
 			<div class="container">
 				<div class="upper_footer">
@@ -482,21 +473,8 @@
 				</div>
 			</div>             
 		</footer>
-
-		<!-- <div id="popup_2" class="popup">
-			<div class="popup__body">
-				<div class="popup__content">
-					<a href="#header" class="close-popup popup__close">X</a>
-					<div class="popup__tiitle">Hello let me tell you a little about myself</div>
-					<div class="popup__text">
-						<a href="#popup_2" class="popup-link">Lorem</a> ipsum dolor sit amet consectetur, adipisicing elit.
-						Libero magnam expedita exercitationem ad repellat vel laborum quaerat suscipit autem,
-						labore qui quo nisi accusamus, repellendus itaque voluptatem? Aperiam, rem sed.
-					</div>
-				</div>
-			</div>
-		</div> -->
-
+		<!--Footer END-->
+		<!--JS connect-->
 		<script src="./Js/smooft_scroll.js"></script>
 		<script src="./Js/popup-book-a-call.js"></script>
 		<script src="./Swiper/package/swiper-bundle.min.js"></script>
@@ -504,8 +482,10 @@
 		<script src="./Js/calendar.js"></script>
 		<script src="./Js/form-validate-book-a-call.js"></script>
 		<!--<script src="./Js/form-validate-succsess.js"></script>-->
+		<script src="./Js/modal_calendar.js"></script>
 		<script src="./Js/form-validate-sectionOne.js"></script>
 		<script src="./Js/form-section-five.js"></script>
+		<!--JS connect END-->
 	</div>
 </body>
 </html>
