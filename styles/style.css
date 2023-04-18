@@ -65,6 +65,8 @@ body._lock{
   --main-gray: #333333;
 	--main-white: #FFFFFF;
 	--main-hover-button: #00cc96;
+	--main-errors-red: #ff333f;
+	--main-sucsess-green: #4caf50cf;
 }
 
 
@@ -492,15 +494,19 @@ option{
 	width: 100%;
 }
 
+.success .form-control{
+	border-color: #00cc96;
+}
+
 .error .form-control{
-	border-color: red;
+	border-color: var(--main-errors-red);
 	margin-bottom: 0px;
 }
 
 
 .error-text{
 	font-size: 1.5rem;
-	color: red;
+	color: var(--main-errors-red);
 	line-height: 1.5rem;
 	padding: 5px 0px 10px 0px;
 
@@ -514,7 +520,17 @@ option{
 	height: 45px;
 	background: var(--main-pink);
 	border-radius: 60px;
-	margin: 36px auto 0
+	margin: 36px auto 0;
+}
+
+.success_button{
+	background-color: var(--main-sucsess-green);
+	margin: 0px auto 0;
+}
+
+.error_button{
+	background-color: var(--main-errors-red);
+	margin: 0px auto 0;
 }
 
 .submit-button__text{
@@ -823,16 +839,28 @@ body.modal-open {
 	align-items: center;
 	width: 10em;
 	height: 45px;
-  	padding: 0 20px;
+  padding: 0 20px;
 	border: none;
-  	border-radius: 60px;
-  	background-color: var(--main-aqua);
- 	color: #474350;
- 	font-size: 18px;
+  border-radius: 60px;
+  background-color: var(--main-aqua);
+	color: #474350;
+	font-size: 18px;
 	font-weight: 600;
-  	cursor: pointer;
+  cursor: pointer;
 	z-index: 3;
 	margin: 36px auto 0;
+}
+
+.error_button{
+	margin: 0px auto 0;
+	background-color: var(--main-errors-red);
+	color: var(--main-white);
+}
+
+.success_button{
+	margin: 0px auto 0;
+	background-color: var(--main-sucsess-green);
+	color: var(--main-white);
 }
 
 textarea {

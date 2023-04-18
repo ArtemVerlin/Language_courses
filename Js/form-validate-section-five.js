@@ -8,7 +8,7 @@ function validation(form) {
 	form.querySelectorAll('.form-control').forEach(input => {
 
 		removeError(input)
-
+		
 		if (input.classList.contains('_email')) {
 			if (emailTest(input)) {
 				createError(input, 'The field is not filled')
@@ -64,13 +64,22 @@ document.getElementById('form_section_five').addEventListener('submit', function
 	event.preventDefault()
 	
 	if (validation(this) === true) {
+		//Добавляет класс успешно к инпутам формы
+		const formElements = document.querySelectorAll('.input_box__section-five');
+  	formElements.forEach((element) => {
+    element.classList.add('success');
+  });
         const modal = document.getElementById('modal_sectionOne');
-        const openModalButton = document.getElementById('open_modal_sectionOne');
+        const buttonError = document.getElementById('open_modal_sectionFive');
         const closeButton = document.querySelector('.close_sectionOne');
             modal.style.display = "block";
             document.body.classList.add("modal-open");
             setTimeout(() => {
               modal.classList.add("open");
+		//Удаляем класс ошибки для кнопки если валидация прошла успешно
+							buttonError.classList.remove('error_button');
+		//Добавляем класс успешно для кнопки если валидация прошла успешно
+							buttonError.classList.add('success_button');
             }, 10);
             window.addEventListener("click", closeOutsideModal);
             document.addEventListener("keydown", closeOnEsc);
@@ -101,14 +110,21 @@ document.getElementById('form_section_five').addEventListener('submit', function
               closeModal();
             }
           }
-	}
+	}else{
+		//Привязка к кнопке отправки
+			const buttonError = document.getElementById('open_modal_sectionFive');
+		//Если валидация провалилась то присваиваем класс ошибки
+			if((validation(this) === false)) {
+				buttonError.classList.add('error_button');
+			}
+		}
 
 });
 
 
 //TELEPHONE MASK
-document.querySelector('#phone').onkeydown = function(e){
-	inputphone(e,document.querySelector('#phone'))
+document.querySelector('#phone-section-five').onkeydown = function(e){
+	inputphone(e,document.querySelector('#phone-section-five'))
 	}
 
 	function inputphone(e, phone){

@@ -3,7 +3,6 @@ function validation(form) {
 
 	let result = true;
 
-	
 
 
 	form.querySelectorAll('.form-control').forEach(input => {
@@ -29,6 +28,8 @@ function validation(form) {
 
 	return result
 
+	
+
 	//Remove errors-------------------------------
 	function removeError(input){
 		const parent = input.parentNode;
@@ -42,16 +43,16 @@ function validation(form) {
 	//createErrors--------------------------------
 	function createError(input, text) {
 		const parent = input.parentNode;
-		const errorText = document.createElement('p')
-		// const title = document.querySelector('.survey-form__title')
+		const errorText = document.createElement('p');
+	
 
-		errorText.classList.add('error-text')
-		errorText.textContent = text
+		errorText.classList.add('error-text');
+		errorText.textContent = text;
 		parent.classList.add('error');
-
-		parent.append(errorText)
+		parent.append(errorText);
 	}
 	
+
 
 	//email cheker
 	function emailTest(input) {
@@ -65,11 +66,23 @@ document.getElementById('form').addEventListener('submit', function(event) {
 	event.preventDefault()
 	
 	if (validation(this) === true) {
+	//Добавляет класс успешно к инпутам формы
+		const formElements = document.querySelectorAll('.input_box__section-one');
+  	formElements.forEach((element) => {
+    element.classList.add('success');
+  });
+		//Выбор Модального окна
         const modal = document.getElementById('modal_sectionOne');
-        const openModalButton = document.getElementById('open_modal_sectionOne');
+		//Привязка к кнопке отправки
+        const buttonError = document.getElementById('open_modal_sectionOne');
+		//Привязка к крестику закрытия
         const closeButton = document.querySelector('.close_sectionOne');
             modal.style.display = "block";
             document.body.classList.add("modal-open");
+		//Удаляем класс ошибки для кнопки если валидация прошла успешно
+						buttonError.classList.remove('error_button');
+		//Добавляем класс успешно для кнопки если валидация прошла успешно
+						buttonError.classList.add('success_button');
             setTimeout(() => {
               modal.classList.add("open");
             }, 10);
@@ -102,14 +115,21 @@ document.getElementById('form').addEventListener('submit', function(event) {
               closeModal();
             }
           }
+	}else{
+	//Привязка к кнопке отправки
+		const buttonError = document.getElementById('open_modal_sectionOne');
+	//Если валидация провалилась то присваиваем класс ошибки
+		if((validation(this) === false)) {
+			buttonError.classList.add('error_button');
+		}
 	}
 
 });
 
 
 //TELEPHONE MASK
-document.querySelector('#phone').onkeydown = function(e){
-	inputphone(e,document.querySelector('#phone'))
+document.querySelector('#phone_sectionOne').onkeydown = function(e){
+	inputphone(e,document.querySelector('#phone_sectionOne'))
 	}
 
 	function inputphone(e, phone){

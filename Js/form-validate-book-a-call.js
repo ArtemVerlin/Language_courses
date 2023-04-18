@@ -64,12 +64,18 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
 	event.preventDefault()
 	
 	if (validation(this) === true) {
+		//Добавляет класс успешно к инпутам формы
+		const formElements = document.querySelectorAll('.input_box__book-a-call');
+  	formElements.forEach((element) => {
+    element.classList.add('success');
+  });
         const modal = document.getElementById('modal_sectionOne');
-        const openModalButton = document.getElementById('open_modal_sectionOne');
+        const buttonError = document.getElementById('open_modal_call-a-back');
         const closeButton = document.querySelector('.close_sectionOne');
 				const popupActive = document.querySelector('.popup.open');
             modal.style.display = "block";
             document.body.classList.add("modal-open");
+						buttonError.classList.remove('error_button');
             setTimeout(() => {
               modal.classList.add("open");
 							if (popupActive) {
@@ -107,6 +113,13 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
               closeModal();
             }
           }
+	}else{
+		//Привязка к кнопке отправки
+			const buttonError = document.getElementById('open_modal_call-a-back');
+		//Если валидация провалилась то присваиваем класс ошибки
+			if((validation(this) === false)) {
+				buttonError.classList.add('error_button');
+			}
 	}
 
 });

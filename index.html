@@ -62,7 +62,7 @@
 									</div>
 								</div>
 								<form action="#" id="form__call-a-back" class="survey-form__book-a-call">
-									<div class="input_box">
+									<div class="input_box__book-a-call">
 										<input
 											type="text"
 											name="name"
@@ -71,7 +71,7 @@
 											placeholder="Full name"
 										/>
 									</div>
-									<div class="input-box">
+									<div class="input_box__book-a-call">
 										<input
 										type="tel"
 										name="phone"
@@ -130,7 +130,7 @@
 							to help you achieve fluency in your target language </p>
 							<form action="#" id="form" class="survey-form">
 								<p class="survey-form__title">Enroll for a course now</p>
-								<div class="input_box">
+								<div class="input_box__section-one">
 									<input
 										type="text"
 										name="name"
@@ -139,7 +139,7 @@
 										placeholder="Full name"
 									/>
 								</div>
-								<div class="input_box">
+								<div class="input_box__section-one">
 									<input
 									type="text"
 									name="name"
@@ -148,17 +148,17 @@
 									placeholder="Email"
 									/>
 								</div>
-								<div class="input-box">
+								<div class="input_box__section-one">
 									<input
 									type="tel"
 									name="phone"
-									id="phone"
+									id="phone_sectionOne__section-one"
 									class="form-control"
 									placeholder="+7(000)000-00-00"
 									maxlength="16"
 									/>
 								</div>
-								<div class="input-box">
+								<div class="input_box__section-one">
 									<select id="dropdown" name="role" class="form-control">
 									<option disabled selected value>Select a course</option>
 									<option value="For beginners">For beginners</option>
@@ -176,22 +176,17 @@
 
 
 								<button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
-								<div id="modal_sectionOne" class="modal_sectionOne">
-									<div class="modal-content_sectionOne">
-										<span class="close_sectionOne">&times;</span>
-										<div class="modal-center_sectionOne">
+									<div id="modal_sectionOne" class="modal_sectionOne">
+										<div class="modal-content_sectionOne">
+											<span class="close_sectionOne">&times;</span>
 											<div class="modal-center_sectionOne">
-												<h3 class="modal_header">Thank you!</h3>
-												<p class="text_modal_section_one">We will contact you shortly</p>
-											</div>
-										</div>	
+												<div class="modal-center_sectionOne">
+													<h3 class="modal_header">Thank you!</h3>
+													<p class="text_modal_section_one">We will contact you shortly</p>
+												</div>
+											</div>	
+										</div>
 									</div>
-								</div>
-
-								
-
-
-
 								</button>
 							</form>
 					</div>
@@ -361,7 +356,7 @@
 						src="./img/project-tile-fifth.svg"
 						alt="group of people sitting close to the table and smiling">
 						<form class="survey_section_five" id="form_section_five" action="#">
-							<div class="input_box">
+							<div class="input_box__section-five">
 								<input
 									type="text"
 									name="name"
@@ -370,7 +365,7 @@
 									placeholder="Name"
 								/>
 							</div>
-							<div class="input_box">
+							<div class="input_box__section-five">
 								<input
 									type="email"
 									name="email_fifth_section"
@@ -379,16 +374,17 @@
 									placeholder="Email"
 								/>
 							</div>
-							<div class="input_box">
+							<div class="input_box__section-five">
 								<input
 									type="text"
 									name="number"
-									id="number_fifth_section"
+									id="phone-section-five"
 									class="form-control"
-									placeholder="Phone number"
+									placeholder="+7(000)000-00-00"
+									maxlength="16"
 								/>
 							</div>
-							<div class="input_box">
+							<div class="input_box__section-five">
 								<textarea
 									name="massage_fifth_section"
 									id="massage_fifth_section"
@@ -396,9 +392,10 @@
 									placeholder="Input Text"></textarea>
 							</div>
 								<button
+									id="open_modal_sectionFive"
 									type="submit"
-									class="send_buttom">
-									<span>Send</span>
+									class="send_buttom send_button-text">
+									Send
 								</button>
 						</form>
 					</div>
@@ -504,8 +501,8 @@
 		<script src="./Js/calendar.js"></script>
 		<script src="./Js/form-validate-book-a-call.js"></script>
 		<!--<script src="./Js/form-validate-succsess.js"></script>-->
-		<script src="./Js/form-validate-sectionOne.js"></script>
-		<script src="./Js/form-section-five.js"></script>
+		<script src="./Js/form-validate-section-one.js"></script>
+		<script src="./Js/form-validate-section-five.js"></script>
 	</div>
 </body>
 </html>

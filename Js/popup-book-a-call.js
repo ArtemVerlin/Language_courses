@@ -18,7 +18,7 @@ if (popupLinks.length > 0) {
 			e.preventDefault();
 		});
 	}
-}
+};
 
 /************************************иконка закрытия попапа*************************************************/
 const popupCloseIcon = document.querySelectorAll('.close-popup');
