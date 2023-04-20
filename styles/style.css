@@ -513,8 +513,7 @@ color: #F2F2F2;
 	background: var(--main-aqua);
 	border-radius: 60px;
 }
-
-/*********************************modal-calendar**********************************/
+/***Third section END***/
 
 /***Fourth section***/
 
@@ -675,9 +674,9 @@ textarea {
 	max-height: 500px;
 }
 
-/*********************************fifth section**********************************/
+/***Fifth section END***/
 
-/*********************************footer**********************************/
+/***Footer***/
 .footer{
   	background-color: #474350;
   	margin: 200px 0px 0px;
