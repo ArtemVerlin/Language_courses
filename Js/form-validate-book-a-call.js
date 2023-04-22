@@ -14,6 +14,11 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
 				const popupActive = document.querySelector('.popup.open');
             modal.style.display = "block";
             document.body.classList.add("modal-open");
+						setTimeout(() => {
+							body.classList.toggle('_lock');
+							document.body.classList.toggle("modal-open");
+              modal.classList.toggle("open");
+            }, 1800);
 						buttonError.classList.remove('error_button');
             setTimeout(() => {
               modal.classList.add("open");

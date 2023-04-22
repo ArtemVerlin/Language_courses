@@ -13,12 +13,16 @@ document.getElementById('form_section_five').addEventListener('submit', function
         const closeButton = document.querySelector('.close_sectionOne');
             modal.style.display = "block";
             document.body.classList.add("modal-open");
+						setTimeout(() => {
+							document.body.classList.toggle("modal-open");
+              modal.classList.toggle("open");
+            }, 1800);
+		//Удаляем класс ошибки для кнопки если валидация прошла успешно
+						buttonError.classList.remove('error_button');
+		//Добавляем класс успешно для кнопки если валидация прошла успешно
+						buttonError.classList.add('success_button');
             setTimeout(() => {
               modal.classList.add("open");
-		//Удаляем класс ошибки для кнопки если валидация прошла успешно
-							buttonError.classList.remove('error_button');
-		//Добавляем класс успешно для кнопки если валидация прошла успешно
-							buttonError.classList.add('success_button');
             }, 10);
             window.addEventListener("click", closeOutsideModal);
             document.addEventListener("keydown", closeOnEsc);

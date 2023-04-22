@@ -35,8 +35,7 @@
 	position: relative;
 	background-color:white;
 	color: #000;
-	border-radius: 60px;
-	margin-top: 80px;
+	border-radius: 40px;
 	transition: all 0.5s ease 0s;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 	opacity: 0;
@@ -49,14 +48,14 @@
 }
 
 .popup-book-a-call__text-container{
-	width: 40%;
-	margin: 70px 20px 80px 70px;
+	width: 100%;
+	padding: 60px 15px 70px 60px;
 }
 
 .popup__tiitle {
 	color: #000;
 	font-size: 3rem; 
-	margin: 0px 0px 1em 0px;
+	margin: 0px 0px 0.5em 0px;
 }
 .popup__text {
 	color: #000;
@@ -64,6 +63,45 @@
 }
 
 .survey-form__book-a-call{
-	width: 60%;
-	margin: 120px 60px 80px 0px;
+	width: 100%;
+	padding: 100px 50px 70px 20px;
+}
+
+
+@media (max-width: 42em) {
+	.popup-book-a-call__text-container{
+		padding: 40px 30px 50px 30px;
+	}
+
+	.popup__tiitle {
+		display: flex;
+		justify-content: center;
+		color: #000;
+		font-size: 3rem; 
+		margin: 0px 0px 0.5em 0px;
+	}
+
+	.popup__content {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	}
+
+	.survey-form__book-a-call{
+		padding: 0px 30px 30px 30px;
+	}
+}
+
+@media (max-width: 28.125em) {
+	.popup-book-a-call__text-container{
+		padding-top: calc(20px + (40 - 20) * ((100vw - 320px) / (801 - 320)));
+		padding-right: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+		padding-bottom: calc(25px + (50 - 25) * ((100vw - 320px) / (801 - 320)));
+		padding-left: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+	}	
+	.survey-form__book-a-call{
+		padding-right: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+		padding-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+		padding-left: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+	}
 }
