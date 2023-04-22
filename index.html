@@ -261,20 +261,54 @@
 								<a onclick="return false;" href="#" id="open-modal" class="grid_button">Book a meeting</a>
 								<div id="modal" class="modal">
 									<div class="modal-content">
-									  	<span class="close">&times;</span>
-										<!--Calendar-->
-									  	<div class="date-picker">
-											<div class="selected-date"></div>
-											<div class="dates active">
-												<div class="month">
-													<div class="arrows prev-mth">&lt;</div>
-													<div class="mth"></div>
-													<div class="arrows next-mth">&gt;</div>
+										<h2>Select date and time</h2>
+										<div class="modal-wrapper">
+									  	<!--<span class="close">&times;</span>-->
+											<article class="modal-calendar-article">
+												<p>
+													Thank you for your interest in our language school. We are excited to hear that you are interested in booking a course with us.
+														Please complete the form below with your contact information and booking details. 
+												</p>
+												<div class="profile_block">
+													<img class="profile_photo" src="./img/our_specialist.jpg" alt="Ours specialist photo">
+													<p>
+														<span>Ethan Davis</span>
+														We look forward to helping you achieve your language goals.
+													</p>
 												</div>
-												<div class="days"></div>
-											</div>
-										</div>	
-										<!--Calendar END-->  
+											</article>
+											<form id="calendar-form" class="calendar-block">
+											<!--Calendar-->
+											<div class="date-picker">
+												<div class="selected-date"></div>
+												<div class="dates active">
+													<div class="month">
+														<div class="arrows_calendar prev-mth">&lt;</div>
+														<div class="mth"></div>
+														<div class="arrows_calendar next-mth">&gt;</div>
+													</div>
+													<div class="days"></div>
+												</div>
+											</div>	
+											<!--Calendar END-->
+											<input 
+												type="email"
+												class="form-control"
+												placeholder="Email"
+												>
+											<input
+												type="text"
+												class="form-control"
+												placeholder="Full name"
+												>
+											<button
+												id=""
+												type="submit"
+												class="send_buttom send_button-text">
+												Send
+											</button>
+											</form>
+										</div>  
 									</div>
 								</div>
 

@@ -25,20 +25,27 @@
 	border: none;
 	border-radius: 0px;
 	width: 800px;
+
 	position: fixed;
 	top: 40%;
 	left: 0;
 	right: 0;
+
 	transform: translateY(-50%) translateX(-50%) scale(0.8);
 	opacity: 0;
 	transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.modal-center{
+.modal-wrapper{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+}
+
+.calendar-block{
+	width: 50%;
+}
+
+.modal-calendar-article{
+	width: 50%;
 }
 
 .calendar_text{
@@ -46,6 +53,14 @@
 	color: #474350;
 	margin-bottom: 20px;
 	font-weight: 600;
+}
+
+.profile_block{
+	display: flex;
+}
+
+.profile_photo{
+	border-radius: 60px;
 }
 
 .close {
