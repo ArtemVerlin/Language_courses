@@ -7,6 +7,7 @@
 	<!--CSS-->
 	<link rel="stylesheet" href="./Swiper/package/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./styles/style.css"/>
+	<link rel="stylesheet" href="./styles/menu_burger.css"/>
 	<link rel="stylesheet" href="./styles/adaptation.css">
 	<link rel="stylesheet" href="./styles/reset.css"/>
 	<link rel="stylesheet" href="./styles/calendar.css">
@@ -29,27 +30,27 @@
 					<img src="./img/logo.png" alt="Language_School_logo" class="header__logo-img">
 				</div>
 				
-				<div class="menu__icon">
-					<span></span>
-				</div>
-
+			
 				<nav class="header__nav">
 					<ul class="menu__list">
-
 						<li><a class="menu__link"  href="#">Home</a></li>
 						<li><a class="menu__link" href="#">What we offer</a></li>
 						<li><a class="menu__link" href="#">Cases</a></li>
 						<li><a class="menu__link" href="#">Get in Touch</a></li>
-						
 					</ul>
 				</nav>
 
 				<div class="callback">
 						<a href="#popup-book-a-call" class="callback__button popup-link">
 						<img class="callback-icon" src="/img/callback-icon.svg" alt="">
-						Book a call
+							<p class="callback__button-text">Book a call</p>
 						</a>
 				</div>
+
+				<div class="menu__icon">
+					<span></span>
+				</div>
+
 
 				<div id="popup-book-a-call" class="popup">
 					<div class="popup__body">
@@ -115,7 +116,7 @@
 			<!--Section 1-->
 			<section class="first_section">
 				<div class="container">
-
+					
 							<div class="first_section__content">
 								<h1 class="title">Discover the world<br> through language</h1>
 								<div class="first_section__links">
@@ -139,10 +140,11 @@
 						<h2 class="section__title">Enrol for a course now</h2>
 					</div>
 					<div class="two_section__container">
-						<p class="two_section__text">
-							Our language school offers a dynamic and immersive learning experience designed
-							to help you achieve fluency in your target language </p>
-
+						<div class="two_section__text">
+							<p>
+								Our language school offers a dynamic and immersive learning experience designed
+								to help you achieve fluency in your target language </p>
+						</div>
 							<form action="#" id="form" class="survey-form">
 								<p class="survey-form__title">Enroll for a course now</p>
 								<div class="input_box__section-one">
@@ -457,21 +459,21 @@
 					<div id="social_media">
 						<img class="footer_logo" src="./img/logo.png" alt="green parrent logo">
 						<h3 class="footer_text">Discover the world<br>Through language</h3>
-						<ul class="logos">
-							<li class="icon">
-								<a href=""><img  src="./img/logos/facebook.png" alt="facebook logo"/></a>
-							</li>
-							<li class="icon">
-								<a href=""><img  src="./img/logos/twitter.png" alt="twitter logo"></a>
-							</li>
-							<li class="icon">
-								<a href=""><img  src="./img/logos/instagramm.png" alt="instagram logo"></a>
-							</li>
-							<li class="icon">
-								<a href=""><img  src="./img/logos/linkedIN.png" alt="linkedIn logo"></a>
-							</li>
-						</ul>
 					</div>
+					<ul class="logos">
+						<li class="icon">
+							<a href=""><img  src="./img/logos/facebook.png" alt="facebook logo"/></a>
+						</li>
+						<li class="icon">
+							<a href=""><img  src="./img/logos/twitter.png" alt="twitter logo"></a>
+						</li>
+						<li class="icon">
+							<a href=""><img  src="./img/logos/instagramm.png" alt="instagram logo"></a>
+						</li>
+						<li class="icon">
+							<a href=""><img  src="./img/logos/linkedIN.png" alt="linkedIn logo"></a>
+						</li>
+					</ul>
 						<div class="company_info left">
 							<div>
 								<p class="text bold">Address:</p>
@@ -529,6 +531,7 @@
 		<!--Footer END-->
 		<!--JS connect-->
 		<script src="./Js/validation-form.js"></script>
+		<script src="./Js/menu-burger.js"></script>
 		<script src="./Js/smooft_scroll.js"></script>
 		<script src="./Js/popup-book-a-call.js"></script>
 		<script src="./Swiper/package/swiper-bundle.min.js"></script>
