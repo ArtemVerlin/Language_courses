@@ -1,0 +1,52 @@
+.date-picker{
+    
+}
+
+.dates {
+    background-color: #FFF;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #EEE;
+}
+
+.arrows_calendar {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    font-size: 20px;
+}
+
+.arrows_calendar:hover {
+    background-color: var(--main-pink);
+	cursor: pointer;
+}
+
+.arrows_calendar:active {
+    background-color: #00CA85;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 200px;
+}
+.selected-date{
+    text-align: center;
+    border-bottom: 2px solid var(--main-pink);
+}
+.day { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+}
+.selected_day {
+    background-color: var(--main-aqua);
+}

@@ -1,30 +1,33 @@
 //Отправка формы после успешной валидации
-document.getElementById('form__call-a-back').addEventListener('submit', function(event) {
+	document.getElementById('form').addEventListener('submit', function(event) {
 	event.preventDefault()
 	
 	if (validation(this) === true) {
-		//Добавляет класс успешно к инпутам формы
-		const formElements = document.querySelectorAll('.input_box__book-a-call');
+	//Переменная с выбором всех инпутов
+		const formElements = document.querySelectorAll('.input_box__section-one');
+	//Добавляет класс успешно к инпутам формы
   	formElements.forEach((element) => {
     element.classList.add('success');
   });
+
+		//Выбор Модального окна
         const modal = document.getElementById('modal_sectionOne');
-        const buttonError = document.getElementById('open_modal_call-a-back');
+		//Привязка к кнопке отправки
+        const buttonError = document.getElementById('open_modal_sectionOne');
+		//Привязка к крестику закрытия
         const closeButton = document.querySelector('.close_sectionOne');
-				const popupActive = document.querySelector('.popup.open');
             modal.style.display = "block";
             document.body.classList.add("modal-open");
 						setTimeout(() => {
-							body.classList.toggle('_lock');
 							document.body.classList.toggle("modal-open");
               modal.classList.toggle("open");
             }, 1800);
+		//Удаляем класс ошибки для кнопки если валидация прошла успешно
 						buttonError.classList.remove('error_button');
+		//Добавляем класс успешно для кнопки если валидация прошла успешно
+						buttonError.classList.add('success_button');
             setTimeout(() => {
               modal.classList.add("open");
-							if (popupActive) {
-								popupClose(popupActive, false);
-							}
             }, 10);
             window.addEventListener("click", closeOutsideModal);
             document.addEventListener("keydown", closeOnEsc);
@@ -32,12 +35,10 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
           
           closeButton.addEventListener('click', function() {
             closeModal();
-						
           });
           
           function closeModal() {
             modal.classList.remove("open");
-						body.classList.remove('_lock');
             setTimeout(() => {
               modal.style.display = "none";
               document.body.classList.remove("modal-open");
@@ -58,12 +59,14 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
             }
           }
 	}else{
-		//Привязка к кнопке отправки
-			const buttonError = document.getElementById('open_modal_call-a-back');
-		//Если валидация провалилась то присваиваем класс ошибки
-			if((validation(this) === false)) {
-				buttonError.classList.add('error_button');
-			}
+	//Привязка к кнопке отправки
+		const buttonError = document.getElementById('open_modal_sectionOne');
+	//Если валидация провалилась то присваиваем класс ошибки
+		if((validation(this) === false)) {
+			buttonError.classList.add('error_button');
+		}
 	}
 
 });
+
+

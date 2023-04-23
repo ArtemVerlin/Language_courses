@@ -1,0 +1,107 @@
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 5;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: all 0.5s ease 0s;
+}
+
+.popup.open{
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup.open .popup__content{
+	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+	opacity: 1;
+}
+
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+.popup__content {
+	display: flex;
+	position: relative;
+	background-color:white;
+	color: #000;
+	border-radius: 40px;
+	transition: all 0.5s ease 0s;
+	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+	opacity: 0;
+}
+.popup__close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+}
+
+.popup-book-a-call__text-container{
+	width: 100%;
+	padding: 60px 15px 70px 60px;
+}
+
+.popup__tiitle {
+	color: #000;
+	font-size: 3rem; 
+	margin: 0px 0px 0.5em 0px;
+}
+.popup__text {
+	color: #000;
+	font-size: 2rem;
+}
+
+.survey-form__book-a-call{
+	width: 100%;
+	padding: 100px 50px 70px 20px;
+}
+
+
+@media (max-width: 42em) {
+	.popup-book-a-call__text-container{
+		padding: 40px 30px 50px 30px;
+	}
+
+	.popup__tiitle {
+		display: flex;
+		justify-content: center;
+		color: #000;
+		font-size: 3rem; 
+		margin: 0px 0px 0.5em 0px;
+	}
+
+	.popup__content {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	}
+
+	.survey-form__book-a-call{
+		padding: 0px 30px 30px 30px;
+	}
+}
+
+@media (max-width: 28.125em) {
+	.popup-book-a-call__text-container{
+		padding-top: calc(20px + (40 - 20) * ((100vw - 320px) / (801 - 320)));
+		padding-right: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+		padding-bottom: calc(25px + (50 - 25) * ((100vw - 320px) / (801 - 320)));
+		padding-left: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+	}	
+	.survey-form__book-a-call{
+		padding-right: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+		padding-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+		padding-left: calc(15px + (30 - 15) * ((100vw - 320px) / (801 - 320)));
+	}
+}
