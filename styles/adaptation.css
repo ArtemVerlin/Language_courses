@@ -116,6 +116,7 @@ margin-bottom: 36px;
 }
 
 .survey-form {
+
 	margin: 53px 40px 0px 40px;
 	width: 50%;
 }
@@ -138,12 +139,12 @@ margin-bottom: 36px;
 /***Second section END***/
 
 /***Third section***/
-
 .third_section{
 	margin-top: 170px;
 }
 
 .third_section__title {
+
 	margin: 0px auto 70px;
 }
 
@@ -160,6 +161,7 @@ margin-bottom: 36px;
 }
 
 .project-grid__tile3 {
+
 	grid-template-columns: 1fr 1fr;
 }
 
@@ -169,12 +171,14 @@ margin-bottom: 36px;
 }
 
 .project-grid__tile-text-reverse{
+
 	margin-right:40px;
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
 	grid-row-end: 2;
 }
+
 
 .project-grid__tile-text {
 	margin-left:40px;

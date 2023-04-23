@@ -49,6 +49,50 @@ html{
   }
 } */
 
+html{
+	/* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+}
+
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
+/* @media (min-width: 75em) {
+  html {
+    font-size: 80%;
+  }
+} */
+
+/* 980px / 16px = 61.25em */
+/* @media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+/* 460px / 16px = 28.75em */
+/* @media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+} */
+
 
 body{
 	font-family: 'Poppins', sans-serif;
@@ -71,7 +115,6 @@ body._lock{
 	--main-hover-button: #00cc96;
 	--main-errors-red: #ff333f;
 	--main-sucsess-green: #4caf50cf;
-
 }
 
 
@@ -116,7 +159,6 @@ p{
 	display: flex;
 	align-items: center;
 	text-align: center;
-}
 
 .menu__list {
 	display: flex;
@@ -271,7 +313,6 @@ p{
 	border: 2px solid var(--main-hover-button);
 }
 
-
 /***First section END***/
 
 /***Second section***/
@@ -351,6 +392,10 @@ textarea::placeholder{
 	appearance: none;
 }
 
+
+#dropdown{
+	color: #A3A3A4;
+}
 .form-control {
 	display: block;
 	margin-bottom: 20px;
@@ -407,7 +452,6 @@ textarea::placeholder{
 	line-height: 1.2rem;
 	letter-spacing: -0.02em;
 	color: #F2F2F2;
-
 }
 
 /***Second section END***/
@@ -589,7 +633,6 @@ textarea::placeholder{
 .fourth_section__grid-templaetes{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	
 }
 
 .fourth-section__title-container {
@@ -628,7 +671,6 @@ textarea::placeholder{
 }
 .slider__img {
 	padding: 25px 10px 20px 20px;
-
 }
 .slider__name {
 	font-family: 'Poppins', sans-serif;
@@ -778,7 +820,6 @@ textarea {
 .intend_low{
 	margin-top: 12px;
 }
-
 
 .footer_text{
 	color: var(--main-white);
