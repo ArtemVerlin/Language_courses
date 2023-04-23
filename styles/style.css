@@ -745,7 +745,8 @@ textarea {
 .upper_footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 0fr;
+  grid-template-rows: 1fr 0.2fr;
+	gap: 20px 0px;
 }
 
 .subscribe_form {
@@ -799,11 +800,15 @@ textarea {
   margin-left: auto;
 }
 
+.logos{
+	display: flex;
+}
+
 .icon{
-	display: inline-block;
-	margin: 30px 20px 0px 0px;
-	width: 20px;
-	height: 20px;
+	margin-right: 27px;
+	width: 25px;
+	height: 25px;
+	object-fit:contain;
 }
 
 .subscribe_text{
@@ -831,7 +836,7 @@ textarea {
 	padding: 10px;
 	border: none;
 	outline: none;
-	padding-right: 11.25em;
+	padding-right: 165px;
 	border-radius: 60px;
 	font-size: 1.5rem;
 	z-index: 3;
