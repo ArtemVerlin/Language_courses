@@ -19,8 +19,8 @@
             modal.style.display = "block";
             document.body.classList.add("modal-open");
 						setTimeout(() => {
-							document.body.classList.toggle("modal-open");
-              modal.classList.toggle("open");
+							document.body.classList.remove("modal-open");
+              modal.classList.remove("open");
             }, 1800);
 		//Удаляем класс ошибки для кнопки если валидация прошла успешно
 						buttonError.classList.remove('error_button');
