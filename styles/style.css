@@ -76,12 +76,10 @@ body._lock{
 
 
 .container{
-
 	max-width:1220px;
 	padding: 0 75px 0;
 	margin: 0 auto 0;
 	height: 100%;
-
 }
 
 p{
@@ -100,10 +98,9 @@ p{
 	padding: 15px 0;
 	background: #F2F2F2;
 	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
-
 	z-index: 5;
-
 }
+
 .header__container {
 	display: flex;
 	justify-content: space-between;
@@ -142,7 +139,7 @@ p{
 }
 
 .callback{
-
+	display: flex;
 	margin: auto 0px;
 	height: 35px;
 	opacity: 0.7;
@@ -191,9 +188,9 @@ p{
 	display: block;
 	padding: 1px 0;
 
-	height: 32vh;
-	max-height: 55vh;
-	min-height: 10vh;
+	height: 450px;
+	/* max-height: 55vh;
+	min-height: 10vh; */
 
 	width: 100%;
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
@@ -205,6 +202,11 @@ p{
 	), url("/img/background-first-section.svg");
 	background-size: cover;
 	background-position: center;
+}
+@media (max-width: 1000px) {
+.first_section{
+	height: calc(150px + (450 - 200) * ((100vw - 320px) / (1000 - 320)));
+	}
 }
 
 .first_section__content{
@@ -745,7 +747,8 @@ textarea {
 .upper_footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 0fr;
+  grid-template-rows: 1fr 0.2fr;
+	gap: 20px 0px;
 }
 
 .subscribe_form {
@@ -799,11 +802,15 @@ textarea {
   margin-left: auto;
 }
 
+.logos{
+	display: flex;
+}
+
 .icon{
-	display: inline-block;
-	margin: 30px 20px 0px 0px;
-	width: 20px;
-	height: 20px;
+	margin-right: 27px;
+	width: 25px;
+	height: 25px;
+	object-fit:contain;
 }
 
 .subscribe_text{
@@ -831,7 +838,7 @@ textarea {
 	padding: 10px;
 	border: none;
 	outline: none;
-	padding-right: 11.25em;
+	padding-right: 165px;
 	border-radius: 60px;
 	font-size: 1.5rem;
 	z-index: 3;
