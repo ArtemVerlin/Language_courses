@@ -1,3 +1,4 @@
+/* 1200px / 16px = 75em */
 @media (min-width: 75em) {
 	html {
 		font-size: 70%;
@@ -12,7 +13,7 @@
 /***First section***/
 
 .first_section {
-	height: calc(450px + (650 - 450) * ((100vh - 600px) / (1200 - 600)));
+	height: calc(500px + (650 - 500) * ((100vh - 600px) / (1200 - 650)));
 }
 
 .title {

@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+/* font-family: 'Alegreya Sans SC', sans-serif; */
+
+
 /***Default styles***/
 
 html{
@@ -255,12 +259,11 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 }
 
 .title {
 	display: inline-block;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 3rem;
@@ -322,7 +325,7 @@ p{
 
 .section__title {
 	margin: 100px auto 70px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	color: var(--main-gray);
 	font-weight: 700;
 	font-size: 3rem;
@@ -461,7 +464,7 @@ textarea::placeholder{
 
 .third_section__title {
 	margin: 0px auto 70px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	color: var(--main-gray);
 	font-weight: 700;
 	font-size: 3rem;
@@ -519,7 +522,7 @@ textarea::placeholder{
 .grid-1-title-reverse{
 	grid-column-start: 1;
 	grid-column-end: 2;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 900;
 	font-size: 3rem;
 	line-height: 3.3rem;
@@ -572,7 +575,7 @@ textarea::placeholder{
 .grid-1-title {
 	grid-column-start: 2;
 	grid-column-end: 3;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 900;
 	font-size: 3rem;
 	line-height: 3.3rem;
@@ -635,13 +638,13 @@ textarea::placeholder{
 }
 
 .fourth-section__title {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 700;
 	font-size: 4rem;
 	line-height: 7.6rem;
 	text-transform: capitalize;
 	padding-top: 40px;
-
+	hyphens: manual;
 }
 
 .pink {

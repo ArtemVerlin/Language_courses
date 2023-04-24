@@ -1,3 +1,4 @@
+/* 800px / 16px = 50em */
 @media (max-width: 50em) {
   html {
     font-size: 55%;
@@ -135,6 +136,10 @@ margin-bottom: 36px;
 
 .fourth-section__title-container {
 	margin: 0 auto 0;
+}
+
+.fourth-section__title{
+	text-align: center;
 }
 
 .fourth_section__grid-templaetes{
