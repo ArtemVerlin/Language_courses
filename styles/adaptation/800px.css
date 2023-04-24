@@ -1,0 +1,244 @@
+@media (max-width: 50em) {
+  html {
+    font-size: 55%;
+  }
+
+	.container{
+		padding: 0 50px 0;
+	}
+
+/***Header***/
+
+
+/***Header END***/
+
+.main {
+	margin-top: 109px;
+}
+
+/***First section***/
+
+.first_section__links {
+	gap: 15px;
+	margin-top: 40px;
+}
+
+.first_section__link-1{
+	padding: 6px 12px 6px 12px;
+	min-width: 100px;
+}
+
+.first_section__link-1:hover{
+	min-width: 60px;
+}
+
+.first_section__link-2 {
+	padding: 6px 12px 6px 12px;
+	min-width: 100px;
+}
+
+.first_section__link-2:hover{
+	min-width: 60px;
+}
+
+/***First section END***/
+
+/***Second section***/
+
+.section__title {
+	margin: 100px auto 40px;
+}
+
+.two_section__container {
+	height: 450px;
+	min-height:500px;
+}
+
+.two_section__text {
+padding: 90px 0px 0px 62px;
+min-width: 200px;
+}
+
+.survey-form__title{
+margin-bottom: 36px;
+}
+
+.survey-form {
+	margin: 53px 40px 0px 40px;
+	min-width: 180px;
+}
+
+.form-control {
+	margin-bottom: 20px;
+	padding: 10px 0 14px 10px;
+}
+
+.error-text{
+	padding: 5px 0px 10px 0px;
+}
+
+.submit-button {
+	height: 45px;
+	margin: 36px auto 0;
+}
+
+/***Second section END***/
+
+/***Third section***/
+
+.third_section{
+	margin-top: 170px;
+}
+
+.third_section__title {
+	margin: 0px auto 70px;
+	font-size: 4rem;
+}
+
+.project-grid__tile1 {
+	grid-template-rows: 0.2fr 0.5fr 2fr 0.5fr;
+	margin-bottom: 120px;
+	gap: 10px 50px;
+}
+
+.project-grid__tile2 {
+	grid-template-rows: 0.2fr 0.5fr 2fr 0.5fr;
+	margin-bottom: 120px;
+	gap: 10px 50px;
+}
+
+.project-grid__tile3 {
+	grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+	margin-bottom: 120px;
+	gap: 10px 50px;
+}
+
+.project-grid__tile-img{
+	max-width: 450px;
+	min-width: 250px;
+}
+.project-grid__tile-img-reverse{
+	grid-column-start: 2;
+	max-width: 450px;
+	min-width: 250px;
+}
+
+.grid_button {
+	padding: 12px 30px;
+}
+
+/***Fourth section***/
+
+.fourth_section{
+	margin-top: 170px;
+}
+
+.fourth-section__title-container {
+	margin: 0 auto 0;
+}
+
+.fourth_section__grid-templaetes{
+	grid-template-columns: 1fr;
+}
+
+.fourth-section__title-container {
+	min-width:300px;
+	margin-bottom: 40px;
+}
+
+.fourth-section__title {
+	padding-top: 40px;
+}
+
+.swiper {
+	max-width: 450px;
+	min-width: 400px;
+}
+
+.swiper-slide {
+	width:430px;
+	height:300px;
+}
+
+.slider__img {
+	padding: 20px 10px 20px 20px;
+}
+.slider__name {
+	padding: 40px 0px 0px 10px;
+}
+
+.slider__text {
+	padding: 0px 40px 40px 50px;
+}
+
+/***Fourth section END***/
+
+/***Fifth section***/
+
+.five_section__container {
+	width: 33,3em;
+	height: 450px;
+}
+
+.send_buttom {
+	width: 10em;
+	height: 45px;
+  padding: 0 20px;
+}
+
+textarea {
+	line-height: 1.2rem;
+	height: 8rem;
+  }
+
+/*********************************fifth section**********************************/
+
+/*********************************footer**********************************/
+.footer{
+  margin: 200px 0px 0px;
+	padding: 50px 0px 100px;
+}
+
+.subscribe_form {
+  margin-top: 50px;
+}
+
+.text{
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+.intend{
+	margin-top: 22px;
+}
+
+.intend_low{
+	margin-top: 12px;
+}
+
+.footer_text{
+	margin-top: 20px;
+}
+
+.subscribe_text{
+	font-size: 2.4rem;
+	line-height: 3.6rem;
+}
+
+.subscribe{
+  margin-top: 20px;
+	max-width: 550px;
+	min-width: 50px;
+}
+.subscribe_email {
+	height: 55px;
+	padding: 10px;
+}
+  
+.subscribe_bottom {
+	height: 55px;
+	padding: 0 20px;
+}
+
+/***Footer END***/
+}
