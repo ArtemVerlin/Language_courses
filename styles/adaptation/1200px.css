@@ -5,7 +5,34 @@
 	}
 
 /***Header***/
+.menu__link {
+	font-weight: 600;
+	font-size: 1.7rem;
+	line-height: 1.5rem;
 
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.02em;
+
+	color: rgba(0, 0, 0, 0.7);
+	transition: all 0.3s;
+}
+
+.callback__button{
+	display: flex;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	font-weight: 600;
+	font-size: 1.7rem;
+	line-height: 4rem;
+	color: rgba(0, 0, 0, 1);
+	border: 1px solid yellow;
+	border-radius: 30px;
+	background-color: yellow;
+	padding: 17px 15px 17px;
+}
 
 /***Header END***/
 

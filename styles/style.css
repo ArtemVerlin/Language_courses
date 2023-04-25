@@ -271,6 +271,10 @@ p{
 	color: var(--main-white);
 }
 
+.discription{
+	display: none;
+}
+
 .first_section__links {
 	display: flex;
 	align-items: center;
@@ -477,6 +481,7 @@ textarea::placeholder{
 	display: grid;
 	align-items: center;
 	justify-items: center;
+	justify-content: center;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
 	margin-bottom: 120px;
@@ -487,6 +492,7 @@ textarea::placeholder{
 	display: grid;
 	align-items: center;
 	justify-items: center;
+	justify-content: center;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
 	margin-bottom: 120px;
@@ -497,6 +503,7 @@ textarea::placeholder{
 	display: grid;
 	align-items: center;
 	justify-items: center;
+	justify-content: center;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
 	margin-bottom: 120px;
