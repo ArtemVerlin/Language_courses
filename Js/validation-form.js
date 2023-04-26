@@ -95,7 +95,7 @@ function validation(form) {
 		}
 	}
 
-	//TELEPHONE MASK
+	//TELEPHONE MASK sectionOne
 document.querySelector('#phone_sectionOne').onkeydown = function(e){
 	inputphone(e,document.querySelector('#phone_sectionOne'))
 	}
@@ -108,7 +108,49 @@ document.querySelector('#phone_sectionOne').onkeydown = function(e){
 		
 		if(not == 1 || 'Backspace' === not){
 		if('Backspace' != not){ 
-				if(v.length < 3 || v ===''){phone.value= '+7('}
+				if(v.length < 3 || v ===''){phone.value= '+3('}
+				if(v.length === 6){phone.value= v +')'}
+				if(v.length === 10){phone.value= v +'-'}
+				if(v.length === 13){phone.value= v +'-'}
+				}
+		}else{stop(e)}};
+
+
+	//TELEPHONE MASK phone_book-a-call
+document.querySelector('#phone_book-a-call').onkeydown = function(e){
+	inputphone(e,document.querySelector('#phone_book-a-call'))
+	}
+
+	function inputphone(e, phone){
+		function stop(evt) {
+				evt.preventDefault();
+		}
+		let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
+		
+		if(not == 1 || 'Backspace' === not){
+		if('Backspace' != not){ 
+				if(v.length < 3 || v ===''){phone.value= '+3('}
+				if(v.length === 6){phone.value= v +')'}
+				if(v.length === 10){phone.value= v +'-'}
+				if(v.length === 13){phone.value= v +'-'}
+				}
+		}else{stop(e)}};
+
+
+	//TELEPHONE MASK phone-section-five
+document.querySelector('#phone-section-five').onkeydown = function(e){
+	inputphone(e,document.querySelector('#phone-section-five'))
+	}
+
+	function inputphone(e, phone){
+		function stop(evt) {
+				evt.preventDefault();
+		}
+		let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
+		
+		if(not == 1 || 'Backspace' === not){
+		if('Backspace' != not){ 
+				if(v.length < 3 || v ===''){phone.value= '+3('}
 				if(v.length === 6){phone.value= v +')'}
 				if(v.length === 10){phone.value= v +'-'}
 				if(v.length === 13){phone.value= v +'-'}
