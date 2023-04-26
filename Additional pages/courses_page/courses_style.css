@@ -457,31 +457,32 @@ textarea::placeholder{
 /***Enrol for a course now SECTION END***/
 
 /***Footer***/
+
+
+
 .footer{
 	background-color: #474350;
 	margin: 200px 0px 0px;
 	padding: 50px 0px 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
 }
 
 
 .upper_footer {
-	max-width:1220px;
-	padding: var(--main-padding-section);
-	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr 0fr;
 }
 
-.subscribe_form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 50px;
-	width: 100%;
-}
 
+.footer_content{
+	padding: var(--main-padding-section);
+	max-width: 1070px;
+}
 
 .text{
 	color: var(--main-white);
@@ -532,6 +533,7 @@ textarea::placeholder{
 }
 
 .subscribe_text{
+	margin-top: 50px;
 	font-weight: 400;
 	font-size: 2.4rem;
 	line-height: 3.6rem;
