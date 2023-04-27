@@ -26,11 +26,6 @@ html{
 	--main-common-text: 'Poppins', sans-serif;
 	--main-max-width: 1220px;
 }
-@media (max-width:700px){
-	:root {
-		--main-padding-section: 0 10px 0;
-	}
-}
 
 body{
 	font-family: var(--main-common-text);
@@ -64,6 +59,7 @@ p{
 
 .header_container {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	max-width:var(--main-max-width);
 	padding: var(--main-padding-section);
@@ -152,7 +148,7 @@ p{
 
 .first_section, .background_main{
 	height: 650px;
-	min-height: 320px;
+	min-height: 300px;
 }
 
 .background_main{
@@ -327,7 +323,7 @@ p{
 	background-color: var(--main-white);
 	border-radius:  60px;
 	height: 450px;
-	min-height:612px;
+	min-height:550px;
 	width: 100%;
 }
 
@@ -350,7 +346,7 @@ p{
 }
 
 .survey-form {
-	margin: 53px 40px 0px 40px;
+	padding: 53px 40px 0px 40px;
 	width: 50%;
 }
 
@@ -395,7 +391,7 @@ textarea::placeholder{
 
 .form-control:focus{
 	border-color: #f497da; 
-  	outline: 0;
+  outline: 0;
 }
 
 .success .form-control{

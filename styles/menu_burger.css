@@ -1,4 +1,4 @@
-@media (max-width: 42em) {
+@media (max-width: 43.75em) {
 	.header {
 	}
 	.lock-padding {
@@ -30,7 +30,7 @@
 		height: 10%;
 		width: 100%;
 		transition: all 0.3s ease 0s;
-		background-color: var(--main-sucsess-green);
+		background-color: red;
 		z-index: 1000;
 	}
 
