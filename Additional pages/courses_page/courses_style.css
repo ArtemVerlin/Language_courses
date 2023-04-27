@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+/* font-family: 'Alegreya Sans SC', sans-serif; */
+
+html{
+	/* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+}
+
 :root {
 	--main-aqua: #92dce5;
 	--main-pink: #f497da;
@@ -8,9 +22,9 @@
 	--main-sucsess: #4caf50cf;
 	--main-book-a-call: yellow;
 	--main-padding-section: 0 75px 0;
-	--main-title-text: 'Roboto', sans-serif;
+	--main-title-text: 'Alegreya Sans SC', sans-serif;
 	--main-common-text: 'Poppins', sans-serif;
-	--main-max-width: 1070px;
+	--main-max-width: 1220px;
 }
 @media (max-width:700px){
 	:root {
@@ -25,7 +39,7 @@ body{
 
 .main {
 	max-width:var(--main-max-width);
-	margin: 103px auto 0;
+	margin: 100px auto 0;
 	padding: var(--main-padding-section);
 }
 
@@ -57,9 +71,10 @@ p{
 	height: 100%;
 }
 
-.header_logo {
-	max-width: 100px;
-	max-height: 100px;
+.header__logo,
+.header__logo-img{
+	height: 70px;
+	width: 70px;
 }
 
 .header__nav{
@@ -75,20 +90,18 @@ p{
 
 .menu__link {
 	font-weight: 600;
-
-	font-size: 1.2rem;
-	line-height: 1.5rem;
-
+	font-size: 1.9rem;
+	line-height: 1.6rem;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	letter-spacing: -0.02em;
-
 	color: rgba(0, 0, 0, 0.7);
 	transition: all 0.3s;
 }
 
 .callback{
+	display: flex;
 	margin: auto 0px;
 	height: 35px;
 	opacity: 0.7;
@@ -107,16 +120,17 @@ p{
 
 .callback__button{
 	display: flex;
-	align-items: center;
-	width: 100%;
-	font-weight: 600;
-	font-size: 1rem;
-	line-height: 2rem;
+  align-items: center;
+  font-family: var(--main-common-text);
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 4rem;
 	color: rgba(0, 0, 0, 1);
-	border: 1px solid var(--main-book-a-call);
-	border-radius: 30px;
-	background-color: var(--main-book-a-call);
-	padding: 0px 15px 0px;
+  border: 1px solid yellow;
+  border-radius: 30px;
+  background-color: yellow;
+  padding: 17px 15px 17px;
 }
 
 .menu__icon{
@@ -137,7 +151,7 @@ p{
 }
 
 .first_section, .background_main{
-	height: 50vh;
+	height: 650px;
 	min-height: 320px;
 }
 
@@ -167,8 +181,8 @@ p{
 	font-family: var(--main-title-text);
 	font-style: normal;
 	font-weight: 700;
-	font-size: 3rem;
-	line-height: 3.8rem;
+	font-size: 5rem;
+	line-height: 7.8rem;
 	color: var(--main-white);
 }
 
@@ -179,8 +193,8 @@ p{
 	max-width: 10em;
 	font-weight: 600;
 	transition: all 0.2s;
-	margin-top: 60px;
-	font-size: 1rem;
+	margin-top: 40px;
+	font-size: 1.5rem;
 	border: 2px solid var(--main-aqua);
 	background: var(--main-aqua);
 	color: var(--main-white);
@@ -208,7 +222,7 @@ p{
 	font-family: var(--main-title-text);
 	color: var(--main-gray);
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 3.3rem;
 	letter-spacing: -0.02em;
 }
 
@@ -237,8 +251,8 @@ p{
 .grid-1-title-reverse{
 	font-family: var(--main-title-text);
 	font-weight: 900;
-	font-size: 3rem;
-	line-height: 3.3rem;
+	font-size: 3.3rem;
+	line-height: 3.5rem;
 	color: var(--main-pink);
 	width: 100%;
 	height: 100%;
@@ -248,8 +262,8 @@ p{
 .grid-2-title-reverse{
 	font-family: var(--main-common-text);
 	font-weight: 600;
-	font-size: 2rem;
-	line-height: 4rem;
+	font-size: 2.4rem;
+	line-height: 4.5rem;
 	color: #474350;
 	width: 100%;
 	height: 100%;
@@ -259,8 +273,8 @@ p{
 .project-text-reverse{
 	font-family: var(--main-common-text);
 	font-weight: 400;
-	font-size: 1.5rem;
-	line-height: 3.6rem;
+	font-size: 1.7rem;
+	line-height: 3.8rem;
 	width: 100%;
 	color: #333333;
 	list-style-type: disc;
@@ -279,7 +293,7 @@ p{
 .grid_button-reverse {
 	background-color: var(--main-aqua);
 	font-family: var(--main-common-text);
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	font-weight: 600;
 	padding: 15px 38px;
 	border-radius: 60px;
@@ -302,8 +316,8 @@ p{
 	font-family: var(--main-title-text);
 	color: var(--main-gray);
 	font-weight: 700;
-	font-size: 3rem;
-	line-height: 2rem;
+	font-size: 3.2rem;
+	line-height: 2.2rem;
 	letter-spacing: -0.02em;
 }
 
@@ -319,8 +333,8 @@ p{
 
 .two_section__text {
 	font-family: var(--main-common-text);
-	font-size: 2rem;
-	line-height: 3.5rem;
+	font-size: 2.2rem;
+	line-height: 3.7rem;
 	color: #333333;
 	padding: 90px 0px 0px 62px;
 	width: 50%;
@@ -329,8 +343,8 @@ p{
 .survey-form__title{
 	display: flex;
 	font-weight: 700;
-	font-size: 2rem;
-	line-height: 1.2rem;
+	font-size: 2.2rem;
+	line-height: 1.4rem;
 	letter-spacing: -0.02em;
 	margin-bottom: 36px;
 }
@@ -353,7 +367,7 @@ p{
 
 input::placeholder,
 textarea::placeholder{
-	font-size: 2rem;
+	font-size: 2.2rem;
 	color: #A3A3A4;
 }
 
@@ -369,7 +383,7 @@ textarea::placeholder{
 .form-control {
 	display: block;
 	margin-bottom: 20px;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	padding: 10px 0 14px 10px;
 	color: #000;
 	background-color: #F2F2F2;
@@ -396,9 +410,9 @@ textarea::placeholder{
 
 
 .error-text{
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	color: var(--main-errors-red);
-	line-height: 1.5rem;
+	line-height: 1.7rem;
 	padding: 5px 0px 10px 0px;
 }
 
@@ -418,8 +432,8 @@ textarea::placeholder{
 .submit-button__text{
 	font-family: var(--main-common-text);
 	font-weight: 600;
-	font-size: 2rem;
-	line-height: 1.2rem;
+	font-size: 2.2rem;
+	line-height: 1.4rem;
 	letter-spacing: -0.02em;
 	color: #F2F2F2;
 
@@ -461,7 +475,7 @@ textarea::placeholder{
 	align-items: center;
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1240px) {
 	.footer_content{
 		width: auto;
 		margin: 0px;
@@ -470,7 +484,7 @@ textarea::placeholder{
 
 .text{
 	color: var(--main-white);
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	margin: 0;
 }
 
@@ -490,7 +504,7 @@ textarea::placeholder{
 .footer_text{
 	color: var(--main-white);
 	font-weight: 900;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	margin-top: 20px;
 }
 
@@ -519,8 +533,8 @@ textarea::placeholder{
 .subscribe_text{
 	margin-top: 50px;
 	font-weight: 400;
-	font-size: 2.4rem;
-	line-height: 3.6rem;
+	font-size: 2.6rem;
+	line-height: 3.8rem;
 
 }
 
@@ -544,7 +558,7 @@ textarea::placeholder{
 	outline: none;
 	padding-right: 11.25em;
 	border-radius: 60px;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	z-index: 3;
 }
 
@@ -556,7 +570,7 @@ textarea::placeholder{
 	border-radius: 60px;
 	background-color: var(--main-aqua);
 	color: #474350;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	cursor: pointer;
 
 	margin-left: -30%;

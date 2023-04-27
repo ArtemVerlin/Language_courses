@@ -152,10 +152,10 @@ p{
 	justify-content: space-between;
 }
 
-
-.header__logo-img {
-	max-width: 100px;
-	max-height: 100px;
+.header__logo,
+.header__logo-img{
+	width: 70px;
+	height: 70px;
 }
 
 .header__nav{
@@ -220,7 +220,7 @@ p{
 /***Header END***/
 
 .main {
-	margin-top: 109px;
+	margin-top: 100px;
 }
 
 /***First section***/
