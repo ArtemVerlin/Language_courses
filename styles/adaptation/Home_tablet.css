@@ -1,0 +1,353 @@
+/* 960px / 16px = 75em */
+@media (max-width: 60em) {
+	html {
+		font-size: 50%;
+	}
+
+	.container{
+		padding: 0 50px 0;
+	}
+
+	/***First section***/
+	.first_section {
+		height: 450px;
+		background-position:90% 60%;
+	}
+
+	.first_section__link {
+		font-size: 2rem;
+	}
+	/***First section END***/
+
+	/***Enrol for a course now***/
+
+	.section__title-container{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.section__title {
+	margin: 100px auto -35px;
+	font-size: 3rem;
+	line-height: 2rem;
+	}
+	
+	.two_section__container {
+		display: flex;
+		flex-direction: column;
+		height: 450px;
+		min-height:580px;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	
+	.two_section__text {
+		display: flex;
+		text-align: center;
+		font-size: 2.2rem;
+		line-height: 3.7rem;
+		margin-top: 15px;
+		padding: 45px 15px 0px 15px;
+		width: 100%;
+	}
+	
+	.survey-form__title{
+		display: none;
+	}
+	
+	.survey-form {
+		margin: 0px 0px 0px 0px;
+		padding: 25px 40px 25px 40px;
+		width: 100%;
+	}
+	
+	.success_button{
+		margin: 0px auto 0;
+	}
+	
+	.error_button{
+		margin: 0px auto 0;
+	
+	}
+	
+	input::placeholder,
+	textarea::placeholder{
+		font-size: 2rem;
+	}
+	
+	.form-control {
+		margin-bottom: 20px;
+		padding: 10px 0 14px 10px;
+	}
+	
+	.error-text{
+		padding: 5px 0px 10px 0px;
+	}
+	
+	.submit-button {
+		height: 45px;
+		margin: 36px auto 0;
+	}
+	
+	.submit-button__text{
+	font-size: 2rem;
+	line-height: 1.2rem;
+	}
+	
+	/***Enrol for a course now END***/
+
+	/***What we offer SECTION***/
+
+.third_section{
+	margin-top: 150px;
+}
+
+.third_section{
+	margin-top: 80px;
+}
+
+.third_section__title {
+	margin: 0px auto 70px;
+	text-align: center;
+	font-size: 5rem;
+}
+
+.project-grid__tile1,
+.project-grid__tile2,
+.project-grid__tile3 {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.2fr 0.2fr 2fr 0.5fr;
+	margin-bottom: 40px;
+	gap: 10px 50px;
+}
+
+.project-grid__tile-img,
+.project-grid__tile-img-reverse{
+	grid-row: 3 / 4;
+	object-fit: cover;
+}
+
+.project-grid__tile-img-reverse{
+	grid-column-start: 1;
+}
+
+.grid-1-title,
+.grid-1-title-reverse{
+	text-align: center;
+	font-weight: 900;
+	font-size: 4.5rem;
+	line-height: 3.5rem;
+}
+
+.grid-2-title,
+.grid-2-title-reverse{
+	text-align: center;
+	font-size: 4rem;
+	line-height: 4.5rem;
+}
+
+.project-text,
+.project-text-reverse{
+	font-size: 2.5rem;
+	line-height: 3.8rem;
+}
+
+/* 700px / 16px = 43.75em */
+@media (min-width: 43.75em) {
+	.project-text,
+	.project-text-reverse{
+		padding-left: calc(7px + (180 - 9) * ((100vw - 700px) / (960 - 700)));
+		padding-right: calc(7px + (180 - 9) * ((100vw - 700px) / (960 - 700)));
+	}
+}
+
+.grid-1-title-reverse,
+.grid-2-title-reverse,
+.project-text-reverse,
+.grid_button-reverse {
+	grid-column: 1 / 2;
+}
+
+.grid_button,
+.grid_button-reverse {
+	font-size: 2rem;
+	padding: 15px 38px;
+	border-radius: 60px;
+	margin-top: 20px;
+	text-align: center;
+	min-width: 200px;
+}
+
+/***What we offer SECTION END***/
+
+/***Fourth section***/
+
+.fourth_section{
+	margin-top: 40px;
+}
+
+
+.fourth_section__grid-templaetes{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.fourth-section__title-container {
+	display: flex;
+	justify-content: center;
+	min-width:300px;
+	margin-bottom: 40px;
+}
+
+.fourth-section__title {
+	padding-top: 40px;
+	font-size: 4.5rem;
+	line-height: 6rem;
+}
+
+.slider__img {
+	padding: 25px 10px 20px 20px;
+}
+
+.slider__name {
+	padding: 40px 0px 0px 10px;
+}
+
+.slider__text {
+	padding: 0px 40px 40px 50px;
+	font-size: 2rem;
+	line-height: 3.5rem;
+}
+
+/***Fourth section END***/
+
+
+/***Get In Touch***/
+
+.five_section__container {
+	width: 100%;
+	height: 450px;
+}
+
+.survey_section_five{
+	padding: 50px 40px 50px 40px;
+	margin-top: 40px;
+	width: 100%;
+	min-width: 215px;
+}
+
+.send_buttom {
+	width: 15em;
+	height: 45px;
+  padding: 0 20px;
+	font-size: 1.5rem;
+	margin: 36px auto 0;
+}
+
+.error_button{
+	margin: 0px auto 0;
+}
+
+.success_button{
+	margin: 0px auto 0;
+}
+
+textarea {
+	height: 8rem;
+  }
+
+.fifth_img {
+	display: none;
+}
+
+/***Get In Touch END***/
+
+/***Footer***/
+.intend{
+	margin-top: 22px;
+}
+
+.intend_low{
+	margin-top: 12px;
+}
+
+.text{
+	font-size: 1.7rem;
+}
+
+/***Footer END***/
+
+/* 700px / 16px = 43.75em */
+@media (max-width: 43.75em) {
+	html {
+		font-size: calc(6.5px + (8 - 6.5) * ((100vw - 450px) / (700 - 450)));
+	}
+	
+	.first_section{
+		height: calc(350px + (450 - 350) * ((100vw - 450px) / (700 - 450)));
+		}
+
+	.background_main{
+		object-position: 20%;
+	}
+
+	#social_media{
+		display: none;
+	}
+
+	.upper_footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.nav_bar_footer{
+		grid-column-start: 2;
+		grid-row-start: 1;
+	}
+	
+	.company_info{
+		grid-column-start: 1;
+		grid-row-start: 1;
+	}
+
+	.logos{
+		display: flex;
+		justify-content: space-around;
+		grid-column: 1 / 4;
+	}
+
+	.left{
+		text-align: left;
+		margin:0 auto 0;
+	}
+
+	.project-text,
+	.project-text-reverse{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.subscribe_form{
+		display: none;
+	}
+	
+	.footer{
+		margin: 200px 0px 0px;
+		padding: 50px 0px 20px;
+	}
+
+	.icon{
+		margin-right: 0px;
+		width: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
+		height: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
+		object-fit:contain;
+	}
+	
+}
+
+
+
+}

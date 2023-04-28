@@ -1,0 +1,144 @@
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.125em) {
+  html {
+    font-size: 40%;
+  }
+
+	:root {
+		--main-padding-section: 0 20px 0;
+	}
+
+	/***Header***/
+
+.header {
+	padding: 5px 0px;
+}
+
+.header__logo-img{
+	width: 60px;
+	height: 60px;
+}
+
+.callback-icon{
+	width: 12px;
+	height: 12px;
+}
+
+/***Header END***/
+
+
+.main {
+	margin-top: 70px;
+}
+
+/***First section***/
+
+.first_section {
+	margin: 0px auto 0px auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	align-items: center;
+}
+
+.first_section, .background_main{
+	height: calc(100vh - 70px);
+	min-height: 300px;
+}
+
+.background_main{
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	width: 100vw;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.65) 0%,
+		rgba(255, 255, 255, 0) 100%);
+	background-image:linear-gradient(
+		115deg,
+		rgba(26, 26, 26, 0.7),
+		rgba(217, 217, 217, 0.2));
+
+	background-size: cover;
+
+	object-position: 45% 50%;
+}
+
+.title {
+	display: inline-block;
+	font-family: var(--main-title-text);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 4rem;
+	line-height: 7.8rem;
+	color: var(--main-white);
+	padding-top: 190px;
+	text-align: center;
+}
+
+.first_section__link {
+	text-align: center;
+	border-radius: 60px;
+	padding: 6px 12px;
+	width: 50%;
+	font-weight: 600;
+	transition: all 0.2s;
+	margin-top: 40px;
+	font-size: 2rem;
+	border: 2px solid var(--main-aqua);
+	background: var(--main-aqua);
+	color: var(--main-white);
+}
+
+.first_section__link:hover{
+	color: #000;
+	min-width: 60px;
+	background-color: #00cc96;
+	border: 2px solid var(--main-hover-button);
+}
+
+/***First section END***/
+
+/***Second section***/
+
+.section__title {
+margin: 100px auto -35px;
+}
+
+.two_section__container {
+	height: 435px;
+	min-height:470px;
+}
+
+.two_section__text {
+	margin-top: 15px;
+	padding: 35px 10px 0px 10px;
+}
+
+.survey-form__title{
+	display: none;
+}
+
+.survey-form {
+	margin: 0px 0px 0px 0px;
+	padding: 15px 30px 15px 30px;
+}
+
+
+.form-control {
+	margin-bottom: 15px;
+	padding: 5px 0 8px 5px;
+}
+
+.submit-button {
+	max-width: 180px;
+	min-width: 100px;
+	height: 35px;
+	margin: 32px auto 0;
+}
+
+/***Second section END***/
+}

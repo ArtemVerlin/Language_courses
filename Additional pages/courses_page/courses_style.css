@@ -146,7 +146,8 @@ p{
 	justify-content: center;
 }
 
-.first_section, .background_main{
+.first_section, 
+.background_main{
 	height: 650px;
 	min-height: 300px;
 }
@@ -177,7 +178,7 @@ p{
 	font-family: var(--main-title-text);
 	font-style: normal;
 	font-weight: 700;
-	font-size: 5rem;
+	font-size: 4.5rem;
 	line-height: 7.8rem;
 	color: var(--main-white);
 }
@@ -448,7 +449,6 @@ textarea::placeholder{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 }
 
 

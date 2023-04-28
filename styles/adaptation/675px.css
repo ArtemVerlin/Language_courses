@@ -55,7 +55,7 @@
 
 /***First section END***/
 
-/***Second section***/
+/***Enrol for a course now***/
 
 .section__title-container{
 	display: flex;
@@ -128,7 +128,7 @@ font-size: 2rem;
 line-height: 1.2rem;
 }
 
-/***Second section END***/
+/***Enrol for a course now END***/
 
 /***Third section***/
 
@@ -279,7 +279,7 @@ line-height: 1.2rem;
 
 /***Fourth section END***/
 
-/***Fifth section***/
+/***Get In Touch***/
 
 .five_section__container {
 	width: 100%;
@@ -317,7 +317,7 @@ textarea {
 	display: none;
 }
 
-/***Fifth section END***/
+/***Get In Touch END***/
 
 /***Footer***/
 .footer{
