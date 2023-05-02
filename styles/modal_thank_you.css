@@ -27,7 +27,7 @@
 	max-width: 800px;
 	width: 85%;
 	max-height: 200px;
-	height: 250px;;
+	height: 250px;
 	position: fixed;
 	top: 40%;
 	left: 0;
@@ -83,7 +83,7 @@
 	display: inline-block;
 	background-color: #4CAF50;
 	border: none;
-	color: white;;
+	color: white;
 	padding: 15px 25px;
 	text-align: center;
 	text-decoration: none;

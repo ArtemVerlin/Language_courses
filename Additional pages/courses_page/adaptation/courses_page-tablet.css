@@ -4,14 +4,15 @@
 		font-size: 50%;
 	}
 
-	:root {
-		--main-padding-section: 0 50px 0;
+	.container{
+		padding: 0 50px 0;
 	}
 
 /***Background SECTION***/
 
 .first_section,
-.background_main{
+.background_main,
+.gradient{
 	height: 450px;
 	min-height: 200px;
 }
@@ -22,20 +23,29 @@
 
 .first_section__link {
 	font-size: 2rem;
+	line-height: 1.2rem;
+}
+
+.first_section__link-1{
+	padding: 16px 12px 16px 12px;
+
+}
+
+.first_section__link-2 {
+	padding: 16px 12px 16px 12px;
 }
 /***Background SECTION END***/
 
 	/***Enrol for a course now***/
 
-	.enrol_section_title{
-		display: flex;
-		flex-direction: row;
+	.enrol_section{
+		margin-top: 100px;
 	}
-	
-	.section__title {
-	margin: 100px auto -35px;
-	font-size: 3rem;
-	line-height: 2rem;
+
+	.enrol_section_title{
+		font-size: 4rem;
+		line-height: 2rem;
+		margin-bottom: -40px;
 	}
 	
 	.enrol_sectoion_container {
@@ -50,10 +60,10 @@
 	.enrol_section_text {
 		display: flex;
 		text-align: center;
-		font-size: 2rem;
-		line-height: 3.5rem;
+		font-size: 2.2rem;
+		line-height: 3.7rem;
 		margin-top: 15px;
-		padding: 45px 15px 0px 15px;
+		padding: 60px 15px 0px 15px;
 		width: 100%;
 	}
 	
@@ -67,32 +77,9 @@
 		width: 100%;
 	}
 	
-	.success_button{
-		margin: 0px auto 0;
-	}
-	
-	.error_button{
-		margin: 0px auto 0;
-	
-	}
-	
-	input::placeholder,
-	textarea::placeholder{
-		font-size: 2rem;
-	}
-	
 	.form-control {
 		margin-bottom: 20px;
 		padding: 10px 0 14px 10px;
-	}
-	
-	.error-text{
-		padding: 5px 0px 10px 0px;
-	}
-	
-	.submit-button {
-		height: 45px;
-		margin: 36px auto 0;
 	}
 	
 	.submit-button__text{
@@ -102,281 +89,124 @@
 	
 	/***Enrol for a course now END***/
 
-	.what_we_offer_section{
-		margin-top: 80px;
-	}
-	
-	.what_we_offer_section_title {
-		margin: 0px auto 70px;
-		text-align: center;
-		font-family: var(--main-title-text);
-		color: var(--main-img-background-color);
-		font-weight: 700;
-		font-size: 5rem;
-		letter-spacing: -0.02em;
-	}
-	
-	.project-grid__tile1,
-	.project-grid__tile2,
-	.project-grid__tile3 {
-		display: grid;
-		align-items: center;
-		justify-items: center;
-		grid-template-columns: 1fr;
-		grid-template-rows: 0.2fr 0.2fr 2fr 0.5fr;
-		margin-bottom: 40px;
-		gap: 10px 50px;
-	}
-	
-	.project-grid__tile-img,
-	.project-grid__tile-img-reverse{
-		grid-row: 3 / 4;
-		object-fit: cover;
-	}
-	
-	.project-grid__tile-img-reverse{
-		grid-column-start: 1;
-	}
-	
-	.grid-1-title,
-	.grid-1-title-reverse{
-		text-align: center;
-		font-family: var(--main-title-text);
-		font-weight: 900;
-		font-size: 4.5rem;
-		line-height: 3.5rem;
-		color: var(--main-second-text-color);
-		width: 100%;
-		height: 100%;
-	}
-	
-	.grid-2-title,
-	.grid-2-title-reverse{
-		text-align: center;
-		font-family: var(--main-casual-text);
-		font-weight: 600;
-		font-size: 4rem;
-		line-height: 4.5rem;
-		color: #474350;
-		width: 100%;
-		height: 100%;
-	}
-	
+	/***What we offer SECTION***/
+
+.what_we_offer_section{
+	margin-top: 100px;
+}
+
+
+.what_we_offer_section_title {
+	margin: 0px auto 50px;
+	text-align: center;
+	font-size: 4rem;
+}
+
+.project-grid__tile1,
+.project-grid__tile2,
+.project-grid__tile3 {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 0.2fr 2fr 0.5fr;
+	margin-bottom: 40px;
+	gap: 10px 50px;
+}
+
+.project-grid__tile-img,
+.project-grid__tile-img-reverse{
+	grid-row: 3 / 4;
+	object-fit: cover;
+}
+
+.project-grid__tile-img-reverse{
+	grid-column-start: 1;
+}
+
+.grid-1-title,
+.grid-1-title-reverse{
+	text-align: center;
+	font-weight: 900;
+	font-size: 3.7rem;
+	line-height: 3.5rem;
+}
+
+.grid-2-title,
+.grid-2-title-reverse{
+	text-align: center;
+	font-size: 3.4rem;
+	line-height: 4.5rem;
+}
+
+.project-text,
+.project-text-reverse{
+	font-size: 2.2rem;
+	line-height: 3.8rem;
+}
+
+@media (min-width: 43.75em) {
 	.project-text,
 	.project-text-reverse{
-		font-family: var(--main-casual-text);
-		font-weight: 400;
-		font-size: 2.5rem;
-		line-height: 3.8rem;
-		width: 100%;
-		color: #333333;
-		list-style-type: disc;
-		padding-left: 25px;
+		padding-left: calc(15px + (180 - 9) * ((100vw - 700px) / (960 - 700)));
+		padding-right: calc(15px + (180 - 9) * ((100vw - 700px) / (960 - 700)));
 	}
-
-	@media (min-width: 43.75em) {
-		.project-text,
-		.project-text-reverse{
-			padding-left: calc(10px + (150 - 10) * ((100vw - 700px) / (960 - 700)));
-		}
-	}
-	
-	.grid-1-title-reverse,
-	.grid-2-title-reverse,
-	.project-text-reverse,
-	.grid_button-reverse {
-		grid-column: 1 / 2;
-	}
-	
-	.grid_button,
-	.grid_button-reverse {
-		background-color: var(--main-first-text-color);
-		font-family: var(--main-casual-text);
-		font-size: 2rem;
-		font-weight: 600;
-		padding: 15px 38px;
-		border-radius: 60px;
-		margin-top: 20px;
-		text-align: center;
-		min-width: 200px;
-	}
-	/***What we offer SECTION END***/
-
-	/***Enrol for a course now SECTION***/
-
-.enrol_section_title{
-	display: flex;
-	align-items: center;
-	text-align: center;
 }
 
-.section__title {
-	margin: 100px auto -40px;
-	font-family: var(--main-title-text);
-	color: var(--main-img-background-color);
-	font-weight: 700;
-	font-size: 3.2rem;
-	line-height: 2.2rem;
-	letter-spacing: -0.02em;
+.grid_button,
+.grid_button-reverse {
+	font-size: 2rem;
+	padding: 10px 38px;
+}
+/***What we offer SECTION END***/
+
 }
 
-.enrol_sectoion_container {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--main-background-color);
-	border-radius:  60px;
+/* 700px / 16px = 43.75em */
+@media (max-width: 43.75em) {
+	html {
+		font-size: calc(6.5px + (8 - 6.5) * ((100vw - 450px) / (700 - 450)));
+	}
+
+	/***Background SECTION***/
+
+.first_section,
+.background_main,
+.gradient{
 	height: 450px;
-	min-height:600px;
-	width: 100%;
+	min-height: 200px;
 }
 
-.enrol_section_text {
-	font-family: var(--main-casual-text);
-	font-size: 2.2rem;
-	line-height: 3.7rem;
-	color: #333333;
-	padding: 45px 15px 0px 15px;
-	width: 100%;
+.background_main{
+	object-position: 85% 30%;
 }
 
-.survey-form__title{
-	display: none;
-	justify-content: center;
-	font-weight: 700;
-	font-size: 2.2rem;
-	line-height: 1.4rem;
-	letter-spacing: -0.02em;
-	margin-bottom: 36px;
+.first_section__link {
+	font-size: 2rem;
+	line-height: 1.2rem;
 }
 
-.survey-form {
-	padding: 40px 40px 0px 40px;
-	width: 100%;
-}
-
-.success_button{
-	background-color: var(--main-sucsess-color);
-	margin: 0px auto 0;
-}
-
-.error_button{
-	background-color: var(--main-errors-color);
-	margin: 0px auto 0;
+.first_section__link-1{
+	padding: 16px 12px 16px 12px;
 
 }
 
-input::placeholder,
-textarea::placeholder{
-	font-size: 2.2rem;
-	color: #A3A3A4;
+.first_section__link-2 {
+	padding: 16px 12px 16px 12px;
+}
+/***Background SECTION END***/
+
+/***What we offer SECTION***/
+
+.what_we_offer_section_title {
+	margin: 0px auto 50px;
+	text-align: center;
+	font-size: 5rem;
 }
 
-._select{
-	position: relative;
-	color: #000;
-	appearance: none;
-	border-radius: 5px;
-	transition: all 0.3s;
-	appearance: none;
-}
-
-.form-control {
-	display: block;
-	margin-bottom: 20px;
-	font-size: 2.2rem;
-	padding: 10px 0 14px 10px;
-	color: #000;
-	background-color: #F2F2F2;
-	border: 1.5px solid #F2F2F2;
-	width: 100%;
-	border-radius: 5px;
-	transition: all 0.3s;
-}
-
-.form-control:focus{
-	border-color: #f497da; 
-  outline: 0;
-}
-
-.success .form-control{
-	border-color: #00cc96;
-}
-
-.error .form-control{
-	border-color: var(--main-errors-color);
-	margin-bottom: 0px;
-	outline: 0;
-}
-
-
-.error-text{
-	font-size: 1.7rem;
-	color: var(--main-errors-color);
-	line-height: 1.7rem;
-	padding: 5px 0px 10px 0px;
-}
-
-.submit-button {
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	width: 100%;
-	max-width: 240px;
-	min-width: 50px;
-	height: 45px;
-	background: var(--main-second-text-color);
-	border-radius: 60px;
-	margin: 36px auto 0;
-}
-
-.submit-button__text{
-	font-family: var(--main-casual-text);
-	font-weight: 600;
-	font-size: 2.2rem;
-	line-height: 1.4rem;
-	letter-spacing: -0.02em;
-	color: #F2F2F2;
-
-}
-
-/***Enrol for a course now SECTION END***/
+/***What we offer SECTION END***/
 
 /***Footer***/
-
-.footer{
-	margin: 100px 0px 0px;
-	padding: 50px 0px 100px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.footer_content{
-	max-width: var(--main-max-width);
-	padding: var(--main-padding-section);
-	width: var(--main-max-width);
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-@media (max-width: 1240px) {
-	.footer_content{
-		width: auto;
-		margin: 0px;
-	}
-}
-
-.text{
-	font-size: 1.7rem;
-	margin: 0;
-}
-
-.bold{
-	font-weight: 800;
-}
-
 .intend{
 	margin-top: 22px;
 }
@@ -385,85 +215,31 @@ textarea::placeholder{
 	margin-top: 12px;
 }
 
-
-.footer_text{
-	font-weight: 900;
-	font-size: 2.2rem;
-	margin-top: 20px;
+.text{
+	font-size: 1.7rem;
 }
 
 .icon{
-	display: inline-block;
-	margin: 30px 20px 0px 0px;
-	width: 20px;
-	height: 20px;
+	margin-right: 0px;
+	width: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
+	height: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
+	object-fit:contain;
 }
 
-
-.subscribe_text{
-	margin-top: 50px;
-	font-weight: 400;
-	font-size: 2.6rem;
-	line-height: 3.8rem;
-
+.footer{
+	margin: 200px 0px 0px;
+	padding: 50px 0px 20px;
 }
 
-.subscribe{
-	position: relative;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-	max-width: 550px;
-	min-width: 50px;
+.subscribe_form{
+	display: none;
 }
 
-.subscribe_email {
-	width: 100%;
-	height: 55px;
-	padding: 10px;
-	border: none;
-	outline: none;
-	padding-right: 11.25em;
-	border-radius: 60px;
-	font-size: 1.7rem;
-	z-index: 3;
-}
-
-.subscribe_bottom {
-	width: 30%;
-	height: 55px;
-	padding: 0 20px;
-	border: none;
-	border-radius: 60px;
-	background-color: var(--main-first-text-color);
-	color: #474350;
-	font-size: 1.8rem;
-	margin-left: -30%;
-	z-index: 5;
-}
-
-/***Footer END***/
-
-
-
-/* 700px / 16px = 43.75em */
-@media (max-width: 43.75em) {
-	html {
-		font-size: calc(6.5px + (8 - 6.5) * ((100vw - 450px) / (700 - 450)));
+	.project-text,
+	.project-text-reverse{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
-	
-	.first_section,
-	.background_main{
-		height: calc(350px + (450 - 350) * ((100vw - 450px) / (700 - 450)));
-		}
-
-	.background_main{
-		object-position: 20%;
-	}
-
 	#social_media{
 		display: none;
 	}
@@ -494,20 +270,5 @@ textarea::placeholder{
 		margin:0 auto 0;
 	}
 
-	.subscribe_form{
-		display: none;
-	}
-	
-	.footer{
-		margin: 200px 0px 0px;
-		padding: 50px 0px 20px;
-	}
-
-	.icon{
-		margin-right: 0px;
-		width: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
-		height: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
-		object-fit:contain;
-	}
-}
+/***Footer END***/
 }

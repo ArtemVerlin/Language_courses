@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* font-family: var(--main-casual-text);; */
+/* font-family: var(--main-casual-text); */
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
 /* font-family: var(--main-title-text); */
 
 
 /***Default styles***/
-
-html{
-	/* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
-  font-size: 62.5%;
-}
 
 /* A few media query to set some font sizes at different screen sizes.
  * This helps automate a bit of responsiveness.
@@ -97,7 +89,7 @@ html{
 
 
 body{
-	font-family: var(--main-casual-text);;
+	font-family: var(--main-casual-text);
 	font-weight: 400;
 	font-size: 24px;
 	background: #F2F2F2;
@@ -201,7 +193,7 @@ p{
 .callback__button{
 	display: flex;
 	align-items: center;
-	font-family: var(--main-casual-text);;
+	font-family: var(--main-casual-text);
 	width: 100%;
 	font-weight: 600;
 	font-size: 1.7rem;
@@ -300,7 +292,7 @@ p{
 .first_section__link-1{
 	border: 2px solid var(--main-background-color);
 	border-radius: 60px;
-	padding: 6px 12px 6px 12px;
+	padding: 9px 12px 9px 12px;
 	min-width: 130px;
 	transition: all 0.2s;
 }
@@ -316,7 +308,7 @@ p{
 	border: 2px solid var(--main-first-text-color);
 	border-radius: 60px;
 	background: var(--main-first-text-color);
-	padding: 6px 12px 6px 12px;
+	padding: 9px 12px 9px 12px;
 	min-width: 120px;
 	transition: all 0.2s;
 }
@@ -331,9 +323,13 @@ p{
 
 /***Enrol for a course now***/
 
+.enrol_section{
+	margin-top: 150px;
+}
+
 .enrol_section_title {
 	text-align: center;
-	margin: 100px auto 70px;
+	margin-bottom: 70px;
 	font-family: var(--main-title-text);
 	color: var(--main-img-background-color);
 	font-weight: 700;
@@ -411,12 +407,12 @@ textarea::placeholder{
 	border: 1.5px solid #F2F2F2;
 	width: 100%;
 	border-radius: 5px;
-	transition: all 0.3s;
+	transition: border-color 0.2s;
 }
 
 .form-control:focus{
 	border-color: #f497da; 
-  	outline: 0;
+  outline: 0;
 }
 
 .success .form-control{
@@ -517,7 +513,7 @@ textarea::placeholder{
 .grid-2-title-reverse{
 	font-family: var(--main-casual-text);
 	font-weight: 600;
-	font-size: 2.4rem;
+	font-size: 3rem;
 	line-height: 4.5rem;
 	color: #474350;
 	width: 100%;
@@ -528,8 +524,8 @@ textarea::placeholder{
 .project-text-reverse{
 	font-family: var(--main-casual-text);
 	font-weight: 400;
-	font-size: 1.7rem;
-	line-height: 3.8rem;
+	font-size: 2rem;
+	line-height: 4rem;
 	width: 100%;
 	color: #333333;
 	list-style-type: disc;
@@ -552,7 +548,7 @@ textarea::placeholder{
 	padding: 15px 38px;
 	border-radius: 60px;
 	margin-top: 20px;
-	text-align: center;
+	text-align: center;;
 	min-width: 200px;
 }
 /***What we offer SECTION END***/
@@ -565,7 +561,8 @@ textarea::placeholder{
 
 .swiper_section_grid_templ{
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
 }
 
 .swiper_section_title_container {
@@ -575,10 +572,9 @@ textarea::placeholder{
 .swiper_section_title {
 	font-family: var(--main-title-text);
 	font-weight: 700;
-	font-size: 4rem;
-	line-height: 7.6rem;
+	font-size: 7rem;
+	line-height: 8rem;
 	text-transform: capitalize;
-	padding-top: 40px;
 }
 
 .main_color {
@@ -589,7 +585,22 @@ textarea::placeholder{
 
 /***Get In Touch SECTION***/
 
-.five_section__container {
+.get_In_touch{
+	margin-top: 150px;
+}
+
+.get_In_touch_title{
+	text-align: center;
+	margin-bottom: 70px;
+	font-family: var(--main-title-text);
+	color: var(--main-img-background-color);
+	font-weight: 700;
+	font-size: 3.2rem;
+	line-height: 2.2rem;
+	letter-spacing: -0.02em;
+}
+
+.get_In_touch__container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -606,31 +617,21 @@ textarea::placeholder{
 	min-width: 215px;
 }
 
-@media (max-width: 1000px) {
-	.survey_section_five{
-		padding-right: calc(10px + (40 - 10) * ((100vw - 640px) / (1000 - 640)));;
-		padding-left: calc(10px + (50 - 10) * ((100vw - 640px) / (1000 - 640)));;
-	}
-}
-
 .send_buttom {
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	width: 10em;
+	font-weight: 700;
+	width: 100%;
+	max-width: 240px;
+	min-width: 50px;
 	height: 45px;
-  padding: 0 20px;
-	border: none;
-  border-radius: 60px;
-  background-color: var(--main-first-text-color);
-	color: #474350;
-	font-size: 1.5rem;
-	font-weight: 600;
-  cursor: pointer;
-	z-index: 3;
+	background: var(--main-first-text-color);
+	border-radius: 60px;
 	margin: 36px auto 0;
-
 }
+
+
 
 .error_button{
 	margin: 0px auto 0;
@@ -651,19 +652,13 @@ textarea {
 	height: 8rem;
   }
 
-  .fifth_img {
+  .get_In_touch_img {
 	border-radius: 60px;
 	border: none;
 	width: 60%;
 	height: 500px;
 	min-height: 370px;
 	padding: 20px;
-}
-
-@media (max-width: 1000px) {
-	.fifth_img{
-		height: calc(230px + (500 - 230) * ((100vw - 670px) / (1000 - 670)));
-	}
 }
 
 /***Get In Touch SECTION END***/

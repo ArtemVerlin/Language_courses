@@ -22,7 +22,7 @@
 .callback__button{
 	display: flex;
 	align-items: center;
-	font-family: var(--main-casual-text);;
+	font-family: var(--main-casual-text);
 	width: 100%;
 	font-weight: 600;
 	font-size: 1.5rem;
@@ -149,7 +149,7 @@
 
 /***Get In Touch SECTION***/
 
-.five_section__container {
+.get_In_touch__container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -204,7 +204,7 @@ textarea {
 	height: 8rem;
   }
 
-  .fifth_img {
+  .get_In_touch_img {
 	border-radius: 60px;
 	border: none;
 	width: 50%;
