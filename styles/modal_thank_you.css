@@ -19,7 +19,7 @@
   }
   
   .modal-content_sectionOne {
-	background-color: var(--main-aqua);
+	background-color: var(--main-first-text-color);
 	margin: auto;
 	padding: 20px;
 	border: none;

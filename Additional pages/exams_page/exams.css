@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* font-family: 'Poppins', sans-serif; */
+/* font-family: var(--main-casual-text);; */
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
-/* font-family: 'Alegreya Sans SC', sans-serif; */
+/* font-family: var(--main-title-text); */
 
 html{
 	/* Set font size for easy rem calculations
@@ -13,21 +13,21 @@ html{
 }
 
 :root {
-	--main-aqua: #92dce5;
-	--main-pink: #f497da;
-	--main-gray: #333333;
-	--main-white: #FFFFFF;
+	--main-first-text-color: #92dce5;
+	--main-second-text-color: #f497da;
+	--main-img-background-color: #333333;
+	--main-background-color: #FFFFFF;
 	--main-hover-button: #00cc96;
 	--main-errors: #ff333f;
 	--main-sucsess: #4caf50cf;
 	--main-book-a-call: yellow;
 	--main-title-text: 'Alegreya Sans SC', sans-serif;
-	--main-common-text: 'Poppins', sans-serif;
+	--main-casual-text: 'Poppins', sans-serif;
 	--main-max-width: 1220px;
 }
 
 body{
-	font-family: var(--main-common-text);
+	font-family: var(--main-casual-text);
 	background: #F2F2F2;
 }
 
@@ -45,7 +45,7 @@ body{
 
 p{
 	line-height: 1.5;
-    font-family: var(--main-common-text);
+    font-family: var(--main-casual-text);
 }
 
 /***Default styles END***/
@@ -118,7 +118,7 @@ p{
 .callback__button{
 	display: flex;
   align-items: center;
-  font-family: var(--main-common-text);
+  font-family: var(--main-casual-text);
   width: 100%;
   font-weight: 600;
   font-size: 1.7rem;
@@ -136,7 +136,7 @@ p{
 
 /***Header END***/
 
-/***First section***/
+/***Background SECTION***/
 
 .first_section {
 	margin: 0px auto 0px auto;
@@ -145,12 +145,6 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.first_section,
-.background_main{
-	height: 650px;
-	min-height: 320px;
 }
 
 .background_main{
@@ -164,24 +158,26 @@ p{
 		90deg,
 		rgba(0, 0, 0, 0.65) 0%,
 		rgba(255, 255, 255, 0) 100%);
-	background-image:linear-gradient(
-		115deg,
-		rgba(26, 26, 26, 0.7),
-		rgba(217, 217, 217, 0.2));
-
+		
 	background-size: cover;
 	background-position: center;
 	object-position: top center;
 }
 
-.title {
+.first_section,
+.background_main{
+	height: 650px;
+	min-height: 320px;
+}
+
+.first_section_title {
 	display: inline-block;
 	font-family: var(--main-title-text);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 5rem;
 	line-height: 7.8rem;
-	color: var(--main-white);
+	color: var(--main-background-color);
 }
 
 .first_section__link {
@@ -193,9 +189,9 @@ p{
 	transition: all 0.2s;
 	margin-top: 40px;
 	font-size: 1.5rem;
-	border: 2px solid var(--main-aqua);
-	background: var(--main-aqua);
-	color: var(--main-white);
+	border: 2px solid var(--main-first-text-color);
+	background: var(--main-first-text-color);
+	color: var(--main-background-color);
 }
 
 .first_section__link:hover{
@@ -205,7 +201,7 @@ p{
 	border: 2px solid var(--main-hover-button);
 }
 
-/***First section END***/
+/***Background SECTION END***/
 
 /***What we offer SECTION***/
 
@@ -213,7 +209,7 @@ p{
     margin: 120px auto 50px;
 	text-align: center;
 	font-family: var(--main-title-text);
-	color: var(--main-gray);
+	color: var(--main-img-background-color);
 	font-weight: 700;
 	font-size: 3.3rem;
 	letter-spacing: -0.02em;
@@ -221,7 +217,7 @@ p{
 
 
 .what_we_offer_text {
-	font-family: var(--main-common-text);
+	font-family: var(--main-casual-text);
 	font-weight: 400;
 	font-size: 2rem;
 	line-height: 3.5rem;
@@ -251,7 +247,7 @@ p{
 }
 
 .professional_name{
-    font-family: var(--main-common-text);
+    font-family: var(--main-casual-text);
 	font-weight: 600;
 	font-size: 2.4rem;
 	line-height: 4.5rem;
@@ -284,7 +280,7 @@ p{
     margin: 15px;
 	font-size: 3.3rem;
 	line-height: 3.5rem;
-	color: var(--main-pink);
+	color: var(--main-second-text-color);
 	width: 100%;
 	height: 100%;
     grid-column: 1 / 3;
@@ -293,7 +289,7 @@ p{
 }
 
 .text_exam{
-    font-family: var(--main-common-text);
+    font-family: var(--main-casual-text);
 	font-weight: 400;
 	font-size: 2em;
 	line-height: 3.8rem;
@@ -306,8 +302,8 @@ p{
 }
 
 .button_exam{
-    background-color: var(--main-aqua);
-	font-family: var(--main-common-text);
+    background-color: var(--main-first-text-color);
+	font-family: var(--main-casual-text);
 	font-size: 1.4rem;
 	font-weight: 600;
 	padding: 15px 38px;
@@ -343,18 +339,18 @@ p{
 }
 
 .main_color {
-	color: var(--main-pink);
+	color: var(--main-second-text-color);
 }
 
 /***Swiper SECTION END***/
 
 /***Enrol for a course now SECTION***/
 
-.enrol_sectoion_title {
+.enrol_section_title {
 	text-align: center;
 	margin: 100px auto 70px;
 	font-family: var(--main-title-text);
-	color: var(--main-gray);
+	color: var(--main-img-background-color);
 	font-weight: 700;
 	font-size: 3.2rem;
 	line-height: 2.2rem;
@@ -364,15 +360,15 @@ p{
 .enrol_sectoion_container {
 	display: flex;
 	flex-direction: row;
-	background-color: var(--main-white);
+	background-color: var(--main-background-color);
 	border-radius:  60px;
 	height: 450px;
 	min-height:612px;
 	width: 100%;
 }
 
-.enrol_sectoion_text{
-	font-family: var(--main-common-text);
+.enrol_section_text{
+	font-family: var(--main-casual-text);
 	font-size: 2.2rem;
 	line-height: 3.7rem;
 	color: #333333;
@@ -395,12 +391,12 @@ p{
 }
 
 .success_button{
-	background-color: var(--main-sucsess-green);
+	background-color: var(--main-sucsess-color);
 	margin: 0px auto 0;
 }
 
 .error_button{
-	background-color: var(--main-errors-red);
+	background-color: var(--main-errors-color);
 	margin: 0px auto 0;
 
 }
@@ -443,7 +439,7 @@ textarea::placeholder{
 }
 
 .error .form-control{
-	border-color: var(--main-errors-red);
+	border-color: var(--main-errors-color);
 	margin-bottom: 0px;
 	outline: 0;
 }
@@ -451,7 +447,7 @@ textarea::placeholder{
 
 .error-text{
 	font-size: 1.7rem;
-	color: var(--main-errors-red);
+	color: var(--main-errors-color);
 	line-height: 1.7rem;
 	padding: 5px 0px 10px 0px;
 }
@@ -464,13 +460,13 @@ textarea::placeholder{
 	max-width: 240px;
 	min-width: 50px;
 	height: 45px;
-	background: var(--main-pink);
+	background: var(--main-second-text-color);
 	border-radius: 60px;
 	margin: 36px auto 0;
 }
 
 .submit-button__text{
-	font-family: var(--main-common-text);
+	font-family: var(--main-casual-text);
 	font-weight: 600;
 	font-size: 2.2rem;
 	line-height: 1.4rem;
@@ -503,7 +499,7 @@ textarea::placeholder{
   }
   
   .text{
-      color: var(--main-white);
+      color: var(--main-background-color);
       font-size: 1.2rem;
       margin: 0;
   }
@@ -521,7 +517,7 @@ textarea::placeholder{
   }
   
   .footer_text{
-      color: var(--main-white);
+      color: var(--main-background-color);
       font-weight: 900;
       font-size: 2rem;
       margin-top: 20px;
@@ -590,7 +586,7 @@ textarea::placeholder{
       padding: 0 20px;
       border: none;
       border-radius: 60px;
-      background-color: var(--main-aqua);
+      background-color: var(--main-first-text-color);
       color: #474350;
       font-size: 1.6rem;
       cursor: pointer;

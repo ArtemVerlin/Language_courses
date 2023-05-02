@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--CSS-->
 	<link rel="stylesheet" href="./Swiper/package/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./styles/swiper.css">
 	<link rel="stylesheet" href="./styles/style.css"/>
 	<link rel="stylesheet" href="./styles/menu_burger.css"/>
 	<!-- <link rel="stylesheet" href="./styles/adaptation/1200px.css"/> -->
@@ -121,237 +122,236 @@
 
 		<main class="main">
 
-			<!--Section 1-->
-			<section class="first_section">
-				<div class="container">
-        
-							<div class="first_section__content">
-								<h1 class="title">Discover the world<br> Through language</h1>
-								<p class="discription">With indispensable courses</p>
-								<div class="first_section__links">
-								<a href="#" data-goto=".third_section" class="first_section__link-1 first_section__link">
-									Our Courses
-								</a>
-								<a href="#" data-goto=".fourth_section" class="first_section__link-2 first_section__link">
-								Book a meeting
-							</a>
-							</div>
-						</div>
-
+			<!--Background SECTION-->
+			<section class="first_section container">
+				<h1 class="first_section_title">
+					Discover the world<br> Through language
+				</h1>
+				<div class="gradient">
+					<picture>
+						<img src="./img/background-first-section.svg" alt="bb" class="background_main">
+					</picture>
+				</div>
+				<p class="discription">
+					With indispensable courses
+				</p>
+				<div class="first_section__links">
+					<a href="#" data-goto=".what_we_offer_section" class="first_section__link-1 first_section__link">
+						Our Courses
+					</a>
+					<a href="#" data-goto=".swiper_section" class="first_section__link-2 first_section__link">
+						Book a meeting
+					</a>
 				</div>
 			</section>
-			<!--Section 1 END--> 
+			<!--Background SECTION END-->
 
-			<!--Section 2--> 
-			<section class="two_section">
-				<div class="container">
-					<div class="section__title-container">
-						<h2 class="section__title">Enrol for a course now</h2>
-					</div>
-					<div class="two_section__container">
-						<div class="two_section__text">
-							<p>
-								Our language school offers a dynamic and immersive learning experience designed
-								to help you achieve fluency in your target language </p>
+            <!--Enrol for a course now SECTION-->
+            <section class="container">
+				<h2 class="enrol_section_title">
+					Enrol for a course now
+				</h2>
+				<div class="enrol_sectoion_container">
+					<p class="enrol_section_text">
+						Our language school offers a dynamic and immersive learning experience designed
+						to help you achieve fluency in your target language
+					</p>
+					<form action="#" id="form" class="survey-form">
+						<p class="survey-form__title">Enroll for a course now</p>
+						<div class="input_box__section-one">
+							<input
+								type="text"
+								name="name"
+								id="name"
+								class="form-control _name"
+								placeholder="Full name"
+							/>
 						</div>
-							<form action="#" id="form" class="survey-form">
-								<p class="survey-form__title">Enroll for a course now</p>
-								<div class="input_box__section-one">
-									<input
-										type="text"
-										name="name"
-										id="name"
-										class="form-control _name"
-										placeholder="Full name"
-									/>
-								</div>
-								<div class="input_box__section-one">
-									<input
-									type="text"
-									name="name"
-									id="name"
-									class="form-control _email"
-									placeholder="Email"
-									/>
-								</div>
-								<div class="input_box__section-one">
-									<input
-									type="tel"
-									name="phone"
-									id="phone_sectionOne"
-									class="form-control _tel"
-									placeholder="+3(000)000-00-00"
-									maxlength="16"
-									/>
-								</div>
-								<div class="input_box__section-one">
-									<select id="dropdown" name="role" class="form-control _select" placeholder="Select a course">
-									<option value="" disabled selected style='display:none;'>Select a course</option>
-									<option value="For beginners">For beginners</option>
-									<option value="For Pre-intermediate">For Pre-intermediate</option>
-									<option value="For intermediate">For intermediate</option>
-									<option value="Preparation for Exam">Preparation for Exam</option>
-									<option value="Consultation">Consultation</option>
-								</optgroup>
-									</select>
-								</div>
-								<!--Modal "thank you + Apply button"-->
-								<button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
-								<div id="modal_sectionOne" class="modal_sectionOne">
-									<div class="modal-content_sectionOne">
-										<span class="close_sectionOne">&times;</span>
-										<div class="modal-center_sectionOne">
-											<div class="modal-center_sectionOne">
-												<h3 class="modal_header">Thank you!</h3>
-												<p class="text_modal_section_one">We will contact you shortly</p>
+						<div class="input_box__section-one">
+							<input
+								type="text"
+								name="name"
+								id="name"
+								class="form-control _email"
+								placeholder="Email"
+							/>
+						</div>
+						<div class="input_box__section-one">
+							<input
+								type="tel"
+								name="phone"
+								id="phone_sectionOne"
+								class="form-control _tel"
+								placeholder="+7(000)000-00-00"
+								maxlength="16"
+							/>
+						</div>
+						<div class="input_box__section-one">
+							<select id="dropdown" name="role" class="form-control _select" placeholder="Select a course">
+							<option value="" disabled selected style='display:none;'>Select a course</option>
+							<option value="For beginners">For beginners</option>
+							<option value="For Pre-intermediate">For Pre-intermediate</option>
+							<option value="For intermediate">For intermediate</option>
+							<option value="Preparation for Exam">Preparation for Exam</option>
+							<option value="Consultation">Consultation</option>
+						 
+							</select>
+						</div>
+						<!--Modal "thank you + Apply button"-->
+						<button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
+						<div id="modal_sectionOne" class="modal_sectionOne">
+							<div class="modal-content_sectionOne">
+								<span class="close_sectionOne">&times;</span>
+								<div class="modal-center_sectionOne">
+									<div class="modal-center_sectionOne">
+										<h3 class="modal_header">
+											Thank you!
+										</h3>
+										<p class="text_modal_section_one">
+											We will contact you shortly
+										</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!--Modal "thank you + Apply button" END-->
+					</form>
+				</div>
+		</section>
+		<!--Enrol for a course now SECTION END-->
+			
+            <!--What we offer SECTION-->
+			<section class="what_we_offer_section container">
+					<h2 class="what_we_offer_section_title">
+						What we offer
+					</h2>
+					<div class="project-grid__tile1">
+						<div class="project-grid__tile-img">
+							<img src="./img/project-tile-first.svg" alt="project" class="project-img">
+						</div>
+						<!-- <div class="project-grid__tile-text"> -->
+						<h3 class="grid-1-title">
+							Online Courses
+						</h3>
+						<h4 class="grid-2-title">
+							Our Course are the best among others
+						</h4>
+						<p class=" project-text">
+							With expert teachers, engaging curriculum, 
+							and a supportive community, 
+							we empower you to unlock new opportunities 
+							and connect with people and cultures around the globe.
+						</p>
+						<a href="#" class="grid_button">
+							Explore our courses
+						</a>
+						<!-- </div> -->
+					</div>
+
+					<div class="project-grid__tile2">
+						<div class="project-grid__tile-img-reverse">
+							<img src="./img/project-tile-two.svg" alt="project" class="project-img">
+						</div>
+						<h3 class="grid-1-title-reverse">
+							Preparation for the exams
+						</h3>
+						<h4 class="grid-2-title-reverse">
+							Lets get ready for your exams together!
+						</h4>
+						<p class="project-text-reverse">
+							More than 500 students have successfully passed their exams with us! 
+							Join us and embark on a journey of language and cultural discovery today.
+						</p>
+						<a href="#" class="grid_button-reverse"
+							>Explore exams
+						</a>
+					</div>
+
+					<div class="project-grid__tile3">
+						<div class="project-grid__tile-img">
+
+							<img src="./img/project-tile-three.svg" alt="project" class="project-img">
+
+						</div>
+						<h3 class="grid-1-title">
+							University consultation
+						</h3>
+						<h4 class="grid-2-title">
+							Lets choose the best university for you!
+						</h4>
+						<p class=" project-text">
+							Our experienced consultants work with you to understand your academic goals,
+								preferences, and requirements, and then provide you with personalized recommendations on universities.
+						</p>
+							
+							<!--Modal + calendar-->
+
+							<a onclick="return false;" href="#" id="open-modal" class="grid_button">Book a meeting</a>
+							<div id="modal" class="modal">
+								<div class="modal-content">
+									<h2>Select date and time</h2>
+									<div class="modal-wrapper">
+									<!--<span class="close">&times;</span>-->
+										<article class="modal-calendar-article">
+											<p>
+												Thank you for your interest in our language school. We are excited to hear that you are interested in booking a course with us.
+													Please complete the form below with your contact information and booking details. 
+											</p>
+											<div class="profile_block">
+												<img class="profile_photo" src="./img/our_specialists/ethan_davis.svg" alt="Ours specialist photo">
+												<p>
+													<span>Ethan Davis</span>
+													We look forward to helping you achieve your language goals.
+												</p>
+											</div>
+										</article>
+										<form id="calendar-form" class="calendar-block">
+										<!--Calendar-->
+										<div class="date-picker">
+											<div class="selected-date"></div>
+											<div class="dates active">
+												<div class="month">
+													<div class="arrows_calendar prev-mth">&lt;</div>
+													<div class="mth"></div>
+													<div class="arrows_calendar next-mth">&gt;</div>
+												</div>
+												<div class="days"></div>
 											</div>
 										</div>	
-									</div>
+										<!--Calendar END-->
+										<input 
+											type="email"
+											class="form-control"
+											placeholder="Email"
+											>
+										<input
+											type="text"
+											class="form-control"
+											placeholder="Full name"
+											>
+										<button
+											id=""
+											type="submit"
+											class="send_buttom send_button-text">
+											Send
+										</button>
+										</form>
+									</div>  
 								</div>
-								</button>
-								<!--Modal "thank you + Apply button" END-->
-							</form>
-					</div>
-				</div>
-
-				<!--<div id="popup__apply-now" class="popup-form">
-					<div class="popup__body">
-						<div class="popup__content">
-							<a href="#header" class="close-popup popup__close"><span class="close">&times;</span></a>
-							<div class="popup__tiitle">Hello let me tell you a little about myself</div>
-							<div class="popup__text">
-								<a href="#popup_2" class="popup-link">Lorem</a>
-								ipsum dolor sit amet consectetur, adipisicing elit.
-								Libero magnam expedita exercitationem ad repellat vel laborum quaerat suscipit autem,
-								labore qui quo nisi accusamus, repellendus itaque voluptatem? Aperiam, rem sed.
 							</div>
-						</div>
-					</div>
-				</div>-->
-
-			</section>
-			<!--Section 2 END--> 
-			
-			<!--Section 3--> 
-			<section class="third_section">
-				<div class="container">
-
-					<div class="section__title-container">
-						<h2 class="third_section__title">What we offer</h2>
-					</div>
-
-					<div class="project-grid">
-
-						<div class="project-grid__tile1">
-							<div class="project-grid__tile-img">
-
-								<img src="./img/project-tile-first.svg" alt="project" class="project-img">
-
-							</div>
-							<!-- <div class="project-grid__tile-text"> -->
-								<h3 class="grid-1-title">Online Courses</h3>
-								<h4 class="grid-2-title">Our Course are the best among others</h4>
-								<p class=" project-text">With expert teachers, engaging curriculum, 
-									and a supportive community, 
-									we empower you to unlock new opportunities 
-									and connect with people and cultures around the globe.</p>
-									<a href="#" class="grid_button">Explore our courses</a>
-							<!-- </div> -->
-						</div>
-
-						<div class="project-grid__tile2">
-							<div class="project-grid__tile-img-reverse">
-
-								<img src="./img/project-tile-two.svg" alt="project" class="project-img">
-
-							</div>
-								<h3 class="grid-1-title-reverse">Preparation for the exams</h3>
-								<h4 class="grid-2-title-reverse">Lets get ready for your exams together!</h4>
-								<p class="project-text-reverse">More than 500 students have successfully passed their exams with us! 
-									Join us and embark on a journey of language and cultural discovery today.</p>
-									<a href="#" class="grid_button-reverse">Explore exams</a>
-						</div>
-
-						<div class="project-grid__tile3">
-							<div class="project-grid__tile-img">
-
-								<img src="./img/project-tile-three.svg" alt="project" class="project-img">
-
-							</div>
-								<h3 class="grid-1-title">University consultation </h3>
-								<h4 class="grid-2-title">Lets choose the best university for you!</h4>
-								<p class=" project-text">Our experienced consultants work with you to understand your academic goals, preferences, and requirements, and then provide you with personalized recommendations on universities.</p>
-
-								
-								<!--Modal + calendar-->
-
-								<a onclick="return false;" href="#" id="open-modal" class="grid_button">Book a meeting</a>
-								<div id="modal" class="modal">
-									<div class="modal-content">
-										<h2>Select date and time</h2>
-										<div class="modal-wrapper">
-									  	<!--<span class="close">&times;</span>-->
-											<article class="modal-calendar-article">
-												<p>
-													Thank you for your interest in our language school. We are excited to hear that you are interested in booking a course with us.
-														Please complete the form below with your contact information and booking details. 
-												</p>
-												<div class="profile_block">
-													<img class="profile_photo" src="./img/our_specialists/ethan_davis.svg" alt="Ours specialist photo">
-													<p>
-														<span>Ethan Davis</span>
-														We look forward to helping you achieve your language goals.
-													</p>
-												</div>
-											</article>
-											<form id="calendar-form" class="calendar-block">
-											<!--Calendar-->
-											<div class="date-picker">
-												<div class="selected-date"></div>
-												<div class="dates active">
-													<div class="month">
-														<div class="arrows_calendar prev-mth">&lt;</div>
-														<div class="mth"></div>
-														<div class="arrows_calendar next-mth">&gt;</div>
-													</div>
-													<div class="days"></div>
-												</div>
-											</div>	
-											<!--Calendar END-->
-											<input 
-												type="email"
-												class="form-control"
-												placeholder="Email"
-												>
-											<input
-												type="text"
-												class="form-control"
-												placeholder="Full name"
-												>
-											<button
-												id=""
-												type="submit"
-												class="send_buttom send_button-text">
-												Send
-											</button>
-											</form>
-										</div>  
-									</div>
-								</div>
 
 								<!--Modal + calendar END--> 
 						</div>
-					</div>
 				</div>
 			</section>
-			<!--Section 3 END--> 
+			<!--What we offer SECTION END-->
 
-			<!--Section 4--> 
-			<section class="fourth_section">
+			<!--Swiper SECTION--> 
+			<section class="swiper_section">
 				<div class="container" id="slider-container">
-					<div class="fourth_section__grid-templaetes">
-						<div class="fourth-section__title-container">
-							<h2 class="fourth-section__title">What our <span class="pink"> Students </span> say <br> about us </h2>
+					<div class="swiper_section_grid_templ">
+						<div class="swiper_section_title_container">
+							<h2 class="swiper_section_title">What our <span class="main_color"> Students </span> say <br> about us </h2>
 						</div>
 						<!--Swiper--> 
 						<div class="swiper">
@@ -408,12 +408,12 @@
 					</div>
 				</div>
 			</section>
-			<!--Section 4 END--> 
+			<!--Swiper SECTION END-->
 
-			<!--Section 5-->
+			<!--Get In Touch SECTION-->
 			<section class="five_section">
 				<div class="container">
-					<div class="section__title-container">
+					<div class="enrol_section_title">
 						<h2 class="section__title">Get In Touch</h2>
 					</div>
 					<div class="five_section__container">
@@ -462,20 +462,21 @@
 									id="massage_fifth_section"
 									class="form-control"
 
-									placeholder="Input Text"></textarea>
+									placeholder="Input Text"
+								></textarea>
 							</div>
 
 								<button
 									id="open_modal_sectionFive"
 									type="submit"
-									class="send_buttom send_button-text">
-									Send
+									class="send_buttom send_button-text"
+									>Send
 								</button>
 						</form>
 					</div>
 				</div>
 			</section>
-			<!--Section 5 END-->
+			<!--Get In Touch SECTION END-->
 		</main>
 		<!--Footer-->
 		<footer class="footer">

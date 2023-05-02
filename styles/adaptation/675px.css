@@ -18,7 +18,7 @@
 	margin-top: 109px;
 }
 
-/***First section***/
+/***Background SECTION***/
 
 .first_section {
 	width: 100%;
@@ -53,11 +53,11 @@
 }
 
 
-/***First section END***/
+/***Background SECTION END***/
 
 /***Enrol for a course now***/
 
-.section__title-container{
+.enrol_section_title{
 	display: flex;
 	flex-direction: row;
 }
@@ -68,14 +68,14 @@ font-size: 3rem;
 line-height: 2rem;
 }
 
-.two_section__container {
+.enrol_sectoion_container {
 	display: flex;
 	flex-direction: column;
 	height: 450px;
 	min-height:612px;
 }
 
-.two_section__text {
+.enrol_section_text {
 	display: flex;
 	text-align: center;
 	font-size: 2rem;
@@ -132,11 +132,11 @@ line-height: 1.2rem;
 
 /***Third section***/
 
-.third_section{
+.what_we_offer_section{
 	margin-top: 70px; 
 }
 
-.third_section__title {
+.what_we_offer_section_title {
 	margin: 0px auto 30px;
 	font-size: 3rem;
 }
@@ -244,24 +244,24 @@ line-height: 1.2rem;
 }
 /***Third section END***/
 
-/***Fourth section***/
+/***Swiper SECTION***/
 
-.fourth_section{
+.swiper_section{
 	margin-top: 40px;
 }
 
 
-.fourth_section__grid-templaetes{
+.swiper_section_grid_templ{
 	display: grid;
 	grid-template-columns: 1fr;
 }
 
-.fourth-section__title-container {
+.swiper_section_title_container {
 	min-width:300px;
 	margin-bottom: 40px;
 }
 
-.fourth-section__title {
+.swiper_section_title {
 	padding-top: 40px;
 }
 
@@ -277,7 +277,7 @@ line-height: 1.2rem;
 	padding: 0px 40px 40px 50px;
 }
 
-/***Fourth section END***/
+/***Swiper SECTION END***/
 
 /***Get In Touch***/
 

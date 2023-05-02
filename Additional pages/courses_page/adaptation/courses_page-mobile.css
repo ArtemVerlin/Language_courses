@@ -31,7 +31,7 @@
 	margin-top: 70px;
 }
 
-/***First section***/
+/***Background SECTION***/
 
 .first_section {
 	margin: 0px auto 0px auto;
@@ -67,14 +67,14 @@
 	object-position: 45% 50%;
 }
 
-.title {
+.first_section_title {
 	display: inline-block;
 	font-family: var(--main-title-text);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 4rem;
 	line-height: 7.8rem;
-	color: var(--main-white);
+	color: var(--main-background-color);
 	padding-top: 190px;
 	text-align: center;
 }
@@ -88,9 +88,9 @@
 	transition: all 0.2s;
 	margin-top: 40px;
 	font-size: 2rem;
-	border: 2px solid var(--main-aqua);
-	background: var(--main-aqua);
-	color: var(--main-white);
+	border: 2px solid var(--main-first-text-color);
+	background: var(--main-first-text-color);
+	color: var(--main-background-color);
 }
 
 .first_section__link:hover{
@@ -100,20 +100,20 @@
 	border: 2px solid var(--main-hover-button);
 }
 
-/***First section END***/
+/***Background SECTION END***/
 
-/***Second section***/
+/***Enrol for a course now***/
 
 .section__title {
 margin: 100px auto -35px;
 }
 
-.two_section__container {
+.enrol_sectoion_container {
 	height: 435px;
 	min-height:470px;
 }
 
-.two_section__text {
+.enrol_section_text {
 	margin-top: 15px;
 	padding: 35px 10px 0px 10px;
 }
@@ -140,5 +140,5 @@ margin: 100px auto -35px;
 	margin: 32px auto 0;
 }
 
-/***Second section END***/
+/***Enrol for a course now SECTION END***/
 }

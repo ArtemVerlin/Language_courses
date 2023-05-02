@@ -7,7 +7,7 @@
 .swiper-slide {
 	width:430px;
 	height:340px;
-	background: var(--main-white);
+	background: var(--main-background-color);
 	box-shadow: 0px 0px 20px rgba(226, 226, 226, 0.25);
 	border-radius: 10px;
 }
@@ -20,7 +20,7 @@
 	padding: 20px 10px 15px 20px;
 }
 .slider__name {
-	font-family: var(--main-common-text);
+	font-family: var(--main-casual-text);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.4rem;
@@ -31,11 +31,11 @@
 }
 .slider__text {
 	display: block;
-	font-family: var(--main-common-text);
+	font-family: var(--main-casual-text);
 	font-weight: 400;
 	font-size: 1.5rem;
 	line-height: 2.7rem;
-	color: var(--main-gray);
+	color: var(--main-img-background-color);
 	padding: 0px 40px 40px 50px;
 }
 
@@ -45,7 +45,7 @@
 
 .swiper-button-next::after,
 .swiper-button-prev::after{
-	color: var(--main-pink);
+	color: var(--main-second-text-color);
 	font-size: 2.2rem;
 	transition: all 0.2s;
 }
@@ -56,5 +56,5 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--main-pink);
+  background: var(--main-second-text-color);
 }

@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="./courses_style.css">
         <link rel="stylesheet" href="../../styles/modal_thank_you.css">
         <link rel="stylesheet" href="../../styles/modal_book_a-call.css">
-				<link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-laptop.css">
-				<link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-tablet.css">
-				<link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-mobile.css">
-				<link rel="stylesheet" href="../../styles/menu_burger.css">
+        <link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-laptop.css">
+        <link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-tablet.css">
+        <link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-mobile.css">
+        <link rel="stylesheet" href="../../styles/menu_burger.css">
         <link rel="stylesheet" href="../../styles/reset.css">
         <title>Our courses</title>
         <link rel="icon" href="data:;base64,=">
@@ -107,26 +107,25 @@
             
           
             <main class="main">
-                <!--Section 1-->
-                <section class="first_section center_section">
-                    <h1 class="title">
+                <!--Background SECTION-->
+                <section class="first_section container">
+                    <h1 class="first_section_title">
                         Explore Our Wide Range of<br>
                         Language Courses
                     </h1>
                     <img src="./side_img/first_section_background.svg" alt="bb" class="background_main">
-                        <a href="#" data-goto=".fourth_section" class="first_section__link">
+                        <a href="#" data-goto=".swiper_section" class="first_section__link">
                             Apply Now
                         </a>
                 </section>
-                <!--Section 1 END--> 
+                <!--Background SECTION END--> 
 
 
                 <!--What we offer SECTION--> 
-                <section class="third_section">
-                    <h2 class="third_section__title">
+                <section class="what_we_offer_section container">
+                    <h2 class="what_we_offer_section_title">
                         What we offer
                     </h2>
-                    <div class="project-grid">
                         <div class="project-grid__tile1">
                             <div class="project-grid__tile-img">
                                 <img src="./side_img/second section_first_img.svg" alt="project" class="project-img">
@@ -192,9 +191,15 @@
                                 Take your language skills to an advanced level
                             </h4>
                             <ul class=" project-text">
-                                <li>Improve your ability to communicate fluently</li>
-                                <li>Enhance your comprehension skills through more complex texts and listening exercises</li>
-                                <li>Develop your writing skills</li>
+                                <li>
+                                    Improve your ability to communicate fluently
+                                </li>
+                                <li>
+                                    Enhance your comprehension skills through more complex texts and listening exercises
+                                </li>
+                                <li>
+                                    Develop your writing skills
+                                </li>
                             </ul>
                             <button
                                 id=""
@@ -203,93 +208,87 @@
                                 >Try it now
                             </button>
                         </div>  
-                    </div>
                 </section>
                 <!--What we offer SECTION END-->
 
                 <!--Enrol for a course now SECTION-->
-                <section class="two_section">
-                    <div class="container">
-                        <div class="section__title-container">
-                            <h2 class="section__title">
-                                Enrol for a course now
-                            </h2>
-                        </div>
-                        <div class="two_section__container">
-                            <div class="two_section__text">
-                                <p>
-                                    Our language school offers a dynamic and immersive learning experience designed
-                                    to help you achieve fluency in your target language </p>
-                            </div>
-                            <form action="#" id="form" class="survey-form">
-                                <p class="survey-form__title">Enroll for a course now</p>
-                                <div class="input_box__section-one">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        class="form-control _name"
-                                        placeholder="Full name"
-                                    />
-                                </div>
-                                <div class="input_box__section-one">
-                                    <input
+                <section class="container">
+                    <h2 class="enrol_section_title">
+                        Enrol for a course now
+                    </h2>
+                    <div class="enrol_sectoion_container">
+                        <p class="enrol_section_text">
+                            Our language school offers a dynamic and immersive learning experience designed
+                            to help you achieve fluency in your target language
+                        </p>
+                        <form action="#" id="form" class="survey-form">
+                            <p class="survey-form__title">Enroll for a course now</p>
+                            <div class="input_box__section-one">
+                                <input
                                     type="text"
                                     name="name"
                                     id="name"
-                                    class="form-control _email"
-                                    placeholder="Email"
-                                    />
-                                </div>
-                                <div class="input_box__section-one">
-                                    <input
-                                    type="tel"
-                                    name="phone"
-                                    id="phone_sectionOne"
-                                    class="form-control _tel"
-                                    placeholder="+7(000)000-00-00"
-                                    maxlength="16"
-                                    />
-                                </div>
-                                <div class="input_box__section-one">
-                                    <select id="dropdown" name="role" class="form-control _select" placeholder="Select a course">
-                                    <option value="" disabled selected style='display:none;'>Select a course</option>
-                                    <option value="For beginners">For beginners</option>
-                                    <option value="For Pre-intermediate">For Pre-intermediate</option>
-                                    <option value="For intermediate">For intermediate</option>
-                                    <option value="Preparation for Exam">Preparation for Exam</option>
-                                    <option value="Consultation">Consultation</option>
-                                </optgroup> <!------------------------------------------------------------------------------   !!!ЧТО ЭТО!!!  -------------------------------->
-                                    </select>
-                                </div>
-                                <!--Modal "thank you + Apply button"-->
-                                <button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
-                                <div id="modal_sectionOne" class="modal_sectionOne">
-                                    <div class="modal-content_sectionOne">
-                                        <span class="close_sectionOne">&times;</span>
+                                    class="form-control _name"
+                                    placeholder="Full name"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="form-control _email"
+                                placeholder="Email"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <input
+                                type="tel"
+                                name="phone"
+                                id="phone_sectionOne"
+                                class="form-control _tel"
+                                placeholder="+7(000)000-00-00"
+                                maxlength="16"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <select id="dropdown" name="role" class="form-control _select" placeholder="Select a course">
+                                <option value="" disabled selected style='display:none;'>Select a course</option>
+                                <option value="For beginners">For beginners</option>
+                                <option value="For Pre-intermediate">For Pre-intermediate</option>
+                                <option value="For intermediate">For intermediate</option>
+                                <option value="Preparation for Exam">Preparation for Exam</option>
+                                <option value="Consultation">Consultation</option>
+                             
+                                </select>
+                            </div>
+                            <!--Modal "thank you + Apply button"-->
+                            <button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
+                            <div id="modal_sectionOne" class="modal_sectionOne">
+                                <div class="modal-content_sectionOne">
+                                    <span class="close_sectionOne">&times;</span>
+                                    <div class="modal-center_sectionOne">
                                         <div class="modal-center_sectionOne">
-                                            <div class="modal-center_sectionOne">
-                                                <h3 class="modal_header">
-                                                    Thank you!
-                                                </h3>
-                                                <p class="text_modal_section_one">
-                                                    We will contact you shortly
-                                                </p>
-                                            </div>
-                                        </div>	
-                                    </div>
+                                            <h3 class="modal_header">
+                                                Thank you!
+                                            </h3>
+                                            <p class="text_modal_section_one">
+                                                We will contact you shortly
+                                            </p>
+                                        </div>
+                                    </div>	
                                 </div>
-                                <!--Modal "thank you + Apply button" END-->
-                            </form>
-                        </div>
+                            </div>
+                            <!--Modal "thank you + Apply button" END-->
+                        </form>
                     </div>
-                </section>
+            </section>
                 <!--Enrol for a course now SECTION END-->
                 
             </main>
             <!--Footer-->
             <footer class="footer">
-                <div class="footer_content">
+                <div class="container">
                     <div class="upper_footer">
                         <div id="social_media">
                             <img class="footer_logo" src="../../img/logo.png" alt="green parrent logo">
@@ -335,7 +334,7 @@
                                     </li>
                                     <li>
                                         <p class="text intend_low">
-                                            <a href="">Courses</a>
+                                            <a href=""> Courses</a>
                                         </p>
                                     </li>
                                     <li>
@@ -347,9 +346,7 @@
                             </nav>
                     </div>
                     <div class="subscribe_form">
-                        <h3 class = "subscribe_text text">
-                            Subscribe to get latest updates
-                        </h3>
+                        <h3 class = "subscribe_text text">Subscribe to get latest updates</h3>
                         <form class ="subscribe">
                             <input 
                                 type="email"
@@ -363,10 +360,10 @@
                             </button>
                         </form>
                     </div>
-                </div>          
+                </div>             
             </footer>
-		    <!--Footer END-->   
-				<!--JS connect-->
+            <!--Footer END-->
+		<!--JS connect-->
 		<script src="../../Js/menu-burger.js"></script>
 		<script src="../../Js/popup-book-a-call.js"></script>
 		<!--JS connect END-->

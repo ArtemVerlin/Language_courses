@@ -31,7 +31,7 @@
 	margin-top: 70px;
 }
 
-/***First section***/
+/***Background SECTION***/
 
 .first_section {
 	display: block;
@@ -53,14 +53,14 @@
 	align-items: center;
 }
 
-.title{
+.first_section_title{
 	font-size: 4rem;
 }
 
 .discription{
 	padding: 15px 0px 15px;
 	font-size: 2rem;
-	color: var(--main-white);
+	color: var(--main-background-color);
 	display: inline-block;
 }
 
@@ -93,20 +93,20 @@
 	min-width: 60px;
 }
 
-/***First section END***/
+/***Background SECTION END***/
 
-/***Second section***/
+/***Enrol for a course now***/
 
 .section__title {
 margin: 100px auto -35px;
 }
 
-.two_section__container {
+.enrol_sectoion_container {
 	height: 435px;
 	min-height:400px;
 }
 
-.two_section__text {
+.enrol_section_text {
 	margin-top: 15px;
 	padding: 35px 10px 0px 10px;
 }
@@ -133,15 +133,15 @@ margin: 100px auto -35px;
 	margin: 32px auto 0;
 }
 
-/***Second section END***/
+/***Enrol for a course now SECTION END***/
 
 /***Third section***/
 
-.third_section{
+.what_we_offer_section{
 	margin-top: 70px; 
 }
 
-.third_section__title {
+.what_we_offer_section_title {
 	margin: 0px auto 30px;
 	font-weight: 700;
 	font-size: 3.2rem;
@@ -262,9 +262,9 @@ margin: 100px auto -35px;
 }
 /***Third section END***/
 
-/***Fourth section***/
+/***Swiper SECTION***/
 
-.fourth_section{
+.swiper_section{
 	margin-top: 40px;
 }
 
@@ -275,17 +275,17 @@ margin: 100px auto -35px;
   height: 100%;
 }
 
-.fourth_section__grid-templaetes{
+.swiper_section_grid_templ{
 	display: grid;
 	grid-template-columns: 1fr;
 }
 
-.fourth-section__title-container {
+.swiper_section_title_container {
 	min-width:300px;
 	margin-bottom: 20px;
 }
 
-.fourth-section__title {
+.swiper_section_title {
 	padding-top: 40px;
 }
 
@@ -314,9 +314,9 @@ margin: 100px auto -35px;
 	font-size: 1.7rem;
 }
 
-/***Fourth section END***/
+/***Swiper SECTION END***/
 
-/***Fifth section***/
+/***Get In Touch SECTION***/
 
 .five_section__container {
 	width: 100%;
@@ -346,7 +346,7 @@ margin: 100px auto -35px;
 	margin: 0px auto 0;
 }
 
-/***Fifth section END***/
+/***Get In Touch SECTION END***/
 
 /***Footer***/
 .footer{
@@ -371,7 +371,7 @@ margin: 100px auto -35px;
   
 
 .text{
-	color: var(--main-white);
+	color: var(--main-background-color);
 	font-size: 1.2rem;
 	margin: 0;
 }

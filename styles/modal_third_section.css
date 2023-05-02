@@ -19,7 +19,7 @@
 }
 
 .modal-content {
-	background-color: var(--main-white);
+	background-color: var(--main-background-color);
 	margin: auto;
 	padding: 20px;
 	border: none;

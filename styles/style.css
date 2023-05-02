@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* font-family: 'Poppins', sans-serif; */
+/* font-family: var(--main-casual-text);; */
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
-/* font-family: 'Alegreya Sans SC', sans-serif; */
+/* font-family: var(--main-title-text); */
 
 
 /***Default styles***/
@@ -97,7 +97,7 @@ html{
 
 
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--main-casual-text);;
 	font-weight: 400;
 	font-size: 24px;
 	background: #F2F2F2;
@@ -109,15 +109,15 @@ body._lock{
 }
 
 :root {
-	--main-aqua: #92dce5;
-	--main-pink: #f497da;
-	--main-gray: #333333;
-	--main-white: #FFFFFF;
+	--main-first-text-color: #92dce5;
+	--main-second-text-color: #f497da;
+	--main-img-background-color: #333333;
+	--main-background-color: #FFFFFF;
 	--main-hover-button: #00cc96;
-	--main-errors-red: #ff333f;
-	--main-sucsess-green: #4caf50cf;
+	--main-errors-color: #ff333f;
+	--main-sucsess-color: #4caf50cf;
 	--main-title-text: 'Alegreya Sans SC', sans-serif;
-	--main-common-text: 'Poppins', sans-serif;
+	--main-casual-text: 'Poppins', sans-serif;
 }
 
 
@@ -201,7 +201,7 @@ p{
 .callback__button{
 	display: flex;
 	align-items: center;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--main-casual-text);;
 	width: 100%;
 	font-weight: 600;
 	font-size: 1.7rem;
@@ -223,43 +223,61 @@ p{
 	margin-top: 100px;
 }
 
-/***First section***/
+/***Background SECTION***/
 
 .first_section {
-	display: block;
-	padding: 1px 0;
-	height: 650px;
+	margin: 0px auto 0px auto;
 	width: 100%;
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
-	background-image:linear-gradient(
-		115deg,
-		rgba(26, 26, 26, 0.7),
-		rgba(217, 217, 217, 0.2)
-	), url("../img/background-first-section.svg");
-	background-size: cover;
-	background-position:70% 30%;
-}
-/* @media (max-width: 1000px) {
-.first_section{
-	height: calc(150px + (450 - 200) * ((100vw - 320px) / (1000 - 320)));
-	}
-} */
 
-.first_section__content{
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.title {
+.background_main{
+	position:relative;
+	left: 0;
+	z-index: -1;
+
+	width: 100vw;
+
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.65),
+		rgba(255, 255, 255, 0));
+	background-size: cover;
+	background-position: center;
+	object-position: 70% 30%;
+}
+
+.gradient{
+	position:absolute;
+	left: 0;
+
+	width: 100vw;
+	background-image:linear-gradient(
+		115deg,
+		rgba(26, 26, 26, 0.7),
+		rgba(217, 217, 217, 0.2));
+}
+
+.gradient,
+.first_section,
+.background_main{
+	height: 650px;
+	min-height: 320px;
+}
+
+
+.first_section_title {
 	display: inline-block;
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: var(--main-title-text);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 4.5rem;
 	line-height: 7.8rem;
-	color: var(--main-white);
+	color: var(--main-background-color);
+	z-index: 2;
 }
 
 .discription{
@@ -267,6 +285,7 @@ p{
 }
 
 .first_section__links {
+	z-index: 2;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -275,11 +294,11 @@ p{
 	font-weight: 600;
 	font-size: 1.5rem;
 	letter-spacing: -0.02em;
-	color: var(--main-white);
+	color: var(--main-background-color);
 }
 
 .first_section__link-1{
-	border: 2px solid var(--main-white);
+	border: 2px solid var(--main-background-color);
 	border-radius: 60px;
 	padding: 6px 12px 6px 12px;
 	min-width: 130px;
@@ -294,9 +313,9 @@ p{
 }
 
 .first_section__link-2 {
-	border: 2px solid var(--main-aqua);
+	border: 2px solid var(--main-first-text-color);
 	border-radius: 60px;
-	background: var(--main-aqua);
+	background: var(--main-first-text-color);
 	padding: 6px 12px 6px 12px;
 	min-width: 120px;
 	transition: all 0.2s;
@@ -308,38 +327,33 @@ p{
 	border: 2px solid var(--main-hover-button);
 }
 
-/***First section END***/
+/***Background SECTION END***/
 
-/***Second section***/
+/***Enrol for a course now***/
 
-.section__title-container{
-	display: flex;
-	align-items: center;
+.enrol_section_title {
 	text-align: center;
-}
-
-.section__title {
 	margin: 100px auto 70px;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	color: var(--main-gray);
+	font-family: var(--main-title-text);
+	color: var(--main-img-background-color);
 	font-weight: 700;
 	font-size: 3.2rem;
 	line-height: 2.2rem;
 	letter-spacing: -0.02em;
 }
 
-.two_section__container {
+.enrol_sectoion_container {
 	display: flex;
 	flex-direction: row;
-	background-color: var(--main-white);
+	background-color: var(--main-background-color);
 	border-radius:  60px;
 	height: 450px;
-	min-height:550px;
+	min-height:612px;
 	width: 100%;
 }
 
-.two_section__text {
-	font-family: 'Poppins', sans-serif;
+.enrol_section_text{
+	font-family: var(--main-casual-text);
 	font-size: 2.2rem;
 	line-height: 3.7rem;
 	color: #333333;
@@ -351,7 +365,7 @@ p{
 	display: flex;
 	font-weight: 700;
 	font-size: 2.2rem;
-	line-height: 1.2rem;
+	line-height: 1.4rem;
 	letter-spacing: -0.02em;
 	margin-bottom: 36px;
 }
@@ -362,19 +376,19 @@ p{
 }
 
 .success_button{
-	background-color: var(--main-sucsess-green);
+	background-color: var(--main-sucsess-color);
 	margin: 0px auto 0;
 }
 
 .error_button{
-	background-color: var(--main-errors-red);
+	background-color: var(--main-errors-color);
 	margin: 0px auto 0;
 
 }
 
 input::placeholder,
 textarea::placeholder{
-	font-size: 2rem;
+	font-size: 2.2rem;
 	color: #A3A3A4;
 }
 
@@ -387,14 +401,10 @@ textarea::placeholder{
 	appearance: none;
 }
 
-#dropdown{
-	color: #000;
-}
-
 .form-control {
 	display: block;
 	margin-bottom: 20px;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	padding: 10px 0 14px 10px;
 	color: #000;
 	background-color: #F2F2F2;
@@ -406,7 +416,7 @@ textarea::placeholder{
 
 .form-control:focus{
 	border-color: #f497da; 
-  outline: 0;
+  	outline: 0;
 }
 
 .success .form-control{
@@ -414,15 +424,16 @@ textarea::placeholder{
 }
 
 .error .form-control{
-	border-color: var(--main-errors-red);
+	border-color: var(--main-errors-color);
 	margin-bottom: 0px;
 	outline: 0;
 }
 
+
 .error-text{
-	font-size: 1.5rem;
-	color: var(--main-errors-red);
-	line-height: 1.5rem;
+	font-size: 1.7rem;
+	color: var(--main-errors-color);
+	line-height: 1.7rem;
 	padding: 5px 0px 10px 0px;
 }
 
@@ -434,33 +445,33 @@ textarea::placeholder{
 	max-width: 240px;
 	min-width: 50px;
 	height: 45px;
-	background: var(--main-pink);
+	background: var(--main-second-text-color);
 	border-radius: 60px;
 	margin: 36px auto 0;
 }
 
 .submit-button__text{
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--main-casual-text);
 	font-weight: 600;
-	font-size: 2rem;
-	line-height: 1.2rem;
+	font-size: 2.2rem;
+	line-height: 1.4rem;
 	letter-spacing: -0.02em;
 	color: #F2F2F2;
 }
 
-/***Second section END***/
+/***Enrol for a course now SECTION END***/
 
 /***What we offer SECTION***/
 
-.third_section{
+.what_we_offer_section{
 	margin-top: 150px;
 }
 
-.third_section__title {
+.what_we_offer_section_title {
 	margin: 0px auto 70px;
 	text-align: center;
 	font-family: var(--main-title-text);
-	color: var(--main-gray);
+	color: var(--main-img-background-color);
 	font-weight: 700;
 	font-size: 3.3rem;
 	letter-spacing: -0.02em;
@@ -497,14 +508,14 @@ textarea::placeholder{
 	font-weight: 900;
 	font-size: 3.3rem;
 	line-height: 3.5rem;
-	color: var(--main-pink);
+	color: var(--main-second-text-color);
 	width: 100%;
 	height: 100%;
 }
 
 .grid-2-title,
 .grid-2-title-reverse{
-	font-family: var(--main-common-text);
+	font-family: var(--main-casual-text);
 	font-weight: 600;
 	font-size: 2.4rem;
 	line-height: 4.5rem;
@@ -515,7 +526,7 @@ textarea::placeholder{
 
 .project-text,
 .project-text-reverse{
-	font-family: var(--main-common-text);
+	font-family: var(--main-casual-text);
 	font-weight: 400;
 	font-size: 1.7rem;
 	line-height: 3.8rem;
@@ -534,8 +545,8 @@ textarea::placeholder{
 
 .grid_button,
 .grid_button-reverse {
-	background-color: var(--main-aqua);
-	font-family: var(--main-common-text);
+	background-color: var(--main-first-text-color);
+	font-family: var(--main-casual-text);
 	font-size: 1.4rem;
 	font-weight: 600;
 	padding: 15px 38px;
@@ -546,106 +557,44 @@ textarea::placeholder{
 }
 /***What we offer SECTION END***/
 
-/***Fourth section***/
+/***Swiper SECTION***/
 
-.fourth_section{
+.swiper_section{
 	margin-top: 170px;
 }
 
-.fourth_section__grid-templaetes{
+.swiper_section_grid_templ{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 }
 
-.fourth-section__title-container {
+.swiper_section_title_container {
 	min-width:300px;
 }
 
-.fourth-section__title {
-	font-family: 'Alegreya Sans SC', sans-serif;
+.swiper_section_title {
+	font-family: var(--main-title-text);
 	font-weight: 700;
 	font-size: 4rem;
 	line-height: 7.6rem;
 	text-transform: capitalize;
 	padding-top: 40px;
-	hyphens: manual;
 }
 
-.pink {
-	color: var(--main-pink);
+.main_color {
+	color: var(--main-second-text-color);
 }
 
-.swiper {
-	width: 100%;
-	max-width: 530px;
-	min-width: 350px;
-}
+/***Swiper SECTION END***/
 
-.swiper-slide {
-	width:530px;
-	height:300px;
-	background: var(--main-white);
-	box-shadow: 0px 0px 20px rgba(226, 226, 226, 0.25);
-	border-radius: 10px;
-}
-
-.slider__foto-name {
-	display: flex;
-}
-
-.slider__img {
-	padding: 20px 10px 15px 20px;
-}
-.slider__name {
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 1.4rem;
-	line-height: 3rem;
-	color: #000000;
-	padding: 40px 0px 0px 10px;
-
-}
-.slider__text {
-	display: block;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 1.7rem;
-	line-height: 2.9rem;
-	color: var(--main-gray);
-	padding: 10px 50px 25px 50px;
-}
-
-/* .swiper-pagination {
-	
-} */
-
-.swiper-button-next::after,
-.swiper-button-prev::after{
-	color: var(--main-pink);
-	font-size: 2.2rem;
-	transition: all 0.2s;
-}
-
-.swiper-button-prev:hover:after,
-.swiper-button-next:hover::after{
-	font-size: 3.8rem;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--main-pink);
-}
-
-/***Fourth section END***/
-
-/***Fifth section***/
+/***Get In Touch SECTION***/
 
 .five_section__container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--main-white);
+	background-color: var(--main-background-color);
 	border-radius: 60px;
 	width: 100%;
 	height: 500px;
@@ -673,7 +622,7 @@ textarea::placeholder{
   padding: 0 20px;
 	border: none;
   border-radius: 60px;
-  background-color: var(--main-aqua);
+  background-color: var(--main-first-text-color);
 	color: #474350;
 	font-size: 1.5rem;
 	font-weight: 600;
@@ -685,14 +634,14 @@ textarea::placeholder{
 
 .error_button{
 	margin: 0px auto 0;
-	background-color: var(--main-errors-red);
-	color: var(--main-white);
+	background-color: var(--main-errors-color);
+	color: var(--main-background-color);
 }
 
 .success_button{
 	margin: 0px auto 0;
-	background-color: var(--main-sucsess-green);
-	color: var(--main-white);
+	background-color: var(--main-sucsess-color);
+	color: var(--main-background-color);
 }
 
 textarea {
@@ -717,7 +666,7 @@ textarea {
 	}
 }
 
-/***Fifth section END***/
+/***Get In Touch SECTION END***/
 
 /***Footer***/
 .footer{
@@ -743,7 +692,7 @@ textarea {
 }
 
 .text{
-	color: var(--main-white);
+	color: var(--main-background-color);
 	font-size: 1.2rem;
 	margin: 0;
 }
@@ -761,7 +710,7 @@ textarea {
 }
 
 .footer_text{
-	color: var(--main-white);
+	color: var(--main-background-color);
 	font-weight: 900;
 	font-size: 2rem;
 	margin-top: 20px;
@@ -830,7 +779,7 @@ textarea {
 	padding: 0 20px;
 	border: none;
 	border-radius: 60px;
-	background-color: var(--main-aqua);
+	background-color: var(--main-first-text-color);
 	color: #474350;
 	font-size: 1.6rem;
 	cursor: pointer;
