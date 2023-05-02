@@ -68,7 +68,7 @@ p{
 	justify-content: space-between;
 }
 
-.header__logo,
+.header_logo,
 .header__logo-img{
 	height: 70px;
 	width: 70px;
@@ -205,8 +205,13 @@ p{
 
 /***What we offer SECTION***/
 
+
+.what_we_offer_section{
+	margin-top: 120px;
+}
+
 .what_we_offer_title{
-    margin: 120px auto 50px;
+    margin: 0px auto 50px;
 	text-align: center;
 	font-family: var(--main-title-text);
 	color: var(--main-img-background-color);
