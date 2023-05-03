@@ -64,8 +64,9 @@
 	display: grid;
 	align-items: center;
 	justify-items: center;
-	grid-template-columns: 0.3fr 1fr;
-	grid-template-rows: 0.1fr, 0.5fr;
+	grid-template-columns: 0.25fr 1fr;
+	grid-template-rows: 0.2fr, 0.4fr;
+	grid-column-gap: 10px;
 }
 
 .specialist_name{
@@ -79,9 +80,9 @@
 }
 
 .profile_photo{
-	border-radius: 60px;
+	border-radius: 80px;
 	width: 100%;
-	height: 100%;
+	height: 80%;
 	grid-column: 1 / 2;
 	grid-row: 1 / 3;
 }
