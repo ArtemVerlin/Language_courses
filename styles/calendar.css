@@ -24,7 +24,7 @@
 }
 
 .arrows_calendar:hover {
-    background-color: var(--main-second-text-color);
+    background-color: var(--main-pink);
 	cursor: pointer;
 }
 
@@ -39,7 +39,7 @@
 }
 .selected-date{
     text-align: center;
-    border-bottom: 2px solid var(--main-second-text-color);
+    border-bottom: 2px solid var(--main-pink);
 }
 .day { 
     display: flex;
@@ -48,5 +48,5 @@
     color: #313131;
 }
 .selected_day {
-    background-color: var(--main-first-text-color);
+    background-color: var(--main-aqua);
 }
