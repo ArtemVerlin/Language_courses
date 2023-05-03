@@ -22,27 +22,6 @@
  * 980px / 16px = 61.25em
 */
 
-/* 1200px / 16px = 75em */
-/* @media (min-width: 75em) {
-  html {
-    font-size: 80%;
-  }
-} */
-
-/* 980px / 16px = 61.25em */
-/* @media (max-width: 56.25em) {
-  html {
-    font-size: 50%;
-  }
-} */
-
-/* 460px / 16px = 28.75em */
-/* @media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-} */
-
 html{
 	/* Set font size for easy rem calculations
    * default document font size = 16px, 1rem = 16px, 100% = 16px
@@ -50,43 +29,6 @@ html{
   */
   font-size: 62.5%;
 }
-
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
-
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
-
-/* 1200px / 16px = 75em */
-/* @media (min-width: 75em) {
-  html {
-    font-size: 80%;
-  }
-} */
-
-/* 980px / 16px = 61.25em */
-/* @media (max-width: 56.25em) {
-  html {
-    font-size: 50%;
-  }
-} */
-
-/* 460px / 16px = 28.75em */
-/* @media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-} */
-
 
 body{
 	font-family: var(--main-casual-text);
@@ -97,7 +39,6 @@ body{
 
 body._lock{
 	overflow: hidden;
-
 }
 
 :root {
@@ -425,7 +366,6 @@ textarea::placeholder{
 	outline: 0;
 }
 
-
 .error-text{
 	font-size: 1.7rem;
 	color: var(--main-errors-color);
@@ -630,8 +570,6 @@ textarea::placeholder{
 	border-radius: 60px;
 	margin: 36px auto 0;
 }
-
-
 
 .error_button{
 	margin: 0px auto 0;

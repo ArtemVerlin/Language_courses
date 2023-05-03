@@ -28,7 +28,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: var(--main-padding-section);
 }
 .popup__content {
 	display: flex;

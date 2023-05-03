@@ -86,10 +86,6 @@
 	grid-row: 1 / 3;
 }
 
-.send_buttom:hover{
-    background-color: #00cc96;
-}
-
 .close {
 	color: #aaa;
 	float: right;

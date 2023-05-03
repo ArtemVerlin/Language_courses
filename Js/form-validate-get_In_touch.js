@@ -1,20 +1,16 @@
 //Отправка формы после успешной валидации
-	document.getElementById('form').addEventListener('submit', function(event) {
+document.getElementById('form_section_five').addEventListener('submit', function(event) {
 	event.preventDefault()
 	
 	if (validation(this) === true) {
-	//Переменная с выбором всех инпутов
-		const formElements = document.querySelectorAll('.input_box__section-one');
-	//Добавляет класс успешно к инпутам формы
+		event.target.reset();
+		//Добавляет класс успешно к инпутам формы
+		const formElements = document.querySelectorAll('.input_box__section-five');
   	formElements.forEach((element) => {
     element.classList.add('success');
   });
-
-		//Выбор Модального окна
         const modal = document.getElementById('modal_sectionOne');
-		//Привязка к кнопке отправки
-        const buttonError = document.getElementById('open_modal_sectionOne');
-		//Привязка к крестику закрытия
+        const buttonError = document.getElementById('open_modal_sectionFive');
         const closeButton = document.querySelector('.close_sectionOne');
             modal.style.display = "block";
             document.body.classList.add("modal-open");
@@ -59,14 +55,13 @@
             }
           }
 	}else{
-	//Привязка к кнопке отправки
-		const buttonError = document.getElementById('open_modal_sectionOne');
-	//Если валидация провалилась то присваиваем класс ошибки
-		if((validation(this) === false)) {
-			buttonError.classList.add('error_button');
+		//Привязка к кнопке отправки
+			const buttonError = document.getElementById('open_modal_sectionFive');
+		//Если валидация провалилась то присваиваем класс ошибки
+			if((validation(this) === false)) {
+				buttonError.classList.add('error_button');
+				buttonError.classList.remove('success_button')
+			}
 		}
-	}
 
 });
-
-
