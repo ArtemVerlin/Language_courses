@@ -6,7 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./exams.css">
         <link rel="stylesheet" href="../../styles/modal_thank_you.css">
+				<link rel="stylesheet" href="../../styles/menu_burger.css">
         <link rel="stylesheet" href="../../styles/modal_book_a-call.css">
+				<link rel="stylesheet" href="./adaptation/exams_page-laptop.css">
+				<link rel="stylesheet" href="./adaptation/exams_page-tablet.css">
+				<link rel="stylesheet" href="./adaptation/exams_page-mobile.css">
         <link rel="stylesheet" href="../../styles/reset.css">
         <link rel="stylesheet" href="../../Swiper/package/swiper-bundle.min.css">
         <link rel="stylesheet" href="../../styles/swiper.css">
@@ -66,7 +70,7 @@
                                             type="text"
                                             name="name"
                                             id="name"
-                                            class="form-control"
+                                            class="form-control _name"
                                             placeholder="Full name"
                                         />
                                         </div>
@@ -75,12 +79,30 @@
                                             type="tel"
                                             name="phone"
                                             id="phone"
-                                            class="form-control"
+                                            class="form-control _tel"
                                             placeholder="+7(000)000-00-00"
                                             maxlength="16"
                                             />
                                         </div>
                                         <!--Modal "Book a call"-->
+
+																				<!--Modal "Callback" + modal "thank you"-->
+
+																					<button id="open_modal_call-a-back" type="submit" class="submit-button submit-button__text">Apply Now</button>
+																					<div id="modal_call-a-back" class="modal_sectionOne">
+																						<div class="modal-content_sectionOne">
+																							<span class="close_sectionOne">&times;</span>
+																							<div class="modal-center_sectionOne">
+																								<div class="modal-center_sectionOne">
+																									<h3 class="modal_header">Thank you!</h3>
+																									<p class="text_modal_section_one">We will contact you shortly</p>
+																								</div>
+																							</div>	
+																						</div>
+																					</div>
+																				</button>
+
+																					<!--Modal "Callback" + modal "thank you" END-->
                                 </form>
                             </div>
                         </div>
@@ -377,6 +399,11 @@
             </footer>
             <!--Footer END-->
             <script src="../../Swiper/package/swiper-bundle.min.js"></script>
+						<script src="../../Js/menu-burger.js"></script>
+						<script src="../../Js/popup-book-a-call.js"></script>
+						<script src="../../Js/validation-form.js"></script>
+						<script src="../../Js/form-validate-book-a-call.js"></script>
+						<script src="../../Js/form-validate-enrol_for_a_course_now.js"></script>
             <script src="../../Js/main.js"></script>
     </body>
 </html>

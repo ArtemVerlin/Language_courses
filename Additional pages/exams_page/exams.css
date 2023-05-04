@@ -31,6 +31,9 @@ body{
 	background: #F2F2F2;
 }
 
+body._lock{
+	overflow: hidden;
+}
 
 .container{
 	max-width: var(--main-max-width);
@@ -65,7 +68,11 @@ p{
 
 .header_container {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
+	max-width:var(--main-max-width);
+	margin: 0 auto 0;
+	height: 100%;
 }
 
 .header_logo,
@@ -395,17 +402,6 @@ p{
 	width: 50%;
 }
 
-.success_button{
-	background-color: var(--main-sucsess-color);
-	margin: 0px auto 0;
-}
-
-.error_button{
-	background-color: var(--main-errors-color);
-	margin: 0px auto 0;
-
-}
-
 input::placeholder,
 textarea::placeholder{
 	font-size: 2.2rem;
@@ -431,12 +427,12 @@ textarea::placeholder{
 	border: 1.5px solid #F2F2F2;
 	width: 100%;
 	border-radius: 5px;
-	transition: all 0.3s;
+	transition: border-color 0.2s;
 }
 
 .form-control:focus{
 	border-color: #f497da; 
-  	outline: 0;
+  outline: 0;
 }
 
 .success .form-control{
@@ -444,15 +440,14 @@ textarea::placeholder{
 }
 
 .error .form-control{
-	border-color: var(--main-errors-color);
+	border-color: var(--main-errors);
 	margin-bottom: 0px;
 	outline: 0;
 }
 
-
 .error-text{
 	font-size: 1.7rem;
-	color: var(--main-errors-color);
+	color: var(--main-errors);
 	line-height: 1.7rem;
 	padding: 5px 0px 10px 0px;
 }
@@ -477,6 +472,16 @@ textarea::placeholder{
 	line-height: 1.4rem;
 	letter-spacing: -0.02em;
 	color: #F2F2F2;
+}
+
+.success_button{
+	background-color: var(--main-sucsess);
+	margin: 0px auto 0;
+}
+
+.error_button{
+	background-color: var(--main-errors);
+	margin: 0px auto 0;
 }
 /***Enrol for a course now SECTION END***/
 
@@ -562,15 +567,15 @@ textarea::placeholder{
   }
   
   .subscribe{
-      position: relative;
-      width: 100%;
-      display: flex;
+    position: relative;
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-      max-width: 550px;
-      min-width: 50px;
+    max-width: 550px;
+    min-width: 50px;
   }
   
   .subscribe_email {
