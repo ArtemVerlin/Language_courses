@@ -18,7 +18,7 @@ function validation(form) {
 			if (input.classList.contains('_name')) {
 				removeError(input)
 				if (!nameTest(input)) {
-					createError(input, 'Имя введено не верно')
+					createError(input, 'Please use a valid name')
 				result = false
 				}else{
 					sucsess(input);
@@ -28,7 +28,7 @@ function validation(form) {
 		if (input.classList.contains('_email')) {
 			removeError(input)
 			if (emailTest(input)) {
-				createError(input, 'Введен не верный email')
+				createError(input, 'Please use a valid email')
 			result = false
 			}else{
 				sucsess(input);
@@ -38,7 +38,7 @@ function validation(form) {
 		if (input.classList.contains('_tel')) {
 			removeError(input)
 			if (length !== 11 & length !== 16) {
-				createError(input, 'Номер введен не верно')
+				createError(input, 'Please use a valid phone number')
 			result = false
 			}else{
 				sucsess(input);
@@ -48,7 +48,7 @@ function validation(form) {
 			if (input.classList.contains('_select')) {
 				removeError(input)
 				if ((input.value == '')) {
-					createError(input, 'Выберите курс')
+					createError(input, 'Please complete this required field')
 				result = false
 				}else{
 					sucsess(input);
