@@ -252,13 +252,13 @@
 							
 							<!--Modal + calendar-->
 
-							<a href="#" id="open-modal" class="grid_button">
+							<a href="#" onclick="return false" id="open-modal" class="grid_button">
 								Book a meeting
 							</a>
 							<div id="modal" class="modal">
 								<div class="modal-content">
 									<h2 class="modal_title">
-										Select date and time
+										Select date
 									</h2>
 									<div class="modal-wrapper">
 									<!--<span class="close">&times;</span>-->
@@ -278,35 +278,36 @@
 											</div>
 										</article>
 										<form id="calendar-form" class="calendar-block">
-										<!--Calendar-->
-										<div class="date-picker">
-											<div class="selected-date"></div>
-											<div class="dates active">
-												<div class="month">
-													<div class="arrows_calendar prev-mth">&lt;</div>
-													<div class="mth"></div>
-													<div class="arrows_calendar next-mth">&gt;</div>
+											<!--Calendar-->
+											<div class="date-picker">
+												<div class="selected-date"></div>
+												<div class="dates active">
+													<div class="month">
+														<div class="arrows_calendar prev-mth">&lt;</div>
+														<div class="mth"></div>
+														<div class="arrows_calendar next-mth">&gt;</div>
+													</div>
+													<div class="days"></div>
 												</div>
-												<div class="days"></div>
-											</div>
-										</div>	
-										<!--Calendar END-->
-										<input 
-											type="email"
-											class="form-control"
-											placeholder="Email"
-											>
-										<input
-											type="text"
-											class="form-control"
-											placeholder="Full name"
-											>
-										<button
-											id=""
-											type="submit"
-											class="send_buttom send_button-text">
-											Send
-										</button>
+											</div>	
+											<!--Calendar END-->
+											<div class="input_box_calendar"><input 
+												type="email"
+												class="form-control _email"
+												placeholder="Email"
+												></div>
+											<div class="input_box_calendar">
+											<input
+												type="text"
+												class="form-control _name"
+												placeholder="Full name"
+												></div>
+											<button
+												id="submit_calendar"
+												type="submit"
+												class="send_buttom send_button-text">
+												Send
+											</button>
 										</form>
 									</div>  
 								</div>
@@ -541,6 +542,7 @@
 								<!--Modal "thank you + Apply button" END-->
 		<!--JS connect-->
 		<script src="./Js/menu-burger.js"></script>
+		<script src="./Js/form-validate-calendar.js"></script>
 		<script src="./Js/smooft_scroll.js"></script>
 		<script src="./Js/popup-book-a-call.js"></script>
 		<script src="./Swiper/package/swiper-bundle.min.js"></script>

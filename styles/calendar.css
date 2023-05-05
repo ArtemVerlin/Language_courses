@@ -1,9 +1,16 @@
+.calendar-block{
+	margin-left: 30px;
+}
+
+
 /*.date-picker{
     
 }*/
 
 .dates {
     background-color: var(--main-background-color);
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .month {
@@ -11,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #EEE;
+    cursor: auto;
 }
 
 .arrows_calendar {
