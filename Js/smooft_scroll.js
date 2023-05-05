@@ -1,5 +1,5 @@
 /************************************Плавная прокрутка******************************************/
-const menuLinks = document.querySelectorAll('.first_section__link[data-goto]');
+const menuLinks = document.querySelectorAll('.smooft_scroll[data-goto]');
 if (menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener("click", onMenuLinkClick);
@@ -9,7 +9,7 @@ if (menuLinks.length > 0) {
 		const menuLink = e.target;
 		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
-			const gotoBlockBValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset - document.querySelector('header').offsetHeight;
+			const gotoBlockBValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset - document.querySelector('header').offsetHeight - document.querySelector('header').offsetHeight;
 
 			// if (iconMenu.classList.contains('_active')) {
 			// 	document.body.classList.remove('_lock');
