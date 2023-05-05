@@ -80,17 +80,7 @@
                                         <!-- Modal "Book a call" -->
                                         <!-- Modal "thank you" -->
                                         <button id="open_modal_call-a-back" type="submit" class="submit-button submit-button__text">Apply Now</button>
-                                            <div id="modal_call-a-back" class="modal_sectionOne">
-                                                <div class="modal-content_sectionOne">
-                                                    <span class="close_sectionOne">&times;</span>
-                                                    <div class="modal-center_sectionOne">
-                                                        <div class="modal-center_sectionOne">
-                                                            <h3 class="modal_header">Thank you!</h3>
-                                                            <p class="text_modal_section_one">We will contact you shortly</p>
-                                                        </div>
-                                                    </div>	
-                                                </div>
-                                            </div>
+                                            <div id="modal_call-a-back" class="modal_sectionOne"></div>
                                         </button>
                                         <!-- Modal "thank you" END -->
                                 </form>
@@ -120,7 +110,7 @@
 
                             />
                         </div>
-                        <div class="input_box__section-five">
+                        <div class="input_box_main_section">
 
                             <input
                                 type="email"
@@ -131,7 +121,7 @@
 
                             />
                         </div>
-                        <div class="input_box__section-five">
+                        <div class="input_box_main_section">
                             <input
                                 type="text"
                                 name="number"
@@ -260,12 +250,31 @@
             </div>             
         </footer>
         <!--Footer END-->
-        
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-        <script src="../../Js/map.js"></script>
-        <script src="../../Js/popup-book-a-call.js"></script>
-        <script src="../../Js/form-validate-get_In_touch.js"></script>
-        <script src="../../Js/validation-form.js"></script>
-        <script src="../../Js/menu-burger.js"></script>
+        <!--Modal "thank you + Apply button"-->
+						<button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
+						<div id="modal_sectionOne" class="modal_sectionOne">
+							<div class="modal-content_sectionOne">
+								<span class="close_sectionOne">&times;</span>
+								<div class="modal-center_sectionOne">
+									<div class="modal-center_sectionOne">
+										<h3 class="modal_header">
+											Thank you!
+										</h3>
+										<p class="text_modal_section_one">
+											We will contact you shortly
+										</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!--Modal "thank you + Apply button" END-->
+		<!--JS connect-->
+		<script src="../../Js/menu-burger.js"></script>
+		<script src="../../Js/popup-book-a-call.js"></script>
+		<script src="../../Js/validation-form.js"></script>
+		<script src="../../Js/form-validate-book-a-call.js"></script>
+		<script src="../../Js/form-validate-enrol_for_a_course_now.js"></script>
+        <script src="./form-validate-contact-us.js"></script>
+		<!--JS connect END-->
     </body>
 </html>

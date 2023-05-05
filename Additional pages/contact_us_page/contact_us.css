@@ -43,7 +43,6 @@ body._lock{
 
 p{
 	line-height: 1.5;
-    margin-top: 10px;
 }
 
 .form-control {
@@ -69,25 +68,25 @@ p{
 }
 
 .error .form-control{
-	border-color: var(--main-errors-color);
+	border-color: var(--main-errors);
 	margin-bottom: 0px;
 	outline: 0;
 }
 
 .error-text{
 	font-size: 1.7rem;
-	color: var(--main-errors-color);
+	color: var(--main-errors);
 	line-height: 1.7rem;
 	padding: 5px 0px 10px 0px;
 }
 
 .success_button{
-	background-color: var(--main-sucsess-color);
+	background-color: var(--main-sucsess);
 	margin: 0px auto 0;
 }
 
 .error_button{
-	background-color: var(--main-errors-color);
+	background-color: var(--main-errors);
 	margin: 0px auto 0;
 
 }
@@ -127,6 +126,28 @@ p{
 	display: flex;
 	align-items: center;
 	text-align: center;
+}
+
+.submit-button {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	width: 100%;
+	max-width: 240px;
+	min-width: 50px;
+	height: 45px;
+	background: var(--main-second-text-color);
+	border-radius: 60px;
+	margin: 36px auto 0;
+}
+
+.submit-button__text{
+	font-family: var(--main-casual-text);
+	font-weight: 600;
+	font-size: 2.2rem;
+	line-height: 1.4rem;
+	letter-spacing: -0.02em;
+	color: #F2F2F2;
 }
 
 .menu__list {
@@ -239,13 +260,13 @@ p{
 
 .error_button{
 	margin: 0px auto 0;
-	background-color: var(--main-errors-color);
+	background-color: var(--main-errors);
 	color: var(--main-background-color);
 }
 
 .success_button{
 	margin: 0px auto 0;
-	background-color: var(--main-sucsess-color);
+	background-color: var(--main-sucsess);
 	color: var(--main-background-color);
 }
 

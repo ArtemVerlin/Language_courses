@@ -47,8 +47,8 @@ body._lock{
 	--main-img-background-color: #333333;
 	--main-background-color: #FFFFFF;
 	--main-hover-button: #00cc96;
-	--main-errors-color: #ff333f;
-	--main-sucsess-color: #4caf50cf;
+	--main-errors: #ff333f;
+	--main-sucsess: #4caf50cf;
 	--main-title-text: 'Alegreya Sans SC', sans-serif;
 	--main-casual-text: 'Poppins', sans-serif;
 }
@@ -313,12 +313,12 @@ p{
 }
 
 .success_button{
-	background-color: var(--main-sucsess-color);
+	background-color: var(--main-sucsess);
 	margin: 0px auto 0;
 }
 
 .error_button{
-	background-color: var(--main-errors-color);
+	background-color: var(--main-errors);
 	margin: 0px auto 0;
 
 }
@@ -361,14 +361,14 @@ textarea::placeholder{
 }
 
 .error .form-control{
-	border-color: var(--main-errors-color);
+	border-color: var(--main-errors);
 	margin-bottom: 0px;
 	outline: 0;
 }
 
 .error-text{
 	font-size: 1.7rem;
-	color: var(--main-errors-color);
+	color: var(--main-errors);
 	line-height: 1.7rem;
 	padding: 5px 0px 10px 0px;
 }
@@ -573,13 +573,13 @@ textarea::placeholder{
 
 .error_button{
 	margin: 0px auto 0;
-	background-color: var(--main-errors-color);
+	background-color: var(--main-errors);
 	color: var(--main-background-color);
 }
 
 .success_button{
 	margin: 0px auto 0;
-	background-color: var(--main-sucsess-color);
+	background-color: var(--main-sucsess);
 	color: var(--main-background-color);
 }
 
