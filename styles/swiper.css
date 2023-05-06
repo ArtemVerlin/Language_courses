@@ -36,16 +36,18 @@
 	font-family: var(--main-casual-text);
 	font-weight: 400;
 	font-size: 1.5rem;
-	line-height: 2.7rem;
+	line-height: 3rem;
+	letter-spacing: -0.01em;
 	color: var(--main-img-background-color);
 	padding: 0px 40px 40px 50px;
+	letter-spacing: normal;
 }
 
 /* 700px / 16px = 43.75em */
 @media (max-width: 43.75em) {
 	.slider__text {
 		font-size: 1.8rem;
-		line-height: 2.7rem;
+		line-height: 3rem;
 		padding: 0px 40px 40px 50px;
 	}
 }
@@ -61,7 +63,7 @@
 
 	.slider__text {
 		font-size: 2rem;
-		line-height: 2.7rem;
+		line-height: 3rem;
 		padding: 0px 40px 40px 50px;
 	}
 }

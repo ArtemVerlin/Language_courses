@@ -3,9 +3,9 @@
 }
 
 
-/*.date-picker{
-    
-}*/
+.date-picker{
+  font-size: 24px;
+}
 
 .dates {
     background-color: var(--main-background-color);
