@@ -89,8 +89,8 @@
 		display: block;
 	}
 
-	.menu__list > li {
-		color: white;
+	.menu__list > li > a {
+		color: #fff;
 		margin: 0px 0px 70px 0px;
 	}
 	.menu__link {
