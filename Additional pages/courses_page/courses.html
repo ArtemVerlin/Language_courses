@@ -7,22 +7,26 @@
         <link rel="stylesheet" href="./courses_style.css">
         <link rel="stylesheet" href="../../styles/modal_thank_you.css">
         <link rel="stylesheet" href="../../styles/modal_book_a-call.css">
+        <link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-laptop.css">
+        <link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-tablet.css">
+        <link rel="stylesheet" href="../../Additional pages/courses_page/adaptation/courses_page-mobile.css">
+        <link rel="stylesheet" href="../../styles/menu_burger.css">
         <link rel="stylesheet" href="../../styles/reset.css">
         <title>Our courses</title>
         <link rel="icon" href="data:;base64,=">
     </head>
     <body>
-
         <!--Header-->
         <header id="header_main" class="header lock-padding">
             <div class="container header_container">
-                <a><img src="../../img/logo.png" alt="Language school logo" class="header_logo"></a>
+                <a class="header__logo" href="../../index.html"><img src="../../img/logo.png" alt="Language school logo" class="header__logo-img"></a>
                 <nav class="header__nav">
                     <ul class="menu__list">
-                        <li><a class="menu__link"  href="#">Home</a></li>
-                        <li><a class="menu__link" href="#">Courses</a></li>
-                        <li><a class="menu__link" href="#">Exams</a></li>
-                        <li><a class="menu__link" href="#">About us</a></li>
+                        <li><a class="menu__link"  href="../../index.html">Home</a></li>
+                        <li><a class="menu__link" href="../courses_page/courses.html">Courses</a></li>
+                        <li><a class="menu__link" href="../exams_page/exams.html">Exams</a></li>
+                        <li><a class="menu__link" href="../about_us_page/about_us.html">About us</a></li>
+												<li><a class="menu__link" href="../../Additional pages/contact_us_page/contact_us.html">Contact Us</a></li>
                     </ul>
                 </nav>
                 <div class="callback">
@@ -32,16 +36,16 @@
                     </a>
                 </div>
 
-        <!--Burger-->
+                <!--Burger-->
                 <div class="menu__icon">
                     <span></span>
                 </div>
-        <!--Burger-->
+                <!--Burger-->
 
-        <!--Modal "Book a call"-->
+                <!--Modal "Book a call"-->
                 <div id="popup-book-a-call" class="popup">
                     <div class="popup__body">
-                         <div class="container">
+                        <div class="container">
                             <div class="popup__content">
                                 <a href="#header" class="close-popup popup__close">
                                     <span class="popup__close">&times;</span>
@@ -63,7 +67,7 @@
                                             type="text"
                                             name="name"
                                             id="name"
-                                            class="form-control"
+                                            class="form-control _name"
                                             placeholder="Full name"
                                         />
                                         </div>
@@ -72,131 +76,287 @@
                                             type="tel"
                                             name="phone"
                                             id="phone"
-                                            class="form-control"
-                                            placeholder="+7(000)000-00-00"
+                                            class="form-control _tel"
+                                            placeholder="+3(000)000-00-00"
                                             maxlength="16"
                                             />
                                         </div>
-                    <!--Modal "Book a call"-->
-                                        <!--Modal "thank you"
+                                        <!-- Modal "Book a call" -->
                                         <button id="open_modal_call-a-back" type="submit" class="submit-button submit-button__text">Apply Now</button>
-                                            <div id="modal_call-a-back" class="modal_sectionOne">
-                                                <div class="modal-content_sectionOne">
-                                                    <span class="close_sectionOne">&times;</span>
-                                                    <div class="modal-center_sectionOne">
-                                                        <div class="modal-center_sectionOne">
-                                                            <h3 class="modal_header">Thank you!</h3>
-                                                            <p class="text_modal_section_one">We will contact you shortly</p>
-                                                        </div>
-                                                    </div>	
-                                                </div>
-                                            </div>
-                                        </button>
-                                        Modal "thank you" END-->
-                                    </form>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-            </header>
+                </div>
+            </div>
+        </header>
             <!--Header END-->
             
-           
+          
             <main class="main">
-                <!--Section 1-->
-                <section class="first_section center_section">
-                        <h1 class="title">Discover the world<br> through language</h1>
-                        <img src="./side_img/first_section_background.svg" alt="bb" class="background_main">
-                        <div class="first_section__links">
-                            <a href="#" data-goto=".third_section" class="first_section__link-1 first_section__link">
-                                Our Courses
-                            </a>
-                            <a href="#" data-goto=".fourth_section" class="first_section__link-2 first_section__link">
-                                Book a meeting
-                            </a>
-                        </div>
+                <!--Background SECTION-->
+                <section class="first_section container">
+                    <h1 class="first_section_title">
+                        Explore Our Wide Range of<br>
+                        Language Courses
+                    </h1>
+                    <img src="./side_img/first_section_background.svg" alt="bb" class="background_main">
+                        <a href="#" data-goto=".enrol_section_title" class="first_section__link smooft_scroll">
+                            Apply Now
+                        </a>
                 </section>
-                <!--Section 1 END--> 
-                <!--Section 3--> 
-                <section class="third_section">
-                    <div class="container">
+                <!--Background SECTION END--> 
 
-                        <div class="section__title-container">
-                            <h2 class="third_section__title">What we offer</h2>
+
+                <!--What we offer SECTION--> 
+                <section class="what_we_offer_section container">
+                    <h2 class="what_we_offer_section_title">
+                        What we offer
+                    </h2>
+                    <div class="project-grid__tile1">
+                        <div class="project-grid__tile-img">
+                            <img src="./side_img/second section_first_img.svg" alt="project" class="project-img">
                         </div>
-
-                        <div class="project-grid">
-
-                            <div class="project-grid__tile1">
-                                <div class="project-grid__tile-img">
-
-                                    <img src="./side_img/second section_first_img.svg" alt="project" class="project-img">
-
-                                </div>
-                                <!-- <div class="project-grid__tile-text"> -->
-                                    <h3 class="grid-1-title">Online Courses</h3>
-                                    <h4 class="grid-2-title">Our Course are the best among others</h4>
-                                    <p class=" project-text">With expert teachers, engaging curriculum, 
-                                        and a supportive community, 
-                                        we empower you to unlock new opportunities 
-                                        and connect with people and cultures around the globe.</p>
-                                        <a href="#" class="grid_button">Explore our courses</a>
-                                <!-- </div> -->
-                            </div>
-
-                            <div class="project-grid__tile2">
-                                <div class="project-grid__tile-img-reverse">
-
-                                    <img src="./side_img/second section_second_img.svg" alt="project" class="project-img">
-
-                                </div>
-                                    <h3 class="grid-1-title-reverse">
-                                        Preparation for the exams
-                                    </h3>
-                                    <h4 class="grid-2-title-reverse">
-                                        Lets get ready for your exams together!
-                                    </h4>
-                                    <p class="project-text-reverse">
-                                        More than 500 students have successfully passed their exams with us! 
-                                        Join us and embark on a journey of language and cultural discovery today.
-                                    </p>
-                                    <a href="#" class="grid_button-reverse">
-                                        Explore exams
-                                    </a>
-                            </div>
-
-                            <div class="project-grid__tile3">
-                                <div class="project-grid__tile-img">
-
-                                    <img src="./side_img/second section_third_img.svg" alt="project" class="project-img">
-
-                                </div>
-                                    <h3 class="grid-1-title">
-                                        University consultation
-                                    </h3>
-                                    <h4 class="grid-2-title">
-                                        Lets choose the best university for you!
-                                    </h4>
-                                    <p class=" project-text">
-                                        Our experienced consultants work with you to understand your academic goals, preferences,
-                                        and requirements, and then provide you with personalized recommendations on universities.
-                                    </p>
-                                                <button
-                                                    id=""
-                                                    type="submit"
-                                                    class="grid_button"
-                                                    >
-                                                    Send
-                                                </button>
-                                                </form>
-                                            </div>  
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
+                        <h3 class="grid-1-title">
+                            Courses for beginners
+                        </h3>
+                        <h4 class="grid-2-title">
+                            Learn a new language from scratch.
+                        </h4>
+                            <ul class=" project-text">
+                                <li>
+                                    WLearn the basics of the language
+                                </li>
+                                <li>
+                                    Build confidence in your language skills
+                                </li>
+                                <li>
+                                    Enjoy a structured approach to language learning
+                                </li>
+                                <li>
+                                    Gain cultural immersion experience
+                                </li>
+                            </ul>
+                        <a href="#" data-goto=".enrol_section_title" class="grid_button smooft_scroll">
+                            Join now
+                        </a>
                     </div>
+                    <div class="project-grid__tile2">
+                        <div class="project-grid__tile-img-reverse">
+                            <img src="./side_img/second section_second_img.svg" alt="project" class="project-img">
+                        </div>
+                        <h3 class="grid-1-title-reverse">
+                            Courses for pre-intermediate
+                        </h3>
+                        <h4 class="grid-2-title-reverse">
+                            If you want to take your language skills to the next level
+                        </h4>
+                        <ul class="project-text-reverse">
+                            <li>
+                                Expand your vocabulary and improve your grammar and pronunciation
+                            </li>
+                            <li>
+                                Develop your ability to communicate in more complex situations
+                            </li>
+                            <li>
+                                Improve your listening and speaking skills
+                            </li>
+                        </ul>
+                        <a href="#" data-goto=".enrol_section_title" class="grid_button-reverse smooft_scroll">
+                            Apply Now
+                        </a>
+                    </div>
+
+                    <div class="project-grid__tile3">
+                        <div class="project-grid__tile-img">
+                            <img src="./side_img/second section_third_img.svg" alt="project" class="project-img">
+                        </div>
+                        <h3 class="grid-1-title">
+                            Courses for intermediate
+                        </h3>
+                        <h4 class="grid-2-title">
+                            Take your language skills to an advanced level
+                        </h4>
+                        <ul class=" project-text">
+                            <li>
+                                Improve your ability to communicate fluently
+                            </li>
+                            <li>
+                                Enhance your comprehension skills through more complex texts and listening exercises
+                            </li>
+                            <li>
+                                Develop your writing skills
+                            </li>
+                        </ul>
+                        <button
+                            id=""
+                            type="submit"
+                            class="grid_button smooft_scroll"
+														data-goto=".enrol_section_title"
+                            >Try it now
+                        </button>
+                    </div>  
                 </section>
-                <!--Section 3 END-->
-            </main>   
+                <!--What we offer SECTION END-->
+
+                <!--Enrol for a course now SECTION-->
+                <section class="container">
+                    <h2 class="enrol_section_title">
+                        Enrol for a course now
+                    </h2>
+                    <div class="enrol_sectoion_container">
+                        <p class="enrol_section_text">
+                            Our language school offers a dynamic and immersive learning experience designed
+                            to help you achieve fluency in your target language
+                        </p>
+                        <form action="#" id="form" class="survey-form">
+                            <p class="survey-form__title">Enroll for a course now</p>
+                            <div class="input_box__section-one">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="form-control _name"
+                                    placeholder="Full name"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="form-control _email"
+                                placeholder="Email"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <input
+                                type="tel"
+                                name="phone"
+                                id="phone_sectionOne"
+                                class="form-control _tel"
+                                placeholder="+7(000)000-00-00"
+                                maxlength="16"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <select id="dropdown" name="role" class="form-control _select" placeholder="Select a course">
+                                <option value="" disabled selected style='display:none;'>Select a course</option>
+                                <option value="For beginners">For beginners</option>
+                                <option value="For Pre-intermediate">For Pre-intermediate</option>
+                                <option value="For intermediate">For intermediate</option>
+                                <option value="Preparation for Exam">Preparation for Exam</option>
+                                <option value="Consultation">Consultation</option>
+                                </select>
+                            </div>
+														<button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
+                        </form>
+                    </div>
+            </section>
+                <!--Enrol for a course now SECTION END-->
+                
+            </main>
+            <!--Footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="upper_footer">
+                        <div id="social_media">
+                            <img class="footer_logo" src="../../img/logo.png" alt="green parrent logo">
+                            <h3 class="footer_text">Discover the world<br>Through language</h3>
+                        </div>
+                        <ul class="logos">
+                            <li class="icon">
+                                <a href="#"><img  src="../../img/logos/facebook.png" alt="facebook logo"/></a>
+                            </li>
+                            <li class="icon">
+                                <a href="#"><img  src="../../img/logos/twitter.png" alt="twitter logo"></a>
+                            </li>
+                            <li class="icon">
+                                <a href="#"><img  src="../../img/logos/instagramm.png" alt="instagram logo"></a>
+                            </li>
+                            <li class="icon">
+                                <a href="#"><img  src="../../img/logos/linkedIN.png" alt="linkedIn logo"></a>
+                            </li>
+                        </ul>
+                            <div class="company_info left">
+                                <div>
+                                    <p class="text bold">Address:</p>
+                                    <p class="text">Street number city 40100</p>
+                                </div>
+                                <div>
+                                    <p class="text bold intend">Phone:</p>
+                                    <p class="text">+12345678910</p>
+                                </div>
+                                <div>
+                                    <p class="text bold intend">Email:</p>
+                                    <p class="text">contact@language.com</p>
+                                </div>
+                            </div>
+                            <nav class="nav_bar_footer left">
+                                <ul>
+                                    <li>
+                                        <p class="text bold">Company</p>
+                                    </li>
+                                    <li>
+                                        <p class="text intend">
+                                            <a href="../about_us_page/about_us.html">About Us</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text intend_low">
+                                            <a href="../courses_page/courses.html"> Courses</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text intend_low">
+                                            <a href="../exams_page/exams.html">Exams</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </nav>
+                    </div>
+                    <div class="subscribe_form">
+                        <h3 class = "subscribe_text text">Subscribe to get latest updates</h3>
+                        <form class ="subscribe">
+                            <input 
+                                type="email"
+                                class="subscribe_email" 
+                                name="email_footer"
+                                placeholder="Your email address"
+                                required>
+                            <button 
+                                type="submit" 
+                                class="subscribe_bottom">Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>             
+            </footer>
+            <!--Footer END-->
+						<!--Modal "thank you + Apply button"-->
+						<div id="modal_sectionOne" class="modal_sectionOne">
+								<div class="modal-content_sectionOne">
+										<span class="close_sectionOne">&times;</span>
+										<div class="modal-center_sectionOne">
+												<div class="modal-center_sectionOne">
+														<h3 class="modal_header">
+																Thank you!
+														</h3>
+														<p class="text_modal_section_one">
+																We will contact you shortly
+														</p>
+												</div>
+										</div>	
+								</div>
+						</div>
+						<!--Modal "thank you + Apply button" END-->
+		<!--JS connect-->
+		<script src="../../Js/menu-burger.js"></script>
+		<script src="../../Js/popup-book-a-call.js"></script>
+		<script src="../../Js/validation-form.js"></script>
+		<script src="../../Js/form-validate-book-a-call.js"></script>
+		<script src="../../Js/form-validate-enrol_for_a_course_now.js"></script>
+		<script src="../../Js/smooft_scroll.js"></script>
+		<!--JS connect END-->
     </body>
 </html>

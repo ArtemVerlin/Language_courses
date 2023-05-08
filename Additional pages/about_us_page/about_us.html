@@ -4,12 +4,322 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/Additional pages styles/about_us.css">
+        <link rel="stylesheet" href="./about_us.css">
+        <link rel="stylesheet" href="../../styles/modal_thank_you.css">
+        <link rel="stylesheet" href="../../styles/modal_book_a-call.css">
+        <link rel="stylesheet" href="../../Additional pages/about_us_page/adaptation/about_us_page-laptop.css">
+        <link rel="stylesheet" href="../../Additional pages/about_us_page/adaptation/about_us_page-tablet.css">
+        <link rel="stylesheet" href="../../Additional pages/about_us_page/adaptation/about_us_page-mobile.css">
+        <link rel="stylesheet" href="../../styles/menu_burger.css">
+				<link rel="stylesheet" href="../../styles/modal_third_section.css">
+        <link rel="stylesheet" href="../../styles/reset.css">
         <title>About us</title>
         <link rel="icon" href="data:;base64,=">
     </head>
     <body>
+      <!--Header-->
+		<header id="header test" class="header lock-padding">
+			<div class="container header_container">
 
+				<a href="../../index.html" class="header_logo">
+					<img src="../../img/logo.png" alt="Language_School_logo" class="header__logo-img">
+				</a>
+				
+				
+				<nav class="header__nav">
+					<ul class="menu__list">
+						<li><a class="menu__link" href="../../index.html">Home</a></li>
+						<li><a class="menu__link" href="../courses_page/courses.html">Courses</a></li>
+						<li><a class="menu__link" href="../exams_page/exams.html">Exams</a></li>
+						<li><a class="menu__link" href="./about_us.html">About us</a></li>
+						<li><a class="menu__link" href="../../Additional pages/contact_us_page/contact_us.html">Contact Us</a></li>
+					</ul>
+				</nav>
 
+				<div class="callback">
+						<a href="#popup-book-a-call" class="callback__button popup-link">
+						<img class="callback-icon" src="../../img/callback-icon.svg" alt="">
+							<p class="callback__button-text">Book a call</p>
+						</a>
+				</div>
+
+				<div class="menu__icon">
+					<span></span>
+				</div>
+
+				<div id="popup-book-a-call" class="popup">
+					<div class="popup__body">
+						<div class="container">
+							<div class="popup__content">
+								<a href="#header" class="close-popup popup__close">
+									<span class="popup__close">&times;</span>
+								</a>
+								<div class="popup-book-a-call__text-container">
+									<div class="popup__tiitle">Direct Call</div>
+									<div class="popup__text">
+										<p>
+											Fill out the form  and one of our language experts will be in touch with you shortly to discuss
+											how we can help you achieve your language goals.
+										</p>
+									</div>
+								</div>
+								<form action="#" id="form__call-a-back" class="survey-form__book-a-call">
+									<div class="input_box__book-a-call">
+										<input
+											type="text"
+											name="name"
+											id="name"
+											class="form-control _name"
+											placeholder="Full name"
+										/>
+									</div>
+									<div class="input_box__book-a-call">
+										<input
+										type="tel"
+										name="phone"
+										id="phone_book-a-call"
+										class="form-control _tel"
+										placeholder="+3(000)000-00-00"
+										maxlength="16"
+										/>
+									</div>
+									<button id="open_modal_call-a-back" type="submit" class="submit-button submit-button__text">Apply Now</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		</header>
+		<!--Header END-->
+
+		<main class="main">
+
+			<!--Background SECTION-->
+			<section class="first_section container">
+				<h1 class="first_section_title">
+					Meet our experts
+				</h1>
+				<div class="gradient">
+					<picture>
+						<img src="./side_img/first_section_background.svg" alt="bb" class="background_main">
+					</picture>
+				</div>
+			</section>
+			<!--Background SECTION END-->
+
+            <!--TEXT SECTION-->
+            <section class="text_section container">
+                <article class="text_section_text">
+                    <p>
+                        Our mission is to provide top-quality language education to students of all ages and backgrounds.
+                        We believe that learning a new language is not only a valuable skill, but also an enriching and rewarding experience that can broaden your horizons and open up new opportunities.
+                    </p>                           
+                    <p>
+                        At the end of our exam preparation course, students will have the skills and knowledge they need to confidently take on their language proficiency exam and achieve their desired score.
+                        We understand the importance of these exams for students' academic and professional futures, and we are committed to helping students achieve their goals.
+                    </article>
+            </section>
+            <!--TEXT SECTION END-->
+
+            <!--Our professionals SECTION-->
+
+            <section class="our_professionals container">
+                <div class="our_professionals_grid">
+                    <h3 class="professionals_grid_right_column sub_title">
+                        Anna Smith
+                    </h3>
+                    <p class="T1 professionals_grid_right_column our_professionals_text">Anna has been teaching  for over 15 years and is known for her excellent communication skills and ability to connect with her students.
+                        She is patient and always willing to go the extra mile to help her students improve their language skills.
+                    </p>
+                    <img src="../../img/our_specialists/anna_smith.svg" class="our_professionals_img anna_smith_img">
+                    <h3 class=" professionals_grid_right_column sub_title">
+                        Sarah Patel
+                    </h3>
+                    <p class="T2 professionals_grid_right_column our_professionals_text">Sarah is an experienced and versatile teacher who has a talent for making language learning fun and engaging.
+                        She uses a variety of methods to keep her students motivated and challenged, including role-playing and multimedia resources.
+                    </p>
+                    <img src="../../img/our_specialists/sarah_patel.svg" class="our_professionals_img sarah_patel_img">
+                    <h3 class="professionals_grid_right_column sub_title">
+                        Ethan Davis
+                    </h3>
+                    <p class="T3 professionals_grid_right_column our_professionals_text">Ethan is a highly respected teacher who specializes in academic writing and literature.
+                        He has a passion for helping his students improve their critical thinking skills and develop their own writing styles. 
+                    </p>
+                    <img src="../../img/our_specialists/ethan_davis.svg" class="our_professionals_img ethan_davis_img">
+                    <h3 class="professionals_grid_right_column sub_title">
+                        Lucas Garcia
+                    </h3>
+                    <p class="T4 professionals_grid_right_column our_professionals_text">Lucas is a creative and innovative teacher who is always looking for new ways to engage his students.
+                        He uses a variety of multimedia resources and interactive activities to keep her classes lively and engaging.
+                    </p>
+                    <img src="../../img/our_specialists/lucas_garcia.svg" class="our_professionals_img lucas_garcia_img">
+                </div>
+            </section>
+            <!--Our professionals SECTION END-->
+
+            <!--Get In Touch SECTION-->
+			<section class="get_In_touch container">
+                <h2 class="get_In_touch_title">Get In Touch</h2>
+            <div class="get_In_touch__container">
+                <img
+                class="get_In_touch_img"
+                src="../../img/project-tile-fifth.svg"
+                alt="group of people sitting close to the table and smiling">
+                <form class="survey_section_five" id="form_section_five" action="#">
+                    <div class="input_box__section-five">
+
+                        <input
+                            type="text"
+                            name="name"
+                            id="name_fifth_section"
+                            class="form-control _name"
+                            placeholder="Name"
+
+                        />
+                    </div>
+                    <div class="input_box__section-five">
+
+                        <input
+                            type="email"
+                            name="email_fifth_section"
+                            id="email_fifth_section"
+                            class="form-control _email"
+                            placeholder="Email"
+
+                        />
+                    </div>
+                    <div class="input_box__section-five">
+                        <input
+                            type="text"
+                            name="number"
+                            id="phone-section-five"
+                            class="form-control _tel"
+                            placeholder="+3(000)000-00-00"
+                            maxlength="16"
+                        />
+                    </div>
+                    <div class="input_box__section-five">
+
+                        <textarea
+                            name="massage_fifth_section"
+                            id="massage_fifth_section"
+                            class="form-control"
+
+                            placeholder="Input Text"
+                        ></textarea>
+                    </div>
+
+                        <button
+                            id="open_modal_sectionFive"
+                            type="submit"
+                            class="send_buttom send_button-text"
+                            >Send
+                        </button>
+                </form>
+            </div>
+    </section>
+    <!--Get In Touch SECTION END-->
+
+            <!--Footer-->
+		<footer class="footer">
+			<div class="container">
+				<div class="upper_footer">
+					<div id="social_media">
+						<img class="footer_logo" src="../../img/logo.png" alt="green parrent logo">
+						<h3 class="footer_text">Discover the world<br>Through language</h3>
+					</div>
+					<ul class="logos">
+						<li class="icon">
+							<a href="#"><img  src="../../img/logos/facebook.png" alt="facebook logo"/></a>
+						</li>
+						<li class="icon">
+							<a href="#"><img  src="../../img/logos/twitter.png" alt="twitter logo"></a>
+						</li>
+						<li class="icon">
+							<a href="#"><img  src="../../img/logos/instagramm.png" alt="instagram logo"></a>
+						</li>
+						<li class="icon">
+							<a href="#"><img  src="../../img/logos/linkedIN.png" alt="linkedIn logo"></a>
+						</li>
+					</ul>
+						<div class="company_info left">
+							<div>
+								<p class="text bold">Address:</p>
+								<p class="text">Street number city 40100</p>
+							</div>
+							<div>
+								<p class="text bold intend">Phone:</p>
+								<p class="text">+12345678910</p>
+							</div>
+							<div>
+								<p class="text bold intend">Email:</p>
+								<p class="text">contact@language.com</p>
+							</div>
+						</div>
+						<nav class="nav_bar_footer left">
+							<ul>
+								<li>
+									<p class="text bold">Company</p>
+								</li>
+								<li>
+									<p class="text intend">
+										<a href="./about_us.html">About Us</a>
+									</p>
+								</li>
+								<li>
+									<p class="text intend_low">
+										<a href="../courses_page/courses.html"> Courses</a>
+									</p>
+								</li>
+								<li>
+									<p class="text intend_low">
+										<a href="../exams_page/exams.html">Exams</a>
+									</p>
+								</li>
+							</ul>
+						</nav>
+				</div>
+				<div class="subscribe_form">
+					<h3 class = "subscribe_text text">Subscribe to get latest updates</h3>
+					<form class ="subscribe">
+						<input 
+							type="email"
+							class="subscribe_email" 
+							name="email_footer"
+							placeholder="Your email address"
+							required>
+						<button 
+							type="submit" 
+							class="subscribe_bottom">Subscribe
+						</button>
+					</form>
+				</div>
+			</div>             
+		</footer>
+		<!--Footer END-->
+		<!--Modal "thank you + Apply button"-->
+		<div id="modal_sectionOne" class="modal_sectionOne">
+			<div class="modal-content_sectionOne">
+				<span class="close_sectionOne">&times;</span>
+				<div class="modal-center_sectionOne">
+					<div class="modal-center_sectionOne">
+						<h3 class="modal_header">
+							Thank you!
+						</h3>
+						<p class="text_modal_section_one">
+							We will contact you shortly
+						</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!--Modal "thank you + Apply button" END-->
+		<!--JS connect-->
+		<script src="../../Js/menu-burger.js"></script>
+		<script src="../../Js/popup-book-a-call.js"></script>
+		<script src="../../Js/validation-form.js"></script>
+		<script src="../../Js/form-validate-book-a-call.js"></script>
+		<script src="../../Js/form-validate-get_In_touch.js"></script>
+		<!--JS connect END-->
     </body>
 </html>

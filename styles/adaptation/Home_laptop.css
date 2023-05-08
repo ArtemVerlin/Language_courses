@@ -1,0 +1,12 @@
+/* 1220px / 16px = 77.5em */
+@media (max-width: 77.5em) {
+	html {
+		font-size: calc(8px + (10 - 8) * ((100vw - 960px) / (1220 - 960)));
+	}
+
+	.first_section,
+	.background_main,
+	.gradient{
+		height: calc(450px + (650 - 450) * ((100vw - 960px) / (1220 - 960)));
+		}
+}

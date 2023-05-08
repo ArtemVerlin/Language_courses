@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* font-family: 'Poppins', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-/* font-family: 'Roboto', sans-serif; */
+/* font-family: var(--main-casual-text); */
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+/* font-family: var(--main-title-text); */
+
 
 /***Default styles***/
 
-html{
-	/* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
-  font-size: 62.5%;
-}
-
 /* A few media query to set some font sizes at different screen sizes.
  * This helps automate a bit of responsiveness.
  * The trick is to use the rem unit for size values, margin and padding.
@@ -28,27 +22,6 @@ html{
  * 980px / 16px = 61.25em
 */
 
-/* 1200px / 16px = 75em */
-/* @media (min-width: 75em) {
-  html {
-    font-size: 80%;
-  }
-} */
-
-/* 980px / 16px = 61.25em */
-/* @media (max-width: 56.25em) {
-  html {
-    font-size: 50%;
-  }
-} */
-
-/* 460px / 16px = 28.75em */
-/* @media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-} */
-
 html{
 	/* Set font size for easy rem calculations
    * default document font size = 16px, 1rem = 16px, 100% = 16px
@@ -56,65 +29,28 @@ html{
   */
   font-size: 62.5%;
 }
-
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
-
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
-
-/* 1200px / 16px = 75em */
-/* @media (min-width: 75em) {
-  html {
-    font-size: 80%;
-  }
-} */
-
-/* 980px / 16px = 61.25em */
-/* @media (max-width: 56.25em) {
-  html {
-    font-size: 50%;
-  }
-} */
-
-/* 460px / 16px = 28.75em */
-/* @media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-} */
-
 
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--main-casual-text);
 	font-weight: 400;
 	font-size: 24px;
-
 	background: #F2F2F2;
 }
 
 body._lock{
 	overflow: hidden;
-
 }
 
 :root {
-	--main-aqua: #92dce5;
-	--main-pink: #f497da;
-	--main-gray: #333333;
-	--main-white: #FFFFFF;
+	--main-first-text-color: #92dce5;
+	--main-second-text-color: #f497da;
+	--main-img-background-color: #333333;
+	--main-background-color: #FFFFFF;
 	--main-hover-button: #00cc96;
-	--main-errors-red: #ff333f;
-	--main-sucsess-green: #4caf50cf;
+	--main-errors: #ff333f;
+	--main-sucsess: #4caf50cf;
+	--main-title-text: 'Alegreya Sans SC', sans-serif;
+	--main-casual-text: 'Poppins', sans-serif;
 }
 
 
@@ -149,10 +85,10 @@ p{
 	justify-content: space-between;
 }
 
-
-.header__logo-img {
-	max-width: 100px;
-	max-height: 100px;
+.header__logo,
+.header__logo-img{
+	width: 70px;
+	height: 70px;
 }
 
 .header__nav{
@@ -167,15 +103,12 @@ p{
 
 .menu__link {
 	font-weight: 600;
-
-	font-size: 1.2rem;
-	line-height: 1.5rem;
-
+	font-size: 1.9rem;
+	line-height: 1.6rem;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	letter-spacing: -0.02em;
-
 	color: rgba(0, 0, 0, 0.7);
 	transition: all 0.3s;
 }
@@ -201,10 +134,10 @@ p{
 .callback__button{
 	display: flex;
 	align-items: center;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--main-casual-text);
 	width: 100%;
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: 1.7rem;
 	line-height: 4rem;
 	color: rgba(0, 0, 0, 1);
 	border: 1px solid yellow;
@@ -220,133 +153,146 @@ p{
 /***Header END***/
 
 .main {
-	margin-top: 109px;
-
+	margin-top: 100px;
 }
 
-/***First section***/
+/***Background SECTION***/
 
 .first_section {
-	display: block;
-	padding: 1px 0;
-
-	height: 450px;
-	/* max-height: 55vh;
-	min-height: 10vh; */
-
+	margin: 0px auto 0px auto;
 	width: 100%;
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
-	background-image:linear-gradient(
-		115deg,
-		rgba(26, 26, 26, 0.7),
-		rgba(217, 217, 217, 0.2)
 
-	), url("/img/background-first-section.svg");
-	background-size: cover;
-	background-position: center;
-}
-@media (max-width: 1000px) {
-.first_section{
-	height: calc(150px + (450 - 200) * ((100vw - 320px) / (1000 - 320)));
-	}
-}
-
-.first_section__content{
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 }
 
-.title {
+.background_main{
+	position:relative;
+	left: 0;
+	z-index: -1;
+
+	width: 100vw;
+
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.65),
+		rgba(255, 255, 255, 0));
+	background-size: cover;
+	background-position: center;
+	object-position: 70% 30%;
+}
+
+.gradient{
+	position:absolute;
+	left: 0;
+
+	width: 100%;
+	background-image:linear-gradient(
+		115deg,
+		rgba(26, 26, 26, 0.7),
+		rgba(217, 217, 217, 0.2));
+}
+
+.gradient,
+.first_section,
+.background_main{
+	height: 650px;
+	min-height: 320px;
+}
+
+
+.first_section_title {
 	display: inline-block;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--main-title-text);
 	font-style: normal;
 	font-weight: 700;
-	font-size: 3rem;
-	line-height: 3.8rem;
-	color: var(--main-white);
+	font-size: 4.5rem;
+	line-height: 7.8rem;
+	color: var(--main-background-color);
+	z-index: 2;
+}
+
+.discription{
+	display: none;
 }
 
 .first_section__links {
+	z-index: 2;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	gap: 20px;
 	margin-top: 40px;
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	letter-spacing: -0.02em;
-	color: var(--main-white);
+	color: var(--main-background-color);
 }
 
 .first_section__link-1{
-	border: 2px solid var(--main-white);
+	border: 2px solid var(--main-background-color);
 	border-radius: 60px;
-	padding: 6px 12px 6px 12px;
+	padding: 9px 12px 9px 12px;
 	min-width: 130px;
 	transition: all 0.2s;
 }
 
 .first_section__link-1:hover{
 	color: #000;
-	min-width: 60px;
 	background-color: #00cc96;
 	border: 2px solid var(--main-hover-button);
 
 }
 
 .first_section__link-2 {
-	border: 2px solid var(--main-aqua);
+	border: 2px solid var(--main-first-text-color);
 	border-radius: 60px;
-	background: var(--main-aqua);
-	padding: 6px 12px 6px 12px;
+	background: var(--main-first-text-color);
+	padding: 9px 12px 9px 12px;
 	min-width: 120px;
 	transition: all 0.2s;
 }
 
 .first_section__link-2:hover{
 	color: #000;
-	min-width: 60px;
 	background-color: #00cc96;
 	border: 2px solid var(--main-hover-button);
 }
 
-/***First section END***/
+/***Background SECTION END***/
 
-/***Second section***/
+/***Enrol for a course now***/
 
-.section__title-container{
-	display: flex;
-	align-items: center;
-	text-align: center;
+.enrol_section{
+	margin-top: 150px;
 }
 
-.section__title {
-	margin: 100px auto 70px;
-	font-family: 'Roboto', sans-serif;
-	color: var(--main-gray);
+.enrol_section_title {
+	text-align: center;
+	margin-bottom: 70px;
+	font-family: var(--main-title-text);
+	color: var(--main-img-background-color);
 	font-weight: 700;
-	font-size: 3rem;
-	line-height: 2rem;
+	font-size: 3.2rem;
+	line-height: 2.2rem;
 	letter-spacing: -0.02em;
 }
 
-.two_section__container {
+.enrol_sectoion_container {
 	display: flex;
 	flex-direction: row;
-	background-color: var(--main-white);
+	background-color: var(--main-background-color);
 	border-radius:  60px;
 	height: 450px;
 	min-height:612px;
 	width: 100%;
 }
 
-.two_section__text {
-	font-family: 'Poppins', sans-serif;
-	font-size: 2rem;
-	line-height: 3.5rem;
+.enrol_section_text{
+	font-family: var(--main-casual-text);
+	font-size: 2.2rem;
+	line-height: 3.7rem;
 	color: #333333;
 	padding: 90px 0px 0px 62px;
 	width: 50%;
@@ -355,8 +301,8 @@ p{
 .survey-form__title{
 	display: flex;
 	font-weight: 700;
-	font-size: 2rem;
-	line-height: 1.2rem;
+	font-size: 2.2rem;
+	line-height: 1.4rem;
 	letter-spacing: -0.02em;
 	margin-bottom: 36px;
 }
@@ -367,19 +313,19 @@ p{
 }
 
 .success_button{
-	background-color: var(--main-sucsess-green);
+	background-color: var(--main-sucsess);
 	margin: 0px auto 0;
 }
 
 .error_button{
-	background-color: var(--main-errors-red);
+	background-color: var(--main-errors);
 	margin: 0px auto 0;
 
 }
 
 input::placeholder,
 textarea::placeholder{
-	font-size: 2rem;
+	font-size: 2.2rem;
 	color: #A3A3A4;
 }
 
@@ -392,21 +338,17 @@ textarea::placeholder{
 	appearance: none;
 }
 
-
-#dropdown{
-	color: #A3A3A4;
-}
 .form-control {
 	display: block;
 	margin-bottom: 20px;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	padding: 10px 0 14px 10px;
 	color: #000;
 	background-color: #F2F2F2;
 	border: 1.5px solid #F2F2F2;
 	width: 100%;
 	border-radius: 5px;
-	transition: all 0.3s;
+	transition: border-color 0.2s;
 }
 
 .form-control:focus{
@@ -419,16 +361,15 @@ textarea::placeholder{
 }
 
 .error .form-control{
-	border-color: var(--main-errors-red);
+	border-color: var(--main-errors);
 	margin-bottom: 0px;
 	outline: 0;
 }
 
-
 .error-text{
-	font-size: 1.5rem;
-	color: var(--main-errors-red);
-	line-height: 1.5rem;
+	font-size: 1.7rem;
+	color: var(--main-errors);
+	line-height: 1.7rem;
 	padding: 5px 0px 10px 0px;
 }
 
@@ -440,59 +381,40 @@ textarea::placeholder{
 	max-width: 240px;
 	min-width: 50px;
 	height: 45px;
-	background: var(--main-pink);
+	background: var(--main-second-text-color);
 	border-radius: 60px;
 	margin: 36px auto 0;
 }
 
 .submit-button__text{
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--main-casual-text);
 	font-weight: 600;
-	font-size: 2rem;
-	line-height: 1.2rem;
+	font-size: 2.2rem;
+	line-height: 1.4rem;
 	letter-spacing: -0.02em;
 	color: #F2F2F2;
 }
 
-/***Second section END***/
+/***Enrol for a course now SECTION END***/
 
-/***Third section***/
+/***What we offer SECTION***/
 
-.third_section{
-	margin-top: 170px;
+.what_we_offer_section{
+	margin-top: 150px;
 }
 
-.third_section__title {
+.what_we_offer_section_title {
 	margin: 0px auto 70px;
-	font-family: 'Roboto', sans-serif;
-	color: var(--main-gray);
+	text-align: center;
+	font-family: var(--main-title-text);
+	color: var(--main-img-background-color);
 	font-weight: 700;
-	font-size: 3rem;
-
+	font-size: 3.3rem;
 	letter-spacing: -0.02em;
-
 }
 
-.project-grid__tile1 {
-	display: grid;
-	align-items: center;
-	justify-items: center;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
-	margin-bottom: 120px;
-	gap: 10px 50px;
-}
-
-.project-grid__tile2 {
-	display: grid;
-	align-items: center;
-	justify-items: center;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
-	margin-bottom: 120px;
-	gap: 10px 50px;
-}
-
+.project-grid__tile1,
+.project-grid__tile2,
 .project-grid__tile3 {
 	display: grid;
 	align-items: center;
@@ -503,230 +425,134 @@ textarea::placeholder{
 	gap: 10px 50px;
 }
 
-.project-grid__tile-img{
-	display: grid;
-	align-content: center;
-	grid-row-start: 1;
-	grid-row-end: 5;
-	max-width: 450px;
-	min-width: 320px;
+.project-img{
+	border-radius: 60px;
 }
+
+.project-grid__tile-img, .project-grid__tile-img-reverse{
+	grid-row: 1 / 5;
+	object-fit: cover;
+}
+
 .project-grid__tile-img-reverse{
-	display: grid;
-	align-content: center;
-	grid-row-start: 1;
-	grid-row-end: 5;
 	grid-column-start: 2;
-	max-width: 450px;
-	min-width: 300px;
 }
 
+.grid-1-title,
 .grid-1-title-reverse{
-	grid-column-start: 1;
-	grid-column-end: 2;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--main-title-text);
 	font-weight: 900;
-	font-size: 3rem;
-	line-height: 3.3rem;
-	color: var(--main-pink);
+	font-size: 3.3rem;
+	line-height: 3.5rem;
+	color: var(--main-second-text-color);
 	width: 100%;
 	height: 100%;
 }
 
+.grid-2-title,
 .grid-2-title-reverse{
-	grid-column-start: 1;
-	grid-column-end: 2;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--main-casual-text);
 	font-weight: 600;
-	font-size: 2rem;
-	line-height: 4rem;
-	color: #474350;
-	width: 100%;
-	height: 100%;
-}
-
-.project-text-reverse{
-	grid-column-start: 1;
-	grid-column-end: 2;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 1.5rem;
-	line-height: 3.6rem;
-	width: 100%;
-	height: 100%;
-	letter-spacing: -0.01em;
-	color: #333333;
-}
-
-.grid_button-reverse{
-	grid-column-start: 1;
-	grid-column-end: 2;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
-	font-size: 1.2rem;
-	letter-spacing: -0.02em;
-	padding: 15px 38px;
-	background: var(--main-aqua);
-	border-radius: 60px;
-}
-
-.project-img {
-	border-radius: 60px;
-}
-
-.grid-1-title {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 900;
 	font-size: 3rem;
-	line-height: 3.3rem;
-	color: var(--main-pink);
-	width: 100%;
-	height: 100%;
-}
-
-.grid-2-title {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
-	font-size: 2rem;
-	line-height: 4rem;
+	line-height: 4.5rem;
 	color: #474350;
 	width: 100%;
 	height: 100%;
 }
 
-.project-text {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	font-family: 'Poppins', sans-serif;
+.project-text,
+.project-text-reverse{
+	font-family: var(--main-casual-text);
 	font-weight: 400;
-	font-size: 1.5rem;
-	line-height: 3.6rem;
+	font-size: 2rem;
+	line-height: 4rem;
 	width: 100%;
-	height: 100%;
-	letter-spacing: -0.01em;
 	color: #333333;
+	list-style-type: disc;
 }
 
-.grid_button {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	font-family: 'Poppins', sans-serif;
+
+.grid-1-title-reverse,
+.grid-2-title-reverse,
+.project-text-reverse,
+.grid_button-reverse {
+	grid-column: 1 / 2;
+}
+
+.grid_button,
+.grid_button-reverse {
+	background-color: var(--main-first-text-color);
+	font-family: var(--main-casual-text);
+	font-size: 1.4rem;
 	font-weight: 600;
-	font-size: 1.2rem;
-	letter-spacing: -0.02em;
 	padding: 15px 38px;
-	background: var(--main-aqua);
 	border-radius: 60px;
+	margin-top: 20px;
+	text-align: center;;
+	min-width: 200px;
 }
-/***Third section END***/
+/***What we offer SECTION END***/
 
-/***Fourth section***/
+/***Swiper SECTION***/
 
-.fourth_section{
+.swiper_section{
 	margin-top: 170px;
 }
 
-.fourth_section__grid-templaetes{
+.swiper_section_grid_templ{
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
 }
 
-.fourth-section__title-container {
+.swiper_section_title_container {
 	min-width:300px;
 }
 
-.fourth-section__title {
-	font-family: 'Roboto', sans-serif;
+.swiper_section_title {
+	font-family: var(--main-title-text);
 	font-weight: 700;
-	font-size: 4rem;
-	line-height: 7.6rem;
+	font-size: 7rem;
+	line-height: 8rem;
 	text-transform: capitalize;
-	padding-top: 40px;
-
 }
 
-.pink {
-	color: var(--main-pink);
+.main_color {
+	color: var(--main-second-text-color);
 }
 
-.swiper {
-	width: 100%;
-	max-width: 450px;
-	min-width: 350px;
+/***Swiper SECTION END***/
+
+/***Get In Touch SECTION***/
+
+.get_In_touch{
+	margin-top: 150px;
 }
 
-.swiper-slide {
-	width:430px;
-	height:300px;
-	background: var(--main-white);
-	box-shadow: 0px 0px 20px rgba(226, 226, 226, 0.25);
-	border-radius: 10px;
-}
-.slider__foto-name {
-	display: flex;
-}
-.slider__img {
-	padding: 25px 10px 20px 20px;
-}
-.slider__name {
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
+.get_In_touch_title{
+	text-align: center;
+	margin-bottom: 70px;
+	font-family: var(--main-title-text);
+	color: var(--main-img-background-color);
 	font-weight: 700;
-	font-size: 1.4rem;
-	line-height: 3rem;
-	color: #000000;
-	padding: 40px 0px 0px 10px;
-
-}
-.slider__text {
-	display: block;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 1.5rem;
-	line-height: 2.7rem;
-	color: var(--main-gray);
-	padding: 0px 40px 400px 50px;
+	font-size: 3.2rem;
+	line-height: 2.2rem;
+	letter-spacing: -0.02em;
 }
 
-/* .swiper-pagination {
-	
-} */
-
-.swiper-button-next::after,
-.swiper-button-prev::after{
-	color: var(--main-pink);
-	font-size: 2.2rem;
-	transition: all 0.2s;
-}
-
-.swiper-button-prev:hover:after,
-.swiper-button-next:hover::after{
-	font-size: 3.8rem;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--main-pink);
-}
-
-/***Fourth section END***/
-
-/***Fifth section***/
-
-.five_section__container {
+.get_In_touch__container {
 	display: flex;
 	flex-direction: row;
-	background-color: var(--main-white);
+	align-items: center;
+	justify-content: center;
+	background-color: var(--main-background-color);
 	border-radius: 60px;
 	width: 100%;
 	height: 500px;
 }
 
 .survey_section_five{
-	margin: 50px 40px 50px 40px;
+	padding: 50px 40px 50px 40px;
 	width: 50%;
 	min-width: 215px;
 }
@@ -735,31 +561,26 @@ textarea::placeholder{
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	width: 10em;
+	font-weight: 700;
+	width: 100%;
+	max-width: 240px;
+	min-width: 50px;
 	height: 45px;
-  padding: 0 20px;
-	border: none;
-  border-radius: 60px;
-  background-color: var(--main-aqua);
-	color: #474350;
-	font-size: 1.2rem;
-	font-weight: 600;
-  cursor: pointer;
-	z-index: 3;
+	background: var(--main-first-text-color);
+	border-radius: 60px;
 	margin: 36px auto 0;
-
 }
 
 .error_button{
 	margin: 0px auto 0;
-	background-color: var(--main-errors-red);
-	color: var(--main-white);
+	background-color: var(--main-errors);
+	color: var(--main-background-color);
 }
 
 .success_button{
 	margin: 0px auto 0;
-	background-color: var(--main-sucsess-green);
-	color: var(--main-white);
+	background-color: var(--main-sucsess);
+	color: var(--main-background-color);
 }
 
 textarea {
@@ -769,15 +590,16 @@ textarea {
 	height: 8rem;
   }
 
-  .fifth_img {
-	margin: 40px 0px 80px 40px;
+  .get_In_touch_img {
 	border-radius: 60px;
 	border: none;
-	width: 50%;
-
+	width: 60%;
+	height: 500px;
+	min-height: 370px;
+	padding: 20px;
 }
 
-/***Fifth section END***/
+/***Get In Touch SECTION END***/
 
 /***Footer***/
 .footer{
@@ -801,10 +623,9 @@ textarea {
   margin-top: 50px;
 	width: 100%;
 }
-  
 
 .text{
-	color: var(--main-white);
+	color: var(--main-background-color);
 	font-size: 1.2rem;
 	margin: 0;
 }
@@ -822,7 +643,7 @@ textarea {
 }
 
 .footer_text{
-	color: var(--main-white);
+	color: var(--main-background-color);
 	font-weight: 900;
 	font-size: 2rem;
 	margin-top: 20px;
@@ -884,22 +705,20 @@ textarea {
 	font-size: 1.5rem;
 	z-index: 3;
 }
-  
+
 .subscribe_bottom {
 	width: 30%;
 	height: 55px;
 	padding: 0 20px;
 	border: none;
 	border-radius: 60px;
-	background-color: var(--main-aqua);
+	background-color: var(--main-first-text-color);
 	color: #474350;
 	font-size: 1.6rem;
 	cursor: pointer;
-
 	margin-left: -30%;
 	z-index: 5;
 }
-
 
 .subscribe_bottom:hover {
   background-color: #00cc96;

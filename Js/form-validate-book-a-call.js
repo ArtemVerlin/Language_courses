@@ -3,6 +3,7 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
 	event.preventDefault()
 	
 	if (validation(this) === true) {
+		event.target.reset();
 		//Добавляет класс успешно к инпутам формы
 		const formElements = document.querySelectorAll('.input_box__book-a-call');
   	formElements.forEach((element) => {
@@ -15,11 +16,12 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
             modal.style.display = "block";
             document.body.classList.add("modal-open");
 						setTimeout(() => {
-							body.classList.toggle('_lock');
-							document.body.classList.toggle("modal-open");
-              modal.classList.toggle("open");
+							body.classList.remove('_lock');
+							document.body.classList.remove("modal-open");
+              modal.classList.remove("open");
             }, 1800);
 						buttonError.classList.remove('error_button');
+						buttonError.classList.add('success_button');
             setTimeout(() => {
               modal.classList.add("open");
 							if (popupActive) {
@@ -63,6 +65,7 @@ document.getElementById('form__call-a-back').addEventListener('submit', function
 		//Если валидация провалилась то присваиваем класс ошибки
 			if((validation(this) === false)) {
 				buttonError.classList.add('error_button');
+				buttonError.classList.remove('success_button')
 			}
 	}
 

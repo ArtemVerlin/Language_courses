@@ -3,8 +3,9 @@ function validation(form) {
 
 	form.querySelectorAll('.form-control').forEach(input => {
 		removeError(input)
-//валидация всех полей
-		if (input.classList.contains('form-control')) {
+		let length = input.value.length
+//валидация всех полей (добавить в форму "_val-input")
+		if (input.classList.contains('_val-input')) {
 			removeError(input)
 			if (input.value == '') {
 					createError(input, 'Поле не заполнено')
@@ -17,7 +18,7 @@ function validation(form) {
 			if (input.classList.contains('_name')) {
 				removeError(input)
 				if (!nameTest(input)) {
-					createError(input, 'Имя введено не верно')
+					createError(input, 'Please use a valid name')
 				result = false
 				}else{
 					sucsess(input);
@@ -27,7 +28,7 @@ function validation(form) {
 		if (input.classList.contains('_email')) {
 			removeError(input)
 			if (emailTest(input)) {
-				createError(input, 'Введен не верный email')
+				createError(input, 'Please use a valid email')
 			result = false
 			}else{
 				sucsess(input);
@@ -36,8 +37,8 @@ function validation(form) {
 //валидация телефона (добавить в форму "_tel")
 		if (input.classList.contains('_tel')) {
 			removeError(input)
-			if ((input.value == '')) {
-				createError(input, 'Номер введен не верно')
+			if (length !== 11 & length !== 16) {
+				createError(input, 'Please use a valid phone number')
 			result = false
 			}else{
 				sucsess(input);
@@ -47,7 +48,7 @@ function validation(form) {
 			if (input.classList.contains('_select')) {
 				removeError(input)
 				if ((input.value == '')) {
-					createError(input, 'Выберите курс')
+					createError(input, 'Please complete this required field')
 				result = false
 				}else{
 					sucsess(input);
@@ -77,7 +78,6 @@ function validation(form) {
 	function createError(input, text) {
 		const parent = input.parentNode;
 		const errorText = document.createElement('p');
-	
 
 		errorText.classList.add('error-text');
 		errorText.textContent = text;
@@ -88,14 +88,35 @@ function validation(form) {
 	//Remove errors-------------------------------
 	function removeError(input){
 		const parent = input.parentNode;
-
+		
 		if (parent.classList.contains('error')) {
 			parent.querySelector('.error-text').remove()
 			parent.classList.remove('error')
 		}
 	}
 
-	//TELEPHONE MASK
+
+	//TELEPHONE MASK phone-book-a-call
+document.querySelector('#phone_book-a-call').onkeydown = function(e){
+	inputphone(e,document.querySelector('#phone_book-a-call'))
+	}
+
+	function inputphone(e, phone){
+		function stop(evt) {
+				evt.preventDefault();
+		}
+		let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
+		
+		if(not == 1 || 'Backspace' === not){
+		if('Backspace' != not){ 
+				if(v.length < 3 || v ===''){phone.value= '+3('}
+				if(v.length === 6){phone.value= v +')'}
+				if(v.length === 10){phone.value= v +'-'}
+				if(v.length === 13){phone.value= v +'-'}
+				}
+		}else{stop(e)}};
+
+	//TELEPHONE MASK phone-enrol_for_a_course_now
 document.querySelector('#phone_sectionOne').onkeydown = function(e){
 	inputphone(e,document.querySelector('#phone_sectionOne'))
 	}
@@ -108,7 +129,27 @@ document.querySelector('#phone_sectionOne').onkeydown = function(e){
 		
 		if(not == 1 || 'Backspace' === not){
 		if('Backspace' != not){ 
-				if(v.length < 3 || v ===''){phone.value= '+7('}
+				if(v.length < 3 || v ===''){phone.value= '+3('}
+				if(v.length === 6){phone.value= v +')'}
+				if(v.length === 10){phone.value= v +'-'}
+				if(v.length === 13){phone.value= v +'-'}
+				}
+		}else{stop(e)}};
+
+	//TELEPHONE MASK phone-get_In_touch
+document.querySelector('#phone-section-five').onkeydown = function(e){
+	inputphone(e,document.querySelector('#phone-section-five'))
+	}
+
+	function inputphone(e, phone){
+		function stop(evt) {
+				evt.preventDefault();
+		}
+		let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
+		
+		if(not == 1 || 'Backspace' === not){
+		if('Backspace' != not){ 
+				if(v.length < 3 || v ===''){phone.value= '+3('}
 				if(v.length === 6){phone.value= v +')'}
 				if(v.length === 10){phone.value= v +'-'}
 				if(v.length === 13){phone.value= v +'-'}

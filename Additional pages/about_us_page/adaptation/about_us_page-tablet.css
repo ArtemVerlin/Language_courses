@@ -1,0 +1,403 @@
+/* 960px / 16px = 75em */
+@media (max-width: 60em) {
+	html {
+		font-size: 50%;
+	}
+
+	.container{
+		padding: 0 50px 0;
+	}
+
+/***Background SECTION***/
+
+.first_section,
+.background_main,
+.gradient{
+	height: 450px;
+	min-height: 200px;
+}
+
+.background_main{
+	object-position:70% 30%;
+}
+
+.first_section_title {
+font-size: 5rem;
+}
+/***Background SECTION END***/
+
+/***TEXT SECTION***/
+
+.text_section{
+	margin-top:80px;
+}
+
+.text_section_text{
+	font-family: var(--main-casual-text);
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	width: 100%;
+	color: #333333;
+}
+
+/***TEXT SECTION END***/
+
+/***Our professionals SECTION***/
+
+.our_professionals{
+	margin-top: 100px;
+}
+
+.sub_title{
+font-family: var(--main-casual-text);
+font-weight: 600;
+font-size: 2.4rem;
+line-height: 4.5rem;
+color: #474350;
+width: 100%;
+height: 100%;
+}
+
+.our_professionals_text{
+	font-family: var(--main-casual-text);
+font-weight: 400;
+font-size: 2rem;
+line-height: 4rem;
+width: 100%;
+color: #333333;
+list-style-type: disc;
+	align-self: self-start;
+}
+
+.our_professionals_grid{
+	display: grid;
+align-items: center;
+justify-items: center;
+grid-template-columns: 0.3fr 1fr;
+grid-template-rows: repeat(4, 0.1fr 1fr);
+	grid-gap: 30px;
+}
+
+.our_professionals_img{
+	grid-column: 1 / 2;
+	object-fit: cover;
+	object-position: top center;
+	border-radius: 60px;
+	width: 100%;
+	height: 100%;
+	object-position: 70% 100%;
+}
+
+.anna_smith_img{
+	grid-row: 1 / 3;
+}
+
+.sarah_patel_img{
+	grid-row: 3 / 5;
+}
+
+.ethan_davis_img{
+	grid-row: 5 / 7;
+}
+
+.lucas_garcia_img{
+	grid-row: 7 / 9;
+}
+
+.professionals_grid_right_column{
+	grid-column: 2 / 3;
+}
+
+/***Our professionals SECTION END***/
+
+/***Get In Touch SECTION***/
+
+.get_In_touch{
+	margin-top: 150px;
+}
+
+.get_In_touch_title{
+	margin-bottom: -40px;
+	font-size: 4rem;
+	line-height: 2.2rem;
+}
+
+.get_In_touch__container {
+	display: flex;
+  flex-direction: column;
+  height: 400px;
+  min-height: 470px;;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.survey_section_five{
+	padding: 70px 40px 25px 40px;
+	width: 100%;
+	min-width: 215px;
+}
+
+textarea {
+	resize: none; 
+	overflow: auto;
+	line-height: 1.2rem;
+	height: 8rem;
+  }
+
+  .get_In_touch_img {
+	display: none;
+}
+
+.send_buttom {
+	font-size: 2rem;
+}
+
+/***Get In Touch SECTION END***/
+}
+
+/* 700px / 16px = 43.75em */
+@media (max-width: 43.75em) {
+	html {
+		font-size: calc(6.5px + (8 - 6.5) * ((100vw - 450px) / (700 - 450)));
+	}
+
+	/***Background SECTION***/
+
+.first_section,
+.background_main,
+.gradient{
+	height: 450px;
+	min-height: 200px;
+}
+
+.background_main{
+	object-position: 50% 30%;
+}
+
+.first_section__link {
+	font-size: 2rem;
+	line-height: 1.2rem;
+}
+
+.first_section__link-1{
+	padding: 16px 12px 16px 12px;
+
+}
+
+.first_section__link-2 {
+	padding: 16px 12px 16px 12px;
+}
+/***Background SECTION END***/
+
+/***TEXT SECTION***/
+
+.text_section{
+	margin-top:40px;
+}
+
+.text_section_text{
+	font-family: var(--main-casual-text);
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	width: 100%;
+	color: #333333;
+}
+
+/***TEXT SECTION END***/
+
+/***Our professionals SECTION***/
+
+.our_professionals{
+	margin-top: 40px;
+}
+
+.sub_title{
+	text-align: center;
+font-family: var(--main-casual-text);
+font-weight: 600;
+font-size: 2.4rem;
+line-height: 4.5rem;
+color: #474350;
+width: 100%;
+height: 100%;
+padding: 20px 0px 0px 0px;
+}
+
+.our_professionals_grid{
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, 0.1fr 1fr);
+	grid-gap: 0px;
+}
+
+.our_professionals_img{
+	grid-column: 1 / 2;
+	object-fit: cover;
+	border-radius: 20px;
+	width: 100%;
+	height: 90%;
+	object-position: 70% 100%;
+	align-self: start;
+}
+
+.anna_smith_img{
+	grid-row: 2 / 3;
+}
+
+.sarah_patel_img{
+	grid-row: 4 / 5;
+}
+
+.ethan_davis_img{
+	grid-row: 6 / 7;
+}
+
+.lucas_garcia_img{
+	grid-row: 8 / 9;
+}
+
+.professionals_grid_right_column{
+	grid-column: 1 / 2;
+}
+
+.our_professionals_text{
+	font-family: var(--main-casual-text);
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 4rem;
+	width: 100%;
+	color: #333333;
+	list-style-type: disc;
+	align-self: self-start;
+	grid-column: 2 / 3;
+	padding: 0px 0px 20px 15px;
+}
+
+.T1{
+	grid-row: 2;
+}
+.T2{
+	grid-row: 4;
+}
+.T3{
+	grid-row: 6;
+}
+.T4{
+	grid-row: 8;
+}
+/***Our professionals SECTION END***/
+
+/***Get In Touch SECTION***/
+
+.get_In_touch{
+	margin-top: 100px;
+}
+
+.get_In_touch_title{
+	margin-bottom: -40px;
+	font-size: 4rem;
+	line-height: 2.2rem;
+}
+
+.get_In_touch__container {
+	display: flex;
+  flex-direction: column;
+  height: 400px;
+  min-height: 470px;;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.survey_section_five{
+	padding: 70px 40px 25px 40px;
+	width: 100%;
+	min-width: 215px;
+}
+
+textarea {
+	resize: none; 
+	overflow: auto;
+	line-height: 1.2rem;
+	height: 8rem;
+  }
+
+  .get_In_touch_img {
+	display: none;
+}
+
+.send_buttom {
+	font-size: 2rem;
+}
+
+/***Get In Touch SECTION END***/
+
+/***Footer***/
+.intend{
+	margin-top: 22px;
+}
+
+.intend_low{
+	margin-top: 12px;
+}
+
+.text{
+	font-size: 1.7rem;
+}
+
+.icon{
+	margin-right: 0px;
+	width: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
+	height: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
+	object-fit:contain;
+}
+
+.footer{
+	margin: 80px 0px 0px;
+	padding: 50px 0px 20px;
+}
+
+.subscribe_form{
+	display: none;
+}
+
+	.project-text,
+	.project-text-reverse{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#social_media{
+		display: none;
+	}
+
+	.upper_footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.nav_bar_footer{
+		grid-column-start: 2;
+		grid-row-start: 1;
+	}
+	
+	.company_info{
+		grid-column-start: 1;
+		grid-row-start: 1;
+	}
+
+	.logos{
+		display: flex;
+		justify-content: space-around;
+		grid-column: 1 / 4;
+	}
+
+	.left{
+		text-align: left;
+		margin:0 auto 0;
+	}
+
+/***Footer END***/
+}

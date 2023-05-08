@@ -4,12 +4,275 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/Additional pages styles/contact_us.css">
+        <link rel="stylesheet" href="./contact_us.css">
+				<link rel="stylesheet" href="./adaptation/contact_us-laptop.css">
+				<link rel="stylesheet" href="./adaptation/contact_us-tablet.css">
+				<link rel="stylesheet" href="./adaptation/contact_us-mobile.css">
+				<link rel="stylesheet" href="../../styles/menu_burger.css">
+        <link rel="stylesheet" href="../../styles/modal_thank_you.css">
+        <link rel="stylesheet" href="../../styles/modal_book_a-call.css">
+        <link rel="stylesheet" href="../../styles/reset.css">
         <title>Contact us</title>
         <link rel="icon" href="data:;base64,=">
     </head>
     <body>
+        <!--Header-->
+        <header id="header_main" class="header lock-padding">
+            <div class="container header_container">
+                <a class="header__logo" href="../../index.html"><img src="../../img/logo.png" alt="Language school logo" class="header__logo-img"></a>
+                <nav class="header__nav">
+                    <ul class="menu__list">
+                        <li><a class="menu__link"  href="../../index.html">Home</a></li>
+                        <li><a class="menu__link" href="../courses_page/courses.html">Courses</a></li>
+                        <li><a class="menu__link" href="../exams_page/exams.html">Exams</a></li>
+                        <li><a class="menu__link" href="../about_us_page/about_us.html">About us</a></li>
+												<li><a class="menu__link" href="../contact_us_page/contact_us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="callback">
+                    <a href="#popup-book-a-call" class="callback__button popup-link">
+                        <img class="callback-icon" src="../../img/callback-icon.svg" alt="">
+                        <p class="callback__button-text">Book a call</p>
+                    </a>
+                </div>
+
+                <!--Burger-->
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <!--Burger-->
+
+                <!--Modal "Book a call"-->
+                <div id="popup-book-a-call" class="popup">
+                    <div class="popup__body">
+                        <div class="container">
+                            <div class="popup__content">
+                                <a href="#header" class="close-popup popup__close">
+                                    <span class="popup__close">&times;</span>
+                                </a>
+                                <div class="popup-book-a-call__text-container">
+                                    <div class="popup__tiitle">
+                                        Direct Call
+                                    </div>
+                                    <div class="popup__text">
+                                        <p>
+                                            Fill out the form  and one of our language experts will be in touch with you shortly to discuss
+                                            how we can help you achieve your language goals.
+                                        </p>
+                                    </div>
+                                </div>
+                                <form action="#" id="form__call-a-back" class="survey-form__book-a-call">
+                                    <div class="input_box__book-a-call">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            class="form-control _name"
+                                            placeholder="Full name"
+                                        />
+                                        </div>
+                                        <div class="input_box__book-a-call">
+                                            <input
+                                            type="tel"
+                                            name="phone"
+                                            id="phone"
+                                            class="form-control _tel"
+                                            placeholder="+7(000)000-00-00"
+                                            maxlength="16"
+                                            />
+                                        </div>
+                                        <button id="open_modal_call-a-back" type="submit" class="submit-button submit-button__text">Apply Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Header END-->
+        <main class="main">
+            <!--Main section-->
+            <section class="main_section container">
+                <h1 class="main_title">
+                    <span class="second_color">Contact</span> Us
+                </h1>
+                <div class="main_section_container">
+                    <form class="survey_main_section" id="form_main_section" action="#">
+                        <div class="input_box_main_section">
+
+                            <input
+                                type="text"
+                                name="name"
+                                id="name_main_section"
+                                class="form-control _name"
+                                placeholder="Name"
+
+                            />
+                        </div>
+                        <div class="input_box_main_section">
+
+                            <input
+                                type="email"
+                                name="email main section"
+                                id="email_main_section"
+                                class="form-control _email"
+                                placeholder="Email"
+
+                            />
+                        </div>
+                        <div class="input_box_main_section">
+                            <input
+                                type="text"
+                                name="number"
+                                id="phone_main_section"
+                                class="form-control _tel"
+                                placeholder="+3(000)000-00-00"
+                                maxlength="16"
+                            />
+                        </div>
+                        <div class="input_box_main_section">
+
+                            <textarea
+                                name="massage_main_section"
+                                id="massage_main_section"
+                                class="form-control"
+                                placeholder="Input Text"
+                            ></textarea>
+                        </div>
+
+                            <button
+                                id="open_modal_sectionFive"
+                                type="submit"
+                                class="send_buttom"
+                                >Send
+                            </button>
+                    </form>
 
 
+                    <div class="map_section">
+                        <iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25225.703237137182!2d-122.44715924782817!3d37.7850499846105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586d510144681%3A0xe960db8a581aacf5!2z0JTQstC-0YDQtdGGINC40LfRj9GJ0L3Ri9GFINC40YHQutGD0YHRgdGC0LI!5e0!3m2!1sru!2sfi!4v1683208610851!5m2!1sru!2sfi"
+                            allowfullscreen="" 
+                            oading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="location">
+                            <p class="add_info">
+                                <span class="bold">Address: <br></span>Street number city 40100
+                            </p>
+                            <p class="add_info">
+                                <span class="bold">Phone: <br></span>+12345678910
+                            </p>
+                            <p class="add_info">
+                                <span class="bold">Email: <br></span>contact@language.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Main section END-->
+        </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="upper_footer">
+                    <div id="social_media">
+                        <img class="footer_logo" src="../../img/logo.png" alt="green parrent logo">
+                        <h3 class="footer_text">Discover the world<br>Through language</h3>
+                    </div>
+                    <ul class="logos">
+                        <li class="icon">
+                            <a href="#"><img  src="../../img/logos/facebook.png" alt="facebook logo"/></a>
+                        </li>
+                        <li class="icon">
+                            <a href="#"><img  src="../../img/logos/twitter.png" alt="twitter logo"></a>
+                        </li>
+                        <li class="icon">
+                            <a href="#"><img  src="../../img/logos/instagramm.png" alt="instagram logo"></a>
+                        </li>
+                        <li class="icon">
+                            <a href="#"><img  src="../../img/logos/linkedIN.png" alt="linkedIn logo"></a>
+                        </li>
+                    </ul>
+                        <div class="company_info left">
+                            <div>
+                                <p class="text bold">Address:</p>
+                                <p class="text">Street number city 40100</p>
+                            </div>
+                            <div>
+                                <p class="text bold intend">Phone:</p>
+                                <p class="text">+12345678910</p>
+                            </div>
+                            <div>
+                                <p class="text bold intend">Email:</p>
+                                <p class="text">contact@language.com</p>
+                            </div>
+                        </div>
+                        <nav class="nav_bar_footer left">
+                            <ul>
+                                <li>
+                                    <p class="text bold">Company</p>
+                                </li>
+                                <li>
+                                    <p class="text intend">
+                                        <a href="../about_us_page/about_us.html">About Us</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="text intend_low">
+                                        <a href="../courses_page/courses.html"> Courses</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="text intend_low">
+                                        <a href="../exams_page/exams.html">Exams</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="subscribe_form">
+                    <h3 class = "subscribe_text text">Subscribe to get latest updates</h3>
+                    <form class ="subscribe">
+                        <input 
+                            type="email"
+                            class="subscribe_email" 
+                            name="email_footer"
+                            placeholder="Your email address"
+                            required>
+                        <button 
+                            type="submit" 
+                            class="subscribe_bottom">Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>             
+        </footer>
+        <!--Footer END-->
+        <!--Modal "thank you + Apply button"-->
+						<div id="modal_sectionOne" class="modal_sectionOne">
+							<div class="modal-content_sectionOne">
+								<span class="close_sectionOne">&times;</span>
+								<div class="modal-center_sectionOne">
+									<div class="modal-center_sectionOne">
+										<h3 class="modal_header">
+											Thank you!
+										</h3>
+										<p class="text_modal_section_one">
+											We will contact you shortly
+										</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!--Modal "thank you + Apply button" END-->
+		<!--JS connect-->
+		<script src="../../Js/menu-burger.js"></script>
+		<script src="../../Js/popup-book-a-call.js"></script>
+		<script src="../../Js/validation-form.js"></script>
+		<script src="../../Js/form-validate-book-a-call.js"></script>
+		<script src="../../Js/form-validate-enrol_for_a_course_now.js"></script>
+        <script src="./form-validate-contact-us.js"></script>
+		<!--JS connect END-->
     </body>
 </html>

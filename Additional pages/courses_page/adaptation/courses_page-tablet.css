@@ -1,0 +1,275 @@
+/* 960px / 16px = 75em */
+@media (max-width: 60em) {
+	html {
+		font-size: 50%;
+	}
+
+	.container{
+		padding: 0 50px 0;
+	}
+
+/***Background SECTION***/
+
+.first_section,
+.background_main,
+.gradient{
+	height: 450px;
+	min-height: 200px;
+}
+
+.background_main{
+	background-position:70% 30%;
+}
+
+.first_section__link {
+	font-size: 2rem;
+	line-height: 1.2rem;
+	padding: 16px 12px 16px 12px;
+}
+
+.first_section__link-1{
+	padding: 16px 12px 16px 12px;
+
+}
+
+.first_section__link-2 {
+	padding: 16px 12px 16px 12px;
+}
+/***Background SECTION END***/
+
+	/***Enrol for a course now***/
+
+	.enrol_section{
+		margin-top: 100px;
+	}
+
+	.enrol_section_title{
+		font-size: 4rem;
+		line-height: 2rem;
+		margin-bottom: -40px;
+	}
+	
+	.enrol_sectoion_container {
+		display: flex;
+		flex-direction: column;
+		height: 450px;
+		min-height:580px;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	
+	.enrol_section_text {
+		display: flex;
+		text-align: center;
+		font-size: 2.2rem;
+		line-height: 3.7rem;
+		margin-top: 15px;
+		padding: 60px 15px 0px 15px;
+		width: 100%;
+	}
+	
+	.survey-form__title{
+		display: none;
+	}
+	
+	.survey-form {
+		margin: 0px 0px 0px 0px;
+		padding: 25px 40px 25px 40px;
+		width: 100%;
+	}
+	
+	.form-control {
+		margin-bottom: 20px;
+		padding: 10px 0 14px 10px;
+	}
+	
+	.submit-button__text{
+	font-size: 2rem;
+	line-height: 1.2rem;
+	}
+	
+	/***Enrol for a course now END***/
+
+	/***What we offer SECTION***/
+
+.what_we_offer_section{
+	margin-top: 100px;
+}
+
+
+.what_we_offer_section_title {
+	margin: 0px auto 50px;
+	text-align: center;
+	font-size: 4rem;
+}
+
+.project-grid__tile1,
+.project-grid__tile2,
+.project-grid__tile3 {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 0.2fr 2fr 0.5fr;
+	margin-bottom: 40px;
+	gap: 10px 50px;
+}
+
+.project-grid__tile-img,
+.project-grid__tile-img-reverse{
+	grid-row: 3 / 4;
+	object-fit: cover;
+}
+
+.project-grid__tile-img-reverse{
+	grid-column-start: 1;
+}
+
+.grid-1-title,
+.grid-1-title-reverse{
+	text-align: center;
+	font-weight: 900;
+	font-size: 3.7rem;
+	line-height: 3.5rem;
+}
+
+.grid-2-title,
+.grid-2-title-reverse{
+	text-align: center;
+	font-size: 3.4rem;
+	line-height: 4.5rem;
+}
+
+.project-text,
+.project-text-reverse{
+	font-size: 2.2rem;
+	line-height: 3.8rem;
+}
+
+@media (min-width: 43.75em) {
+	.project-text,
+	.project-text-reverse{
+		padding-left: calc(15px + (180 - 9) * ((100vw - 700px) / (960 - 700)));
+		padding-right: calc(15px + (180 - 9) * ((100vw - 700px) / (960 - 700)));
+	}
+}
+
+.grid_button,
+.grid_button-reverse {
+	font-size: 2rem;
+	padding: 10px 38px;
+}
+/***What we offer SECTION END***/
+
+}
+
+/* 700px / 16px = 43.75em */
+@media (max-width: 43.75em) {
+	html {
+		font-size: calc(6.5px + (8 - 6.5) * ((100vw - 450px) / (700 - 450)));
+	}
+
+	/***Background SECTION***/
+
+.first_section,
+.background_main,
+.gradient{
+	height: 450px;
+	min-height: 200px;
+}
+
+.background_main{
+	object-position: 85% 30%;
+}
+
+.first_section__link {
+	font-size: 2rem;
+	line-height: 1.2rem;
+}
+
+.first_section__link-1{
+	padding: 16px 12px 16px 12px;
+
+}
+
+.first_section__link-2 {
+	padding: 16px 12px 16px 12px;
+}
+/***Background SECTION END***/
+
+/***What we offer SECTION***/
+
+.what_we_offer_section_title {
+	margin: 0px auto 50px;
+	text-align: center;
+	font-size: 5rem;
+}
+
+/***What we offer SECTION END***/
+
+/***Footer***/
+.intend{
+	margin-top: 22px;
+}
+
+.intend_low{
+	margin-top: 12px;
+}
+
+.text{
+	font-size: 1.7rem;
+}
+
+.icon{
+	margin-right: 0px;
+	width: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
+	height: calc(15px + (25 - 15) * ((100vw - 320px) / (801 - 320)));
+	object-fit:contain;
+}
+
+.footer{
+	margin: 200px 0px 0px;
+	padding: 50px 0px 20px;
+}
+
+.subscribe_form{
+	display: none;
+}
+
+	.project-text,
+	.project-text-reverse{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#social_media{
+		display: none;
+	}
+
+	.upper_footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.nav_bar_footer{
+		grid-column-start: 2;
+		grid-row-start: 1;
+	}
+	
+	.company_info{
+		grid-column-start: 1;
+		grid-row-start: 1;
+	}
+
+	.logos{
+		display: flex;
+		justify-content: space-around;
+		grid-column: 1 / 4;
+	}
+
+	.left{
+		text-align: left;
+		margin:0 auto 0;
+	}
+
+/***Footer END***/
+}

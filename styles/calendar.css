@@ -1,9 +1,16 @@
+.calendar-block{
+	margin-left: 30px;
+}
+
+
 .date-picker{
-    
+  font-size: 24px;
 }
 
 .dates {
-    background-color: #FFF;
+    background-color: var(--main-background-color);
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .month {
@@ -11,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #EEE;
+    cursor: auto;
 }
 
 .arrows_calendar {
@@ -24,7 +32,7 @@
 }
 
 .arrows_calendar:hover {
-    background-color: var(--main-pink);
+    background-color: var(--main-second-text-color);
 	cursor: pointer;
 }
 
@@ -39,7 +47,7 @@
 }
 .selected-date{
     text-align: center;
-    border-bottom: 2px solid var(--main-pink);
+    border-bottom: 2px solid var(--main-second-text-color);
 }
 .day { 
     display: flex;
@@ -48,5 +56,5 @@
     color: #313131;
 }
 .selected_day {
-    background-color: var(--main-aqua);
+    background-color: var(--main-first-text-color);
 }

@@ -4,12 +4,389 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/Additional pages styles/exams.css">
+        <link rel="stylesheet" href="./exams.css">
+        <link rel="stylesheet" href="../../styles/modal_thank_you.css">
+				<link rel="stylesheet" href="../../styles/menu_burger.css">
+        <link rel="stylesheet" href="../../styles/modal_book_a-call.css">
+				<link rel="stylesheet" href="./adaptation/exams_page-laptop.css">
+				<link rel="stylesheet" href="./adaptation/exams_page-tablet.css">
+				<link rel="stylesheet" href="./adaptation/exams_page-mobile.css">
+        <link rel="stylesheet" href="../../styles/reset.css">
+        <link rel="stylesheet" href="../../Swiper/package/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../../styles/swiper.css">
         <title>Exams</title>
         <link rel="icon" href="data:;base64,=">
     </head>
     <body>
+        <!--Header-->
+        <header id="header_main" class="header lock-padding">
+            <div class="header_container container">
+                <a href="../../index.html" class="header_logo">
+                    <img src="../../img/logo.png" alt="Language school logo" class="header_logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="menu__list">
+                        <li><a class="menu__link"  href="../../index.html">Home</a></li>
+                        <li><a class="menu__link" href="../courses_page/courses.html">Courses</a></li>
+                        <li><a class="menu__link" href="../exams_page/exams.html">Exams</a></li>
+                        <li><a class="menu__link" href="../about_us_page/about_us.html">About us</a></li>
+												<li><a class="menu__link" href="../../Additional pages/contact_us_page/contact_us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="callback">
+                    <a href="#popup-book-a-call" class="callback__button popup-link">
+                        <img class="callback-icon" src="../../img/callback-icon.svg" alt="">
+                        <p class="callback__button-text">Book a call</p>
+                    </a>
+                </div>
 
+                <!--Burger-->
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <!--Burger-->
 
+                <!--Modal "Book a call"-->
+                <div id="popup-book-a-call" class="popup">
+                    <div class="popup__body">
+                        <div class="container">
+                            <div class="popup__content">
+                                <a href="#header" class="close-popup popup__close">
+                                    <span class="popup__close">&times;</span>
+                                </a>
+                                <div class="popup-book-a-call__text-container">
+                                    <div class="popup__tiitle">
+                                        Direct Call
+                                    </div>
+                                    <div class="popup__text">
+                                        <p>
+                                            Fill out the form  and one of our language experts will be in touch with you shortly to discuss
+                                            how we can help you achieve your language goals.
+                                        </p>
+                                    </div>
+                                </div>
+                                <form action="#" id="form__call-a-back" class="survey-form__book-a-call">
+                                    <div class="input_box__book-a-call">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            class="form-control _name"
+                                            placeholder="Full name"
+                                        />
+                                        </div>
+                                        <div class="input_box__book-a-call">
+                                            <input
+                                            type="tel"
+                                            name="phone"
+                                            id="phone"
+                                            class="form-control _tel"
+                                            placeholder="+7(000)000-00-00"
+                                            maxlength="16"
+                                            />
+                                        </div>
+																					<button id="open_modal_call-a-back" type="submit" class="submit-button submit-button__text">Apply Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <!--Header END-->
+
+            <main class="main">
+
+                <!--Background SECTION-->
+                <section class="first_section container">
+                    <h1 class="first_section_title">
+                        Maximize Your Exam Success
+                    </h1>
+                    <img src="./side_img/first_section_background.svg" alt="bb" class="background_main">
+                        <a href="#" data-goto=".enrol_section_title" class="first_section__link smooft_scroll">
+                            Apply Now
+                        </a>
+                    </div>
+                </section>
+                <!--Background SECTION END-->
+
+                <!--What we offer SECTION-->
+                <section class="what_we_offer_section container">
+                    <h2 class="what_we_offer_title">
+                        What we offer
+                    </h2>
+                    <article class="what_we_offer_text">
+                        <p>
+                            Our exam preparation course is designed to help students achieve success in language proficiency exams.
+                            Our course is tailored to your specific needs, ensuring you have the right knowledge and strategies for success.
+                            Here are some of the benefits of taking our exam preparation course:
+                        </p>                           
+                        <p>
+                            At the end of our exam preparation course, students will have the skills and knowledge they need to confidently take on their language proficiency exam and achieve their desired score.
+                            We understand the importance of these exams for students' academic and professional futures, and we are committed to helping students achieve their goals.
+                        </p>
+                        <div class="professional_description">
+                            <img src="../../img/our_specialists/anna_smith.svg" alt="professional" class="professional_logo">
+                            <h3 class="professional_name">
+                                Anna Smith
+                            </h3>
+                            <p class="professional_description_text">
+                                Our exam preparation course is the perfect way to maximize your chances of success in language proficiency exams.
+                                Join our course today and give yourself the best chance of achieving your language goals!
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <!--What we offer SECTION END-->
+
+                <!--Proficiency Exam SECTION-->
+                <section class="exam_section container">
+                    <img src="./side_img/third_section.svg" alt="project" class="img_exam">
+                    <h3 class="exam_title">
+                        Master Your Language Proficiency Exam
+                    </h3>
+                    <ul class="text_exam">
+                        <li>
+                            Tailored to your specific language proficiency exam, ensuring you have the right knowledge and strategies for success.
+                        </li>
+                        <li>
+                            Covers all aspects of the exam, including reading, writing, listening, and speaking components.
+                        </li>
+                        <li>
+                            Develops your ability to respond to exam-style questions quickly and accurately.
+                        </li>
+                        <li>
+                            Provides regular practice tests, to help you build your confidence and measure your progress.
+                        </li>
+                    </ul>
+                    <a href="#" data-goto=".enrol_section_title" class="button_exam smooft_scroll">
+                        Start today
+                    </a>
+                </section>
+                <!--Proficiency Exam SECTION END-->
+                <!--Swiper SECTION--> 
+			<section class="swiper_section">
+				<div class="container" id="slider-container">
+					<div class="swiper_section_grid_templ">
+						<div class="swiper_section_title_container">
+							<h2 class="swiper_section_title">
+                                What our <span class="main_color">Students </span> say <br>about us
+                            </h2>
+						</div>
+						<!--Swiper--> 
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slider__foto-name">
+										<img src="../../img/students-photo slider-1.jpg" alt="students-photo" class="slider__img">
+										<h5 class="slider__name">Name Surname</h5>
+									</div>
+									<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+																					Consectetur ac blandit nam massa massa elementum mollis lectus. 
+																					Sit ultricies nisl amet non, quis enim velit tempus. 
+																					Interdum duis imperdiet venenatis</p>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__foto-name">
+										<img src="../../img/students-photo slider-2.jpg" alt="students-photo" class="slider__img">
+										<h5 class="slider__name">Name Surname</h5>
+									</div>
+									<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+										Consectetur ac blandit nam massa massa elementum mollis lectus. 
+										Sit ultricies nisl amet non, quis enim velit tempus. 
+										Interdum duis imperdiet venenatis</p>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__foto-name">
+										<img src="../../img/students-photo slider-1.jpg" alt="students-photo" class="slider__img">
+										<h5 class="slider__name">Name Surname</h5>
+									</div>
+									<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+										Consectetur ac blandit nam massa massa elementum mollis lectus. 
+										Sit ultricies nisl amet non, quis enim velit tempus. 
+										Interdum duis imperdiet venenatis</p>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__foto-name">
+										<img src="../../img/students-photo slider-2.jpg" alt="students-photo" class="slider__img">
+										<h5 class="slider__name">Name Surname</h5>
+									</div>
+									<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+										Consectetur ac blandit nam massa massa elementum mollis lectus. 
+										Sit ultricies nisl amet non, quis enim velit tempus. 
+										Interdum duis imperdiet venenatis</p>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<!--Swiper END--> 
+					</div>
+				</div>
+			</section>
+			<!--Swiper SECTION END-->
+
+            <!--Enrol for a course now SECTION-->
+            <section class="container">
+                    <h2 class="enrol_section_title">
+                        Enrol for a course now
+                    </h2>
+                    <div class="enrol_sectoion_container">
+                        <p class="enrol_section_text">
+                            Our language school offers a dynamic and immersive learning experience designed
+                            to help you achieve fluency in your target language
+                        </p>
+                        <form action="#" id="form" class="survey-form">
+                            <p class="survey-form__title">Enroll for a course now</p>
+                            <div class="input_box__section-one">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="form-control _name"
+                                    placeholder="Full name"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="form-control _email"
+                                placeholder="Email"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <input
+                                type="tel"
+                                name="phone"
+                                id="phone_sectionOne"
+                                class="form-control _tel"
+                                placeholder="+7(000)000-00-00"
+                                maxlength="16"
+                                />
+                            </div>
+                            <div class="input_box__section-one">
+                                <select id="dropdown" name="role" class="form-control _select" placeholder="Select a course">
+                                <option value="" disabled selected style='display:none;'>Select a course</option>
+                                <option value="For beginners">For beginners</option>
+                                <option value="For Pre-intermediate">For Pre-intermediate</option>
+                                <option value="For intermediate">For intermediate</option>
+                                <option value="Preparation for Exam">Preparation for Exam</option>
+                                <option value="Consultation">Consultation</option>
+                                </select>
+                            </div>
+														<button id="open_modal_sectionOne" type="submit" class="submit-button submit-button__text">Apply Now</button>
+                        </form>
+                    </div>
+            </section>
+            <!--Enrol for a course now SECTION END-->
+
+            <!--Footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="upper_footer">
+                        <div id="social_media">
+                            <img class="footer_logo" src="../../img/logo.png" alt="green parrent logo">
+                            <h3 class="footer_text">Discover the world<br>Through language</h3>
+                        </div>
+                        <ul class="logos">
+                            <li class="icon">
+                                <a href="#"><img  src="../../img/logos/facebook.png" alt="facebook logo"/></a>
+                            </li>
+                            <li class="icon">
+                                <a href="#"><img  src="../../img/logos/twitter.png" alt="twitter logo"></a>
+                            </li>
+                            <li class="icon">
+                                <a href="#"><img  src="../../img/logos/instagramm.png" alt="instagram logo"></a>
+                            </li>
+                            <li class="icon">
+                                <a href="#"><img  src="../../img/logos/linkedIN.png" alt="linkedIn logo"></a>
+                            </li>
+                        </ul>
+                            <div class="company_info left">
+                                <div>
+                                    <p class="text bold">Address:</p>
+                                    <p class="text">Street number city 40100</p>
+                                </div>
+                                <div>
+                                    <p class="text bold intend">Phone:</p>
+                                    <p class="text">+12345678910</p>
+                                </div>
+                                <div>
+                                    <p class="text bold intend">Email:</p>
+                                    <p class="text">contact@language.com</p>
+                                </div>
+                            </div>
+                            <nav class="nav_bar_footer left">
+                                <ul>
+                                    <li>
+                                        <p class="text bold">Company</p>
+                                    </li>
+                                    <li>
+                                        <p class="text intend">
+                                            <a href="../about_us_page/about_us.html">About Us</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text intend_low">
+                                            <a href="../courses_page/courses.html"> Courses</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text intend_low">
+                                            <a href="../exams_page/exams.html">Exams</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </nav>
+                    </div>
+                    <div class="subscribe_form">
+                        <h3 class = "subscribe_text text">Subscribe to get latest updates</h3>
+                        <form class ="subscribe">
+                            <input 
+                                type="email"
+                                class="subscribe_email" 
+                                name="email_footer"
+                                placeholder="Your email address"
+                                required>
+                            <button 
+                                type="submit" 
+                                class="subscribe_bottom">Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>             
+            </footer>
+            <!--Footer END-->
+						<!--Modal "thank you + Apply button"-->
+						<div id="modal_sectionOne" class="modal_sectionOne">
+								<div class="modal-content_sectionOne">
+										<span class="close_sectionOne">&times;</span>
+										<div class="modal-center_sectionOne">
+												<div class="modal-center_sectionOne">
+														<h3 class="modal_header">
+																Thank you!
+														</h3>
+														<p class="text_modal_section_one">
+																We will contact you shortly
+														</p>
+												</div>
+										</div>	
+								</div>
+						</div>
+						<!--Modal "thank you + Apply button" END-->
+            <script src="../../Swiper/package/swiper-bundle.min.js"></script>
+						<script src="../../Js/menu-burger.js"></script>
+						<script src="../../Js/popup-book-a-call.js"></script>
+						<script src="../../Js/validation-form.js"></script>
+						<script src="../../Js/form-validate-book-a-call.js"></script>
+						<script src="../../Js/form-validate-enrol_for_a_course_now.js"></script>
+						<script src="../../Js/smooft_scroll.js"></script>
+            <script src="../../Js/main.js"></script>
     </body>
 </html>

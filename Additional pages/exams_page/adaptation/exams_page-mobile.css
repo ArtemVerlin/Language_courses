@@ -1,0 +1,321 @@
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.125em) {
+  html {
+    font-size: 40%;
+  }
+
+	.container{
+		padding: 0 20px 0;
+	}
+
+/***Header***/
+
+.header {
+	padding: 5px 0px;
+}
+
+.header__logo-img{
+	width: 60px;
+	height: 60px;
+}
+
+.callback-icon{
+	width: 12px;
+	height: 12px;
+}
+
+/***Header END***/
+
+.main {
+	margin-top: 70px;
+}
+
+/***Background SECTION***/
+.first_section,
+.background_main,
+.gradient{
+	height: calc(100vh - 70px);
+	align-items: center;
+}
+
+.background_main{
+	object-position:65% 30%;
+}
+
+.first_section_title {
+	display: inline-block;
+	font-family: var(--main-title-text);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 6rem;
+	line-height: 7.8rem;
+	color: var(--main-background-color);
+	padding-top: 190px;
+	text-align: center;
+}
+
+.first_section__link {
+	text-align: center;
+	padding: 12px 12px;
+	width: 50%;
+	margin-top: 40px;
+	font-size: 2rem;
+}
+
+/***Background SECTION END***/
+
+/***Enrol for a course now***/
+
+.section__title {
+margin: 100px auto -35px;
+}
+
+.enrol_sectoion_container {
+	height: 440px;
+	min-height:480px;
+}
+
+.enrol_section_text {
+	padding: 45px 10px 0px 10px;
+}
+
+.survey-form__title{
+	display: none;
+}
+
+.survey-form {
+	margin: 0px 0px 0px 0px;
+	padding: 15px 30px 15px 30px;
+}
+
+
+.form-control {
+	margin-bottom: 15px;
+	padding: 5px 0 8px 5px;
+}
+
+
+/***Enrol for a course now SECTION END***/
+
+/***What we offer SECTION***/
+
+.what_we_offer_section{
+	margin-top: 40px;
+}
+
+.what_we_offer_title{
+  margin: 0px auto 20px;
+	text-align: center;
+	font-size: 3.3rem;
+}
+
+
+.what_we_offer_text {
+	font-size: 2rem;
+	line-height: 3.5rem;
+	width: 100%;
+}
+
+.professional_description_text{
+  font-size: 1.5rem;
+	line-height: 3rem;
+}
+
+.professional_description{
+  display: grid;
+  align-items: center;
+	justify-items: center;
+  margin-top: 20px;
+  width: 100%;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-rows: 0.2fr 0.5fr;
+	column-gap: 15px;
+}
+
+.professional_logo{
+    border-radius: 20px;
+    height: 135px;
+    grid-row: 1 / 3;
+}
+
+.professional_name{
+	font-size: 2.4rem;
+	line-height: 4.5rem;
+	width: 100%;
+	height: 100%;
+}
+
+/***What we offer SECTION END***/
+
+/***Proficiency Exam***/
+.exam_section{
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	align-items: center;
+	margin-top: 60px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr; 
+	column-gap: 0px;
+}
+
+.img_exam{
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+	border-radius: 60px;
+	object-position: 80% 30%;
+}
+
+.exam_title{
+margin: 15px;
+font-size: 3.3rem;
+line-height: 3.5rem;
+width: 100%;
+height: 100%;
+grid-row: 1 / 2;
+text-align: center;
+}
+
+.text_exam{
+font-size: 2em;
+line-height: 3.8rem;
+width: 100%;
+padding-left: 25px;
+grid-row: 3 / 4;
+align-self: self-start;
+}
+
+.button_exam{
+font-size: 2rem;
+padding: 15px 38px;
+border-radius: 60px;
+margin-top: 20px;
+text-align: center;
+min-width: 200px;
+grid-column: 1 / 3;
+}
+/***Proficiency Exam END***/
+
+/***Swiper SECTION***/
+
+.swiper_section{
+	margin-top: 40px;
+}
+
+#slider-container{
+	max-width: 1220px;
+  padding: 0 10px 0;
+  margin: 0 auto 0;
+  height: 100%;
+}
+
+.swiper_section_grid_templ{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.swiper_section_title_container {
+	min-width:300px;
+	margin-bottom: 20px;
+}
+
+.swiper_section_title {
+	padding-top: 0px;
+}
+
+/***Swiper SECTION END***/
+
+/***Get In Touch SECTION***/
+
+.get_In_touch {
+  margin-top: 60px;
+}
+
+.survey_section_five{
+	width: 100%;
+	min-width: 215px;
+	padding: 0px 30px 0px 30px;
+	padding-top: 20px;
+}
+
+.get_In_touch__container {
+	display: flex;
+  flex-direction: column;
+  height: 380px;
+  min-height: 0px;;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/***Get In Touch SECTION END***/
+
+/***Footer***/
+.footer{
+  margin: 80px 0px 0px;
+	padding: 20px 0px 30px;
+}
+
+.upper_footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.subscribe_form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+	width: 100%;
+}
+  
+
+.text{
+	color: var(--main-background-color);
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+.bold{
+	font-weight: 800;
+}
+
+.intend{
+	margin-top: 22px;
+}
+
+.intend_low{
+	margin-top: 12px;
+}
+
+.nav_bar_footer{
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+
+.company_info{
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+.footer_logo{
+	display: none;
+}
+
+.footer_text{
+	display: none;
+}
+
+.left{
+	text-align: left;
+  margin-right: auto;
+
+}
+
+.logos{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+/***Footer END***/
+}
