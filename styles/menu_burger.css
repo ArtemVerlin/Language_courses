@@ -97,6 +97,7 @@
 		font-size: 2.6rem;
 	}
 	.callback {
+		padding-right: 12px;
 		display: flex;
 		align-items: center;
 		height: 35px;
