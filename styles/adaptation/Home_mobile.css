@@ -210,20 +210,22 @@
 /***Get In Touch SECTION***/
 
 .get_In_touch {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 .survey_section_five{
 	width: 100%;
 	min-width: 215px;
-	padding: 40px 30px 0px 30px;
+	height: 100%;
+	max-height: 400px;
+	padding: 0px 30px 0px 30px;
 }
 
 .get_In_touch__container {
 	display: flex;
   flex-direction: column;
-  height: 380px;
-  min-height: 0px;;
+  height: 100%;
+  min-height: 400px;
   max-width: 600px;
   margin: 0 auto;
 }
