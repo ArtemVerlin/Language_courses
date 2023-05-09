@@ -85,10 +85,15 @@ p{
 	justify-content: space-between;
 }
 
-.header__logo,
-.header__logo-img{
-	width: 70px;
+.header__logo{
+	width: 54px;
 	height: 70px;
+}
+
+.header__logo-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .header__nav{

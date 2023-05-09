@@ -14,11 +14,6 @@
 	padding: 5px 0px;
 }
 
-.header__logo-img{
-	width: 60px;
-	height: 60px;
-}
-
 .callback-icon{
 	width: 12px;
 	height: 12px;
@@ -156,7 +151,7 @@
 	align-items: center;
 	margin-top: 60px;
 	grid-template-columns: 1fr;
-	grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr; 
+	grid-template-rows: 0.1fr 0.8fr 0.1fr 0.1fr; 
 	column-gap: 0px;
 }
 
@@ -178,6 +173,7 @@ text-align: center;
 }
 
 .text_exam{
+	padding-top: 20px;
 font-size: 2em;
 line-height: 3.8rem;
 width: 100%;

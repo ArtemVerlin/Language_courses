@@ -5,18 +5,13 @@
   }
 
 	.container{
-		padding: 0 10px 0;
+		padding: 0 20px 0;
 	}
 
 /***Header***/
 
 .header {
 	padding: 5px 0px;
-}
-
-.header__logo-img{
-	width: 60px;
-	height: 60px;
 }
 
 .callback-icon{
@@ -91,6 +86,10 @@
 /***TEXT SECTION END***/
 
 /***Our professionals SECTION***/
+
+.our_professionals_container{
+	padding: 0 10px 0;
+}
 
 .our_professionals{
 	margin-top: 20px;
@@ -195,8 +194,7 @@
 .survey_section_five{
 	width: 100%;
 	min-width: 215px;
-	padding: 0px 30px 0px 30px;
-	padding-top: 20px;
+	padding: 40px 30px 0px 30px;
 }
 
 .survey-form {

@@ -45,6 +45,13 @@ font-size: 5rem;
 
 /***Our professionals SECTION***/
 
+.our_professionals_container{
+	max-width: var(--main-max-width);
+	padding: 0 50px 0;
+	margin: 0px auto 0px;
+	height: 100%;
+}
+
 .our_professionals{
 	margin-top: 100px;
 }
